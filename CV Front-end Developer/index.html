@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nesterov - Front-end developer</title>
+  <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Oswald&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="center">
+
+    <header>
+      <div class="header-block" id="home">
+        <img class="logo-header" src="icons/logo-header.svg" height="64" alt="logo-header">
+        <ul class="header-nav">
+          <li><a href="#projects">Мои проекты</a></li>
+          <li><a href="#skills">Мои скиллы</a></li>
+          <li><a href="#education">Образование</a></li>
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+          <li><a href="#facts">Интересные факты</a></li>
+        </ul>
+        <button class="header-burger-menu-btn">
+          <img class="menu-btn" src="icons/menu-header.svg" height="50" alt="menu-btn">
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="base">
+          <div class="base-info">
+            <h1 class="base-info-speciality-text" lang="en">Front-end developer</h1>
+            <h2 class="base-info-name-text">Нестеров Евгений</h2>
+            <div class="base-info-phone">
+              <img src="icons/phone-icon.svg" height="35" alt="icon-phone">
+              <p class="base-info-phone-mail-text">+79220867869</p>
+            </div>
+            <div class="base-info-mail">
+              <img src="icons/mail-icon.svg" height="25" alt="icon-mail">
+              <p class="base-info-phone-mail-text" lang="en">Nester669@gmail.com</p>
+            </div>
+            <div>
+              <a class="base-btn btn-connection" title="Telegram" href="https://t.me/NesterEM" target="_blank">Связаться
+                со
+                мной<img src="icons/btn-connection-icon.svg" height="30" alt="icon-telegram"></a>
+            </div>
+            <div>
+              <a class="base-btn btn-download" href="https://disk.yandex.ru/i/YXxOZNnqwyN1OQ" target="_blank">Скачать
+                резюме в PDF<img src="icons/btn-download-icon.svg" height="18" alt="icon-download"></a>
+            </div>
+          </div>
+          <div>
+            <img class="main-photo" src="img/main-photo.png" alt="main-photo">
+          </div>
+        </div>
+        <div class="base-menu">
+          <ul class="burger-menu">
+            <li><a href="#projects">Мои проекты</a></li>
+            <li><a href="#skills">Мои скиллы</a></li>
+            <li><a href="#education">Образование</a></li>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+            <li><a href="#facts">Интересные факты</a></li>
+          </ul>
+        </div>
+        <div class="target">
+          <div class="target-main">
+            <p>Ищу компанию или проект, где смогу максимально реализовать все свои знания во <span
+                lang="en">Front-end</span> разработке</p>
+          </div>
+          <div class="target-comment">
+            <ul>
+              <li>пишу валидный код и верстаю <span lang="en">full-time</span></li>
+              <li>ищу команду профессионалов для совместного роста и достижения успеха</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <div class="projects" id="projects">
+          <h2 class="page-block-title">{Мои проекты}</h2>
+          <div class="projects-list">
+
+            <div class="project-block vantage">
+              <div class="project-text-block">
+                <h3 class="project-title">Студия дизайна Vantage</h3>
+                <h4 class="project-subtitle">Суть проекта:</h4>
+                <ul>
+                  <li class="project-about-list">верстка сайта по макету Figma;</li>
+                  <li class="project-about-list">добавление анимации;</li>
+                  <li class="project-about-list">адаптивность, кроссбраузерность.</li>
+                </ul>
+                <h4 class="project-subtitle">Что делал, какой результат:</h4>
+                <ul>
+                  <li class="project-about-list">сверстал сайта в соответствии c макетом;</li>
+                  <li class="project-about-list">подключил шрифты c помощью Google Fonts и c локального носителя;</li>
+                  <li class="project-about-list">c помощью CSS добавлена анимация;</li>
+                </ul>
+                <h4 class="project-subtitle">Стек технологий:</h4>
+                <ul>
+                  <li class="project-about-list"><span class="text-uppercase">html, html5, css, css3, </span>Figma</li>
+                </ul>
+                <div class="project-link">
+                  <a class="project-link-text"
+                    href="https://github.com/NesterovEvgeniy/Portfolio/tree/main/2-LandingPages/1-Design(Vantage)"
+                    target="_blank">Смотреть проект</a>
+                  <img src="icons/link-arrow-icon.svg" height="19" alt="link-arrow-image">
+                </div>
+              </div>
+              <a href="development-page.html"><img class="project-img" src="img/project-image-vantage.png" height="376"
+                  alt="project-image-vantage"></a>
+            </div>
+
+            <div class="project-block analitycs">
+              <div class="project-text-block">
+                <h3 class="project-title">Услуги по изготовлению дэшбордов<span class="text-uppercase"> analitycs</span>
+                </h3>
+                <h4 class="project-subtitle">Суть проекта:</h4>
+                <ul>
+                  <li class="project-about-list">верстка сайта по макету Figma;</li>
+                  <li class="project-about-list">добавление анимации;</li>
+                  <li class="project-about-list">адаптивность, кроссбраузерность.</li>
+                </ul>
+                <h4 class="project-subtitle">Что делал, какой результат:</h4>
+                <ul>
+                  <li class="project-about-list">сверстал сайт в соответствии c макетом;</li>
+                  <li class="project-about-list">подключил шрифты c помощью Google Fonts и c локального носителя;</li>
+                  <li class="project-about-list">c помощью CSS добавлена анимация;</li>
+                </ul>
+                <h4 class="project-subtitle">Стек технологий:</h4>
+                <ul>
+                  <li class="project-about-list"><span class="text-uppercase">html, html5, css, css3, </span>Figma</li>
+                </ul>
+                <div class="project-link">
+                  <a class="project-link-text"
+                    href="https://github.com/NesterovEvgeniy/Portfolio/tree/main/2-LandingPages/3-Services(Dashbords)"
+                    target="_blank">Смотреть проект</a>
+                  <img src="icons/link-arrow-icon.svg" width="26" height="19" alt="link-arrow-image">
+                </div>
+              </div>
+              <div>
+                <a href="development-page.html"><img class="project-img" src="img/project-image-analitycs.png"
+                    height="376" alt="project-image-analitycs"></a>
+              </div>
+            </div>
+
+            <div class="project-block wooden">
+              <div class="project-text-block">
+                <h3 class="project-title">Интернет-магазин мебели Wooden</h3>
+                <h4 class="project-subtitle">Суть проекта:</h4>
+                <ul>
+                  <li class="project-about-list">верстка сайта по макету Figma;</li>
+                  <li class="project-about-list">добавление анимации;</li>
+                  <li class="project-about-list">адаптивность, кроссбраузерность.</li>
+                </ul>
+                <h4 class="project-subtitle">Что делал, какой результат:</h4>
+                <ul>
+                  <li class="project-about-list">сверстал сайт в соответствии c макетом;</li>
+                  <li class="project-about-list">подключил шрифты c помощью Google Fonts и c локального носителя;</li>
+                  <li class="project-about-list">c помощью CSS добавлена анимация;</li>
+                </ul>
+                <h4 class="project-subtitle">Стек технологий:</h4>
+                <ul>
+                  <li class="project-about-list"><span class="text-uppercase">html, html5, css, css3, </span>Figma</li>
+                </ul>
+                <div class="project-link">
+                  <a class="project-link-text"
+                    href="https://github.com/NesterovEvgeniy/Portfolio/tree/main/2-LandingPages/2-FurnitureStore(Woodendot)"
+                    target="_blank">Смотреть проект</a>
+                  <img src="icons/link-arrow-icon.svg" width="26" height="19" alt="link-arrow-image">
+                </div>
+              </div>
+              <a href="development-page.html"><img class="project-img" src="img/project-image-wooden.png" height="376"
+                  alt="project-image-wooden"></a>
+            </div>
+
+            <div class="keto">
+              <div class="project-block">
+                <div class="project-text-block">
+                  <h3 class="project-title">Персональный план питания <span class="text-uppercase">keto plan</span>
+                  </h3>
+                  <h4 class="project-subtitle">Суть проекта:</h4>
+                  <ul>
+                    <li class="project-about-list"></li>
+                    <li class="project-about-list"></li>
+                    <li class="project-about-list"></li>
+                  </ul>
+                  <h4 class="project-subtitle">Что делал, какой результат:</h4>
+                  <ul>
+                    <li class="project-about-list"></li>
+                    <li class="project-about-list"></li>
+                    <li class="project-about-list"></li>
+                  </ul>
+                  <h4 class="project-subtitle">Стек технологий:</h4>
+                  <ul>
+                    <li class="project-about-list"></li>
+                  </ul>
+                  <div class="project-link">
+                    <a class="project-link-text" href="development-page.html" target="_blank">Смотреть проект</a>
+                    <img src="icons/link-arrow-icon.svg" width="26" height="19" alt="link-arrow-image">
+                  </div>
+                </div>
+                <a href="development-page.html"><img class="project-img" src="img/project-image-keto-plan.png"
+                    height="376" alt="project-image-wooden"></a>
+              </div>
+            </div>
+          </div>
+          <button class="more-project-btn project-btn-text">Больше проектов
+            <div><img class="btn-more-projects-arrow" src="icons/btn-more-projects-arrow-hover.svg" height="17"
+                alt="button-arrow"></div>
+          </button>
+        </div>
+      </section>
+
+      <section>
+        <div class="skills" id="skills">
+          <h2 class="page-block-title">{Мои скиллы}</h2>
+
+          <div class="hard-skills">
+            <h3 class="skills-title" lang="en">Hard skills</h3>
+            <div class="hard-skills-blocks">
+              <div class="skill-box html">
+                <img src="icons/html-icon.svg" height="78" alt="html5">
+                <h3 class="hard-skills-title"><span class="text-uppercase" lang="en">html5</span></h3>
+              </div>
+              <div class="skill-box bootstrap">
+                <img src="icons/bootstrap-icon.svg" height="62" alt="bootstrap">
+                <h3 class="hard-skills-title" lang="en">Bootstrap</h3>
+              </div>
+              <div class="skill-box css">
+                <img src="icons/css-icon.svg" height="78" alt="css">
+                <h3 class="hard-skills-title"><span class="text-uppercase" lang="en">css</span></h3>
+              </div>
+              <div class="skill-box git">
+                <img src="icons/git-icon.svg" height="74" alt="git">
+                <h3 class="hard-skills-title" lang="en">Git</h3>
+              </div>
+              <div class="skill-box sql">
+                <img src="icons/sql-icon.svg" height="73" alt="sql">
+                <h3 class="hard-skills-title"><span class="text-uppercase" lang="en">sql</span></h3>
+              </div>
+              <div class="skill-box js">
+                <img src="icons/javascript-icon.svg" height="67" alt="javascript">
+                <h3 class="hard-skills-title" lang="en">Javascript</h3>
+              </div>
+              <div class="skill-box agile">
+                <img src="icons/agile-icon.svg" height="68" alt="agile">
+                <h3 class="hard-skills-title"><span class="text-uppercase" lang="en">agile</span></h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="soft-skills">
+            <h3 class="skills-title" lang="en">Soft skills</h3>
+            <div class="soft-skills-blocks">
+
+              <div class="soft-skills-box">
+                <div class="soft-skills-info">
+                  <div class="soft-skills-title-persent">
+                    <h4 class="soft-skills-title">Открытость новому</h4>
+                    <p class="soft-skills-persent">100%</p>
+                  </div>
+                  <div class="soft-skills-line">
+                    <span class="soft-skills-color-line light-red" style="width: 100%"></span>
+                  </div>
+                  <div class="soft-skills-description">
+                    <p>Исследую этот мир по-максимуму: от новых знаний до новых впечатлений</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="soft-skills-box">
+                <div class="soft-skills-info">
+                  <div class="soft-skills-title-persent">
+                    <h4 class="soft-skills-title">Адаптивность</h4>
+                    <p class="soft-skills-persent">80%</p>
+                  </div>
+                  <div class="soft-skills-line">
+                    <span class="soft-skills-color-line light-blue" style="width: 80%"></span>
+                  </div>
+                  <div class="soft-skills-description">
+                    <p>Ключевая способность XXI века. Меняйся или уступи место другим </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="soft-skills-box">
+                <div class="soft-skills-info">
+                  <div class="soft-skills-title-persent">
+                    <h4 class="soft-skills-title">Коммуникативные способности</h4>
+                    <p class="soft-skills-persent">85%</p>
+                  </div>
+                  <div class="soft-skills-line">
+                    <span class="soft-skills-color-line red" style="width: 85%"></span>
+                  </div>
+                  <div class="soft-skills-description">
+                    <p>Слушаю, когда говорят; говорю, когда спрашивают; спрашиваю всегда, если есть вопросы</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="soft-skills-box">
+                <div class="soft-skills-info">
+                  <div class="soft-skills-title-persent">
+                    <h4 class="soft-skills-title">Восприяние критики</h4>
+                    <p class="soft-skills-persent">80%</p>
+                  </div>
+                  <div class="soft-skills-line">
+                    <span class="soft-skills-color-line violet" style="width: 80%"></span>
+                  </div>
+                  <div class="soft-skills-description">
+                    <p>Приветствую конструктивную критику и делаю выводы</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="soft-skills-box">
+                <div class="soft-skills-info">
+                  <div class="soft-skills-title-persent">
+                    <h4 class="soft-skills-title">Поиск и анализ информации</h4>
+                    <p class="soft-skills-persent">95%</p>
+                  </div>
+                  <div class="soft-skills-line">
+                    <span class="soft-skills-color-line orange" style="width: 95%"></span>
+                  </div>
+                  <div class="soft-skills-description">
+                    <p>Чем больше на-google-ишь, тем больше на-do-ишь
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="soft-skills-box">
+                <div class="soft-skills-info">
+                  <div class="soft-skills-title-persent">
+                    <h4 class="soft-skills-title">Планирование и организация</h4>
+                    <p class="soft-skills-persent">95%</p>
+                  </div>
+                  <div class="soft-skills-line">
+                    <span class="soft-skills-color-line green" style="width: 95%"></span>
+                  </div>
+                  <div class="soft-skills-description">
+                    <p>Нет плана - жди провала</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="soft-skills-box">
+                <div class="soft-skills-info">
+                  <div class="soft-skills-title-persent">
+                    <h4 class="soft-skills-title">Управление эмоциями</h4>
+                    <p class="soft-skills-persent">85%</p>
+                  </div>
+                  <div class="soft-skills-line">
+                    <span class="soft-skills-color-line yellow" style="width: 85%"></span>
+                  </div>
+                  <div class="soft-skills-description">
+                    <p>15% заедаю бургерами</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="soft-skills-box">
+                <div class="soft-skills-info">
+                  <div class="soft-skills-title-persent">
+                    <h4 class="soft-skills-title">Командная работа</h4>
+                    <p class="soft-skills-persent">100%</p>
+                  </div>
+                  <div class="soft-skills-line">
+                    <span class="soft-skills-color-line blue" style="width: 100%"></span>
+                  </div>
+                  <div class="soft-skills-description">
+                    <p>Самостоятелен, но только в команде достигаются великие результаты</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="soft-skills-box">
+                <div class="soft-skills-info">
+                  <div class="soft-skills-title-persent">
+                    <h4 class="soft-skills-title">Креативность и творчество</h4>
+                    <p class="soft-skills-persent">80%</p>
+                  </div>
+                  <div class="soft-skills-line">
+                    <span class="soft-skills-color-line dark-yellow" style="width: 80%"></span>
+                  </div>
+                  <div class="soft-skills-description">
+                    <p>У дизайнеров тоже должна быть работа</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="education" id="education">
+          <h2 class="page-block-title">{Образование}</h2>
+          <div class="education-blocks">
+            <div class="education-block-info">
+              <p class="education-graduate">2022 год</p>
+              <p class="education-title">It-специалист, профессиональная верстка сайтов, <span
+                  lang="en">GeekBrains</span></p>
+              <p class="education-info">8 мес., 351 час <span lang="en">(HTML, CSS, Bootstrap, JS, C#, SQL, Git, Agile,
+                  SCRUM</span> и др.)</p>
+            </div>
+            <div class="education-block-info">
+              <p class="education-graduate">2010 год</p>
+              <p class="education-title">Инженер, высшее техническое образование, УГТУ</p>
+              <p class="education-info">8 лет (5 лет унивеститета + 3 года аспирантуры) 10 лет опыта работы инженером
+              </p>
+            </div>
+            <div class="education-block-info education-line">
+              <p class="education-graduate">2010 год</p>
+              <p class="education-title">Переводчик технических текстов с английского языка, УГТУ</p>
+              <p class="education-info line">2,5 года, переведено более 150 000 слов не адаптированного текста</p>
+            </div>
+            <div class="education-block-info education-line">
+              <p class="education-graduate">2008 год</p>
+              <p class="education-title">Юриспруденция, специализация гражданско-правовая, СГА</p>
+              <p class="education-info">4,5 года очно-заочного обучения, знаю, чем отличается юрист от адвоката</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="about" id="about">
+          <h2 class="page-block-title">{Обо мне}</h2>
+          <div class="about-blocks">
+            <div class="about-block-info">
+              <p class="about-block-title">Возраст:</p>
+              <p class="about-text">36 лет (дата рождения 05.03.1986); Родился: г. Ухта, Россия</p>
+            </div>
+            <div class="about-block-info">
+              <p class="about-block-title">Место проживания:</p>
+              <p class="about-text">г. Ташкент, Узбекистан</p>
+            </div>
+            <div class="about-block-info">
+              <p class="about-block-title">Занятость:</p>
+              <p class="about-text">полная занятость, проектная работа, стажировка</p>
+            </div>
+            <div class="about-block-info about-line">
+              <p class="about-block-title">Семейное положение:</p>
+              <p class="about-text marital-status-line">Холост</p>
+            </div>
+            <div class="about-block-info about-line">
+              <p class="about-block-title">Знание языков:</p>
+              <p class="about-text">Английский <span lang="en">(pre-intermediate)</span>; Русский (родной);</p>
+            </div>
+            <div class="about-block-info about-line">
+              <p class="about-block-title">График работы:</p>
+              <p class="about-text">полный день, удаленная работа, офис (г. Ташкент), возможна релокация</p>
+            </div>
+          </div>
+          <div>
+            <a class="base-btn btn-connection btn-about" title="Telegram" href="https://t.me/NesterEM"
+              target="_blank">Связаться
+              со
+              мной<img src="icons/btn-connection-icon.svg" height="30" alt="icon-telegram"></a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="contacts" id="contacts">
+          <h2 class="page-block-title">{Контакты}</h2>
+
+          <div class="contacts-blocks">
+            <div class="contacts-phone">
+              <div class="contacts-icon icon-phone"></div>
+              <p class="contacts-text">+79220867869, +7999999999</p>
+            </div>
+            <div class="contacts-mail">
+              <div class="contacts-icon icon-mail"></div>
+              <a href="#!" target="_blank">
+                <p class="contacts-text" lang="en">Nester669@gmail.com</p>
+              </a>
+            </div>
+            <div class="contacts-website">
+              <div class="contacts-icon icon-website"></div>
+              <a href="development-page.html" target="_blank">
+                <p class="contacts-text" lang="en">www.NesterovFrontEnd.com</p>
+              </a>
+            </div>
+
+            <div class="contacts-mesengers">
+              <p class="contacts-title-text">Другие варианты связи</p>
+              <div class="contacts-mesengers-links">
+                <a title="Telegram" href="https://t.me/NesterEM" target="_blank">
+                  <div class="contacts-icon icon-telegram"></div>
+                </a>
+                <a title="whatsapp" href="https://wa.me/79220867869" target="_blank">
+                  <div class="contacts-icon icon-whatsapp"></div>
+                </a>
+                <a title="skype" href="Skype:nester_skype?userinfo" target="_blank">
+                  <div class="contacts-icon icon-skype"></div>
+                </a>
+              </div>
+            </div>
+
+            <div class="contacts-sohials">
+              <p class="contacts-title-text">Я в социальных сетях</p>
+              <div class="contacts-sohials-links">
+                <a title="instagram" href="https://www.instagram.com/nesterov_evgeniy_happy_life/" target="_blank">
+                  <div class="contacts-icon icon-instagram"></div>
+                </a>
+                <a title="vkontakte" href="development-page.html" target="_blank">
+                  <div class="contacts-icon icon-vkontakte"></div>
+                </a>
+                <a title="classmates" href="https://ok.ru/profile/149639897" target="_blank">
+                  <div class="contacts-icon icon-classmates"></div>
+                </a>
+                <a title="classmates" href="https://github.com/NesterovEvgeniy/Portfolio" target="_blank">
+                  <div class="contacts-icon icon-git-hub"></div>
+                </a>
+                <a title="linkedin" href="development-page.html" target="_blank">
+                  <div class="contacts-icon icon-linkedin"></div>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="facts" id="facts">
+          <h2 class="page-block-title">{Интересные факты обо мне}</h2>
+          <div class="page-main-block">
+            <button class="slider-btn btn-left" id="left"></button>
+            <button class="slider-btn btn-right" id="right"></button>
+            <ul class="facts-slider-box">
+
+              <li class="fact-block">
+                <img src="img/about-marathon-img.png" height="292" alt="photo-marathon">
+                <h4>
+                  &lt; Умею побеждать на длинных дистанциях /&gt;
+                </h4>
+              </li>
+
+              <li class="fact-block">
+                <img src="img/about-skydiving-img.png" height="292" alt="photo-skydiving">
+                <h4>
+                  &lt; Люблю, когда <s>страшно</s> интересно /&gt;
+                </h4>
+              </li>
+
+              <li class="fact-block">
+                <img src="img/about-diving-img.png" height="292" alt="foto-diving">
+                <h4>
+                  &lt; В любой обстановке как рыба в воде /&gt;
+                </h4>
+              </li>
+
+              <li class="fact-block">
+                <img src="img/about-travel-img.png" height="292" alt="foto-travel">
+                <h4>
+                  &lt; Путешествия дают огромную мотивацию к работе /&gt;
+                </h4>
+              </li>
+
+              <li class="fact-block">
+                <img src="img/about-yamal-img.png" height="292" alt="photo-yamal">
+                <h4>
+                  &lt; Не боюсь трудностей, работал даже на Ямале /&gt;
+                </h4>
+              </li>
+
+              <li class="fact-block">
+                <img src="img/about-everest-img.png" height="292" alt="foto-everest">
+                <h4>
+                  &lt; Достигаю вершин: Эверест 8848м или 3278 этажей /&gt;
+                </h4>
+              </li>
+
+              <li class="fact-block desert-photo">
+                <img src="img/about-desert-img.png" height="292" alt="foto-desert">
+                <h4>
+                  &lt; Готов к релокации, даже в пустыню /&gt;
+                </h4>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-block">
+        <div class="logo-footer">
+          <a href="#home"><img src="icons/logo-footer.svg" width="76" height="73" alt="logo"></a>
+        </div>
+        <div>
+          <ul class="footer-nav">
+            <li><a class="footer-nav-text" href="#projects">Мои проекты</a></li>
+            <li><a class="footer-nav-text" href="#education">Образование</a></li>
+            <li><a class="footer-nav-text" href="#contacts">Контакты</a></li>
+            <li><a class="footer-nav-text" href="#skills">Мои скиллы</a></li>
+            <li><a class="footer-nav-text" href="#about">Обо мне</a></li>
+            <li><a class="footer-nav-text" href="#facts">Интересные факты</a></li>
+          </ul>
+        </div>
+        <div class="footer-info">
+          <p class="footer-project-complite-text">Проект выполнен для <span lang="en">JS From Zero To Hero 2023</span>
+          </p>
+          <div class="copiright-block">
+            <img src="icons/copyright-icon.svg" alt="copiright">
+            <p class="footer-copiright-text">2023 Все права защищены</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
