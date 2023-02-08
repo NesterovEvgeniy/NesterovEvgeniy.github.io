@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animation.css">
 </head>
 
 <body>
@@ -35,17 +36,17 @@
       </div>
     </header>
 
-    <main style="overflow: auto;">
+    <main>
       <section>
         <div class="main-block">
-          <div class="main-circle">
+          <div class="main-circle main-circle-big">
             <div class="main-circle-block">
-              <h1 class="main-title-text-up">To be in good shape,</h1>
-              <h1 class="main-title-text-down">you need to have Tonus in you</h1>
+              <h1 class="main-title-text">To be in good shape,<br> you need to have Tonus in you</h1>
               <p class="main-text">water freshness will give you strength for the day</p>
-              <button class="btn">Buy now</button>
+              <button class="btn btn-main">Buy now</button>
               <img class="main-bottel-stopper" src="img/main-bottel-stopper.png" alt="bottel-stopper">
-              <img class="main-half-bottel" src="img/main-half-bottel.png" alt="half-bottel">
+              <img class="main-bottel-half-stopper" src="img/main-bottel-half-stopper.png" alt="bottel-stopper">
+              <img class="main-bottel" src="img/main-bottel.png" alt="half-bottel">
             </div>
           </div>
         </div>
@@ -56,16 +57,16 @@
           <div class="about-left">
             <video class="about-video" height="900" autoplay controls loop muted preload="auto"
               poster="img/about-photo.png">
-              <!-- <source src="vid/mp4/about-block-video.mp4" type="video/mp4"> -->
+              <source src="vid/mp4/about-block-video.mp4" type="video/mp4">
               <source src="vid/webm/about-block-video.webm" type="video/webm">
               <source src="vid/about-block-video.ogv" type="video/ogg">
             </video>
           </div>
           <div class="about-right">
-            <ul class="about-text">
-              <li class="about-text">European quality.</li>
-              <li class="about-text">Absolute tightness.</li>
-              <li class="about-text">Temperature saving up to 24 hours.</li>
+            <ul>
+              <li class="about-text about-text-quality anim">European quality.</li>
+              <li class="about-text about-text-tightness anim">Absolute tightness.</li>
+              <li class="about-text about-text-temperature anim">Temperature saving up to 24 hours.</li>
             </ul>
           </div>
         </div>
@@ -76,16 +77,16 @@
           <div class="use-left">
             <video class="use-video" height="900" autoplay controls loop muted preload="auto"
               poster="img/about-photo.png">
-              <!-- <source src="vid/mp4/use-block-video.mp4" type="video/mp4"> -->
+              <source src="vid/mp4/use-block-video.mp4" type="video/mp4">
               <source src="vid/webm/use-block-video.webm" type="video/webm">
               <source src="vid/use-block-video.ogv" type="video/ogg">
             </video>
           </div>
           <div class="use-right">
-            <ul class="use-text">
-              <li class="use-text">You can use in nature</li>
-              <li class="use-text">Take to the gym</li>
-              <li class="use-text">You can choose your color</li>
+            <ul>
+              <li class="use-text use-text-nature anim">You can use in nature</li>
+              <li class="use-text use-text-gym anim"> Take to the gym</li>
+              <li class="use-text use-text-color anim">You can choose your color</li>
             </ul>
           </div>
         </div>
@@ -94,9 +95,9 @@
       <section>
         <div class="color-bottel-block">
           <div class="color-bottel-info">
-            <h2 class="color-bottel-title">Everyone will find
+            <h2 class="color-bottel-title anim">Everyone will find
               their own color</h2>
-            <p class="color-bottel-text">If you haven't found your color,
+            <p class="color-bottel-text anim">If you haven't found your color,
               write to us</p>
             <button class="btn color-box-btn">Choose now</button>
           </div>
@@ -113,18 +114,20 @@
       </section>
 
       <section>
-        <div class="pocket-block">
-          <video class="pocket-backgroung-video" height="900" autoplay controls loop muted preload="auto"
-            poster="img/about-photo.png">
-            <!-- <source src="vid/mp4/pocket-backgroung-video.mp4" type="video/mp4"> -->
-            <source src="vid/webm/pocket-backgroung-video.webm" type="video/webm">
-            <source src="vid/pocket-backgroung-video.ogv" type="video/ogg">
-          </video>
-          <h2 class="pocket-block-title termos">The termos</h2>
-          <h2 class="pocket-block-title pocket">that fits in your pockets</h2>
-          <button class="btn pocket-block-btn">Buy now</button>
-          <img class="pocket-woman-img" src="img/pocket-block-woman-img.png" height="179" alt="woman">
-          <img class="pocket-yellow-bottel-img" src="img/pocket-block-yellow-bottel.png" height="297"
+        <div class="pocket-content-block">
+          <div class="pocket-block">
+            <div class="pocket-backgroung-video-box anim">
+              <video class="pocket-backgroung-video" autoplay controls loop muted preload="auto" poster="">
+                <source src="vid/mp4/pocket-backgroung-video.mp4" type="video/mp4">
+                <source src="vid/webm/pocket-backgroung-video.webm" type="video/webm">
+                <source src="vid/pocket-backgroung-video.ogv" type="video/ogg">
+              </video>
+            </div>
+          </div>
+          <h2 class="pocket-block-title anim">The termos<br> that fits in your pockets</h2>
+          <button class="btn pocket-block-btn anim">Buy now</button>
+          <img class="pocket-woman-img anim" src="img/pocket-block-woman-img.png" height="179" alt="woman">
+          <img class="pocket-yellow-bottel-img anim" src="img/pocket-block-yellow-bottel.png" height="297"
             alt="yellow-bottel">
         </div>
       </section>
@@ -132,17 +135,18 @@
       <section>
         <div class="effects-block">
           <div class="effects-left-block">
-            <h2 class="effects-title">You can use the thermos
+            <h2 class="effects-title anim">You can use the thermos <br>
               for different drinks</h2>
-            <p class="effects-comment">important features of our thermoses</p>
+            <p class="effects-comment anim">important features of our thermoses</p>
             <ul class="effects-list">
-              <li class="effect-text">Outer body - made of metal</li>
-              <li class="effect-text">Inner bulb - reflective</li>
-              <li class="effect-text">Vacuum layer - minimizes heat exchange with the external environment</li>
-              <li class="effect-text">Airtight stopper - a tight screw stopper with a silicone gasket</li>
+              <li class="effect-text anim">Outer body - made of metal</li>
+              <li class="effect-text anim">Inner bulb - reflective</li>
+              <li class="effect-text anim">Vacuum layer - minimizes heat exchange with the external <br> environment
+              </li>
+              <li class="effect-text anim">Airtight stopper - a tight screw stopper with a silicone <br> gasket</li>
             </ul>
           </div>
-          <div class="effect-right-block">
+          <div class="effect-right-block anim">
             <video class="effects-video" height="900" autoplay controls loop muted preload="auto"
               poster="img/about-photo.png">
               <source src="vid/mp4/effects-block-video.mp4" type="video/mp4">
@@ -155,42 +159,26 @@
 
       <section>
         <div class="slider-block">
-          <p class="slider-block-text">important features of our thermoses</p>
-          <h2 class="slider-block-title"><span>the termos</span> is a necessary thing
-            on the road and traveling.</h2>
-
+          <p class="slider-block-text anim">important features of our thermoses</p>
+          <h2 class="slider-block-title anim"><span>the termos</span> is a necessary thing
+            on <br> the road and traveling.</h2>
           <div class="ant-carousel">
             <div class="ant-carousel-hider">
               <ul class="ant-carousel-list">
-                <li class="ant-carousel-element"><img src="http://pvbk.spb.ru/inc/carousel/imgs/img0.jpg" alt="0">
-                  <p>Описание 0</p>
+                <li class="ant-carousel-element ant-carousel-element-first"><img src="img/slider-block-1.png"
+                    height="355" width="464" alt="0">
                 </li>
-                <li class="ant-carousel-element"><img src="http://pvbk.spb.ru/inc/carousel/imgs/img1.jpg" alt="1">
-                  <p>Описание 1</p>
+                <li class="ant-carousel-element"><img src="img/slider-block-2.png" height="355" width="464" alt="1">
                 </li>
-                <li class="ant-carousel-element"><img src="http://pvbk.spb.ru/inc/carousel/imgs/img2.jpg" alt="2">
-                  <p>Описание 2</p>
+                <li class="ant-carousel-element"><img src="img/slider-block-3.png" height="355" width="464" alt="2">
                 </li>
-                <li class="ant-carousel-element"><img src="http://pvbk.spb.ru/inc/carousel/imgs/img3.jpg" alt="3">
-                  <p>Описание 3</p>
+                <li class="ant-carousel-element"><img src="img/slider-block-4.png" height="355" width="464" alt="3">
                 </li>
-                <li class="ant-carousel-element"><img src="http://pvbk.spb.ru/inc/carousel/imgs/img4.jpg" alt="4">
-                  <p>Описание 4</p>
+                <li class="ant-carousel-element"><img src="img/slider-block-5.png" height="355" width="464" alt="4">
                 </li>
-                <li class="ant-carousel-element"><img src="http://pvbk.spb.ru/inc/carousel/imgs/img5.jpg" alt="5">
-                  <p>Описание 5</p>
+                <li class="ant-carousel-element"><img src="img/slider-block-6.png" height="355" width="464" alt="5">
                 </li>
-                <li class="ant-carousel-element"><img src="http://pvbk.spb.ru/inc/carousel/imgs/img6.jpg" alt="6">
-                  <p>Описание 6</p>
-                </li>
-                <li class="ant-carousel-element"><img src="http://pvbk.spb.ru/inc/carousel/imgs/img7.jpg" alt="7">
-                  <p>Описание 7</p>
-                </li>
-                <li class="ant-carousel-element"><img src="http://pvbk.spb.ru/inc/carousel/imgs/img8.jpg" alt="8">
-                  <p>Описание 8</p>
-                </li>
-                <li class="ant-carousel-element"><img src="http://pvbk.spb.ru/inc/carousel/imgs/img9.jpg" alt="9">
-                  <p>Описание 9</p>
+                <li class="ant-carousel-element"><img src="img/slider-block-7.png" height="355" width="464" alt="6">
                 </li>
               </ul>
             </div>
@@ -198,6 +186,7 @@
             <div class="ant-carousel-arrow-right"></div>
             <div class="ant-carousel-dots"></div>
           </div>
+
         </div>
       </section>
 
@@ -206,13 +195,13 @@
           <img class="drink-block-waterfull" height="555" src="vid/waterfull.gif" alt="waterfull">
           <div class="drink-main-info">
             <p class="drink-block-question">Exploring the world?</p>
-            <h1 class="drink-block-title">Drink it</h1>
-            <h1 class="drink-block-title">all<span> in</span></h1>
+            <h1 class="drink-block-title drink-it-title">Drink it</h1>
+            <h1 class="drink-block-title all-in-title">all<span> in</span> </h1>
             <p class="drink-block-text">Just maintenance -free solution designed to perfomsnce
             </p>
             <div class="drink-buttons-block">
-              <button class="btn">Buy now</button>
-              <button class="btn btn-what">What can I do more?
+              <button class="btn btn-buy anim">Buy now</button>
+              <button class="btn btn-what anim">What can I do more?
               </button>
             </div>
           </div>

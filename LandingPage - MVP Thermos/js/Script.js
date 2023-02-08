@@ -24,11 +24,11 @@ function Ant(crslId) {
 Ant.defaults = {
 
   // Default options for the carousel
-  elemVisible: 3, // Кол-во отображаемых элементов в карусели
+  elemVisible: 6, // Кол-во отображаемых элементов в карусели
   loop: true,     // Бесконечное зацикливание карусели 
   auto: true,     // Автоматическая прокрутка
-  interval: 5000, // Интервал между прокруткой элементов (мс)
-  speed: 750,     // Скорость анимации (мс)
+  interval: 2000, // Интервал между прокруткой элементов (мс)
+  speed: 1000,     // Скорость анимации (мс)
   touch: true,    // Прокрутка  прикосновением
   arrows: true,   // Прокрутка стрелками
   dots: true      // Индикаторные точки
@@ -95,17 +95,17 @@ Ant.prototype.elemNext = function (num) {
         buf = elm.cloneNode(true); this$.crslList.appendChild(buf);
         this$.crslList.removeChild(elm)
       };
-      this$.crslList.style.marginLeft = '0px'
+      this$.crslList.style.marginLeft = '22px'
     }, this.options.speed)
   }
 };
 
 Ant.prototype.dotOn = function (num) {
-  this.indicatorDotsAll[num].style.cssText = 'background-color:#BBB; cursor:pointer;'
+  this.indicatorDotsAll[num].style.cssText = 'background-color:D9D9D9; cursor:pointer;'
 };
 
 Ant.prototype.dotOff = function (num) {
-  this.indicatorDotsAll[num].style.cssText = 'background-color:#556; cursor:default;'
+  this.indicatorDotsAll[num].style.cssText = 'background-color:#D01717; cursor:default;'
 };
 
 Ant.initialize = function (that) {
@@ -230,3 +230,28 @@ Ant.initialize = function (that) {
 };
 
 new Ant();
+
+
+
+
+
+// Анимация по скроллу
+
+function anim() {
+  var anims = document.querySelectorAll(".anim");
+  for (var i = 0; i < anims.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = anims[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+    if (elementTop < windowHeight - elementVisible) {
+      anims[i].classList.add("active");
+    } else {
+      anims[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", anim);
+
+// To check the scroll position on page load
+anim();
