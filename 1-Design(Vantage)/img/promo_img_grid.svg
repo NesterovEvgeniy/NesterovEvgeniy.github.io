@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="412px" height="276px" viewBox="0 0 412 276" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L412 0L412 276L0 276L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="promo_img_grid">
+    <path d="M0 0L412 0L412 276L0 276L0 0Z" id="Фон" fill="#FFFFFF" fill-opacity="0" fill-rule="evenodd" stroke="none" />
+    <g clip-path="url(#mask_1)">
+      <path d="M205 0L206 0L206 275L205 275L205 0L205 0Z" id="Фигура" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+      <path d="M103 0L104 0L104 275L103 275L103 0L103 0Z" id="Фигура" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+      <path d="M308 0L309 0L309 275L308 275L308 0L308 0Z" id="Фигура" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>
