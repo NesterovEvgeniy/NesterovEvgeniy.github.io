@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1433.1288px" height="730px" viewBox="0 0 1433.1288 730" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L1433.13 0L1433.13 730L0 730L0 0L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="background-top-mobile">
+    <g id="background-top">
+      <path d="M0 0L1433.13 0L1433.13 730L0 730L0 0L0 0Z" id="Фон" fill="#FFFFFF" fill-opacity="0" fill-rule="evenodd" stroke="none" />
+      <g id="Группа-масок">
+        <path d="M0 0L1433.13 0L1433.13 730L0 730L0 0L0 0Z" id="path_1" fill="none" fill-rule="evenodd" stroke="none" />
+        <g clip-path="url(#mask_1)">
+          <g id="Group" transform="translate(0 -0.00010933906)">
+            <path d="M0 487.264L1433.13 487.264L1433.13 541.006L0 730L0 487.264L0 487.264L0 487.264Z" id="Фигура" fill="#EF2A82" fill-rule="evenodd" stroke="none" />
+            <path d="M0 0.000109339L1433.13 0.000109339L1433.13 525.779L0 714.773L0 0.000109339L0 0.000109339L0 0.000109339Z" id="Фигура#1" fill="#172755" fill-rule="evenodd" stroke="none" />
+            <path d="M0 0L1433.13 0L1433.13 525.779L0 714.773L0 0L0 0L0 0Z" id="Группа-масок" fill="none" fill-rule="evenodd" stroke="none" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="375px" height="930px" viewBox="0 0 375 930" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L375 0L375 930L0 930L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="background__pricing_mobile">
+    <path d="M0 0L375 0L375 930L0 930L0 0Z" id="Фон" fill="#FFFFFF" fill-opacity="0" fill-rule="evenodd" stroke="none" />
+    <g clip-path="url(#mask_1)">
+      <path d="M1600 147.841L0 147.841L4.25823e-06 99.1843L1600 -71.9225L1600 147.841L1600 147.841Z" id="Фигура" fill="#EF2A82" fill-rule="evenodd" stroke="none" />
+      <path d="M1600 930L-0.00012207 930L0.000193213 117.098L1600 -54.9408L1600 930L1600 930Z" id="Фигура" fill="#172755" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>

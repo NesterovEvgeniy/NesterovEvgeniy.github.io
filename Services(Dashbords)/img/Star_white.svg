@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M7.5 0L9.70419 4.46619L14.6329 5.18236L11.0665 8.65881L11.9084 13.5676L7.50001 11.25L3.09163 13.5676L3.93354 8.65883L0.367066 5.1824L5.29579 4.4662L7.5 0Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="Звезда">
+    <use stroke="none" fill="#FFFFFF" xlink:href="#path_1" fill-rule="evenodd" />
+    <g clip-path="url(#clip_1)">
+      <use xlink:href="#path_1" fill="none" stroke="#000000" stroke-width="0.1" />
+    </g>
+  </g>
+</svg>
