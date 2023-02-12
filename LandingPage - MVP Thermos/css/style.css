@@ -117,6 +117,10 @@ a {
   opacity: 0;
 }
 
+.main-title-text span {
+  display: block;
+}
+
 .main-text {
   margin-top: 10px;
   font-family: 'Inter';
@@ -411,6 +415,10 @@ video::-webkit-media-controls-panel {
   opacity: 0;
 }
 
+.pocket-block-title span {
+  display: block;
+}
+
 .pocket-block-btn {
   position: absolute;
   left: 0;
@@ -464,6 +472,10 @@ video::-webkit-media-controls-panel {
   opacity: 0;
 }
 
+.effects-title span {
+  display: block;
+}
+
 .effects-comment {
   width: 100%;
   max-width: 313px;
@@ -494,6 +506,10 @@ video::-webkit-media-controls-panel {
   line-height: 8px;
   color: #828282;
   opacity: 0;
+}
+
+.effect-text span {
+  display: block;
 }
 
 .effect-text::before {
@@ -700,6 +716,7 @@ span.ant-dot {
 .drink-main-info {}
 
 .drink-block-question {
+  position: relative;
   width: 100%;
   max-width: 176px;
   margin: 0 auto 45px auto;
@@ -744,7 +761,7 @@ span.ant-dot {
 .drink-block-text {
   width: 100%;
   max-width: 340px;
-  margin: 176px auto 0 auto;
+  margin: 82px auto 71px auto;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
@@ -754,20 +771,24 @@ span.ant-dot {
   color: #4F4F4F;
 }
 
+.drink-block-text span {
+  display: block;
+}
+
 .drink-buttons-block {
   display: flex;
   justify-content: center;
   gap: 32px;
-  /* margin-bottom: 215px;
-  margin-left: 85px; */
   margin: 0 0 215px 85px;
 }
 
 .btn-buy {
   opacity: 0;
+  margin-top: 0;
 }
 
 .btn-what {
+  margin-top: 0;
   min-width: 271px;
   background-color: #fff;
   color: #D01717;
@@ -775,13 +796,11 @@ span.ant-dot {
   opacity: 0;
 }
 
-
-
 .drink-block-arm-img {
   position: absolute;
   width: 696px;
   height: 476px;
-  top: 159px;
+  top: 177px;
   right: 0;
   z-index: 1;
 }
@@ -860,7 +879,7 @@ span.ant-dot {
 
 .crazycap-img {
   display: block;
-  margin: 0 auto;
+  margin: 300px auto 0 auto;
 }
 
 .crazycap-block-title {
@@ -876,11 +895,15 @@ span.ant-dot {
   color: #333333;
 }
 
+.crazycap-block-title span {
+  display: block;
+}
+
 .crazycap-block-text {
   width: 100%;
   max-width: 679px;
   margin: 0 auto;
-  margin-bottom: 67px;
+  margin-bottom: 90px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -888,6 +911,10 @@ span.ant-dot {
   line-height: 24px;
   text-align: center;
   color: #05A0A8;
+}
+
+.crazycap-block-text span {
+  display: block;
 }
 
 .crazycap-block-btn {
@@ -901,13 +928,14 @@ span.ant-dot {
 
 
 .reviews-block {
+  margin-top: 207px;
   margin-bottom: 144px;
 }
 
 .reviews-block-content {
   display: flex;
   justify-content: center;
-  gap: 146px;
+  gap: 50px;
 
 }
 
@@ -987,10 +1015,6 @@ span.ant-dot {
   gap: 18px;
   list-style: none;
 }
-
-
-
-
 
 /*                                                                  FOOTER-BLOCK */
 
