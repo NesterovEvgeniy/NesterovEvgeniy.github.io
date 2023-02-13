@@ -37,3 +37,34 @@ function scroll(val) {
     behavior: 'smooth'
   });
 }
+
+/* progress bar */
+let progress = document.querySelectorAll('.soft-skills-color-line');
+
+progress.forEach(function (item) {
+  item.style.width = item.getAttribute('data-done') + '%';
+  item.style.opacity = 1;
+})
+
+/* function increase() {
+  let SPEED = 10;
+  let limit = parseInt(document.querySelector('.soft-skills-persent').innerHTML, 10);
+  console.log(limit);
+
+  for (let i = 0; i <= limit; i++) {
+    setTimeout(function () {
+      document.querySelector('.soft-skills-persent').innerHTML = i + "%";
+    }, SPEED * i);
+  }
+}
+
+increase(); */
+
+
+
+
+
+
+
+
+
