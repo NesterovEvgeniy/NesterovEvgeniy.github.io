@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 * {
   margin: 0;
   padding: 0;
@@ -37,6 +30,12 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-width: 320px;
+}
+
+.development-page {
+  height: 100vh;
+  background: url(../img/development-photo.png) no-repeat center center;
+  background-size: contain;
 }
 
 .header-block { 
@@ -360,6 +359,7 @@ a {
   margin-top: 22px;
   padding-top: 25px;
   border-top: solid 1px #BCBEC2;
+  opacity: 0;
 }
 
 .project-title {
@@ -414,44 +414,51 @@ a {
   text-decoration: underline;
 }
 
-.vantage {
-  margin-top: 76px;
-  animation: project-slide-right 1.5s;
-}
-
-.analitycs {
-  animation: project-slide-left 1.5s;
-}
-
-.wooden {
-  animation: project-slide-right 1.5s;
-}
-
 .keto {
   display: none;
-  animation: project-slide-left 1.5s;  
+}
+
+.active.vantage {
+  margin-top: 76px;
+  animation: project-slide-right 1.5s;
+  opacity: 1;
+}
+
+.active.analitycs {
+  animation: project-slide-left 1.5s;
+  opacity: 1;
+}
+
+.active.wooden {
+  animation: project-slide-right 1.5s;
+  opacity: 1;
+}
+
+.keto-plan {
+  animation: project-slide-left 1.5s;
+  opacity: 1;
 }
 
 @keyframes project-slide-right {
   0% {
-    /* opacity: 0; */
+    opacity: 0;
     transform: translateX(1000px);
   }
 
   100% {
-    /* opacity: 1; */
+    opacity: 1;
     transform: translateX(0);
   }
 }
 
 @keyframes project-slide-left {
   0% {
-   /*  opacity: 0; */
+    opacity: 0;
     transform: translateX(-1000px);
   }
 
   100% {
-   /*  opacity: 1; */
+    opacity: 1;
     transform: translateX(0);
   }
 }
@@ -555,7 +562,8 @@ a {
   background-color: #F8F8F8;
   -webkit-box-shadow: 0px 1px 1px #bfbfbf;
           box-shadow: 0px 1px 1px #bfbfbf;
-  border-radius: 10px;  
+  border-radius: 10px;
+  opacity: 0;  
 }
 
 .skill-box:hover {
@@ -567,38 +575,45 @@ a {
   transition: 0.2s;
 }
 
-.html {
+.active.html {
   -ms-grid-column-span: 2;
   grid-column: span 2;
+  opacity: 1;
   animation: skill-visible 0.5s;
 }
 
-.bootstrap {
+.active.bootstrap {
   animation: skill-visible 3s;
+  opacity: 1;
 }
 
-.css {
+.active.css {
   -ms-grid-column-span: 2;
   grid-column: span 2;
   animation: skill-visible 2s;
+  opacity: 1;
 }
 
-.git {
+.active.git {
   animation: skill-visible 1.5s;
+  opacity: 1;
 }
 
-.sql {
+.active.sql {
   animation: skill-visible 3.5s;
+  opacity: 1;
 }
 
-.js {
+.active.js {
   -ms-grid-column-span: 2;
   grid-column: span 2;
   animation: skill-visible 1s;
+  opacity: 1;
 }
 
-.agile {
+.active.agile {
   animation: skill-visible 2.5s;
+  opacity: 1;
 }
 
 @keyframes skill-visible {
@@ -668,13 +683,22 @@ a {
 }
 
 .soft-skills-color-line {
-  display: flex;                
+  display: flex;              
   height: 100%;
   border-radius: 2px; 
-  width: 0;                      
-	opacity: 0;                   
-  transition: 1s ease 0.3s;      
+  width: 0;                  
+  opacity: 0;                 
+  transition: 1s ease 0.3s;
 }
+
+/* .active.soft-skills-color-line {
+  display: flex; 
+  width: 0;                      
+	opacity: 0;
+  transition: 1s ease 0.3s;
+} */
+
+
 
 .light-red {
   background: #F16529;
@@ -745,6 +769,7 @@ a {
 
 .education-block-info {
   border-top: solid 1px #BCBEC2;
+  opacity: 0;
 }
 
 .education-line {
@@ -786,22 +811,22 @@ a {
   color: #4A4A4A;
 }
 
-.education-front-end {
+.active.education-front-end {
   animation: education-slide-left 1.5s;
   animation-fill-mode: forwards;
 }
 
-.education-engineer {
+.active.education-engineer {
   animation: education-slide-right 1.5s;
   animation-fill-mode: forwards;
 }
 
-.education-translater {
+.active.education-translater {
   animation: education-slide-left 1.5s;
   animation-fill-mode: forwards;
 }
 
-.education-lawer {
+.active.education-lawer {
   animation: education-slide-right 1.5s;
   animation-fill-mode: forwards;
 }
@@ -837,6 +862,7 @@ a {
 
 .about-blocks {
   position: relative;
+  margin-top: 50px;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: repeat(2, 110px);
@@ -846,7 +872,6 @@ a {
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
-  margin-top: 50px;
 }
 
 .about-block-info {
@@ -879,8 +904,25 @@ a {
   color: #272727;
 }
 
-.btn-about {  
+.active.btn-about {  
+  animation: btn-about-visible 2.5s;
+  animation-fill-mode: forwards;
+  
+}
+
+.about a {
   margin: 60px auto 0 auto;
+  opacity: 0;
+}
+
+@keyframes btn-about-visible {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .marital-status-line {
@@ -1372,10 +1414,10 @@ display: block;
     text-align: center;
   }
 
-  .project-img {
+/*   .project-img {
     max-width: 340px;
     height: 232px;
-  }
+  } */
   
   .hard-skills-blocks {
     display: -ms-grid;
@@ -1434,7 +1476,6 @@ display: block;
   .contacts-title-text {
     display: none;
   }
-
 
   .facts {
     padding: 0 20px;
@@ -1602,10 +1643,10 @@ display: block;
             align-items: center;
   }
 
-  .project-img {
+/*   .project-img {
     max-width: 340px;
     height: 232px;
-  }
+  } */
 
   .hard-skills-blocks {
     display: -ms-grid;
@@ -1874,10 +1915,10 @@ display: block;
             align-items: center;
   }
 
-  .project-img {
+/*   .project-img {
     max-width: 300px;
     height: 205px;
-  }
+  } */
 
   .more-project-btn {
     margin: 40px auto ;

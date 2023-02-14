@@ -62,6 +62,28 @@ increase(); */
 
 
 
+/* scroll amimation */
+
+function anim() {
+  var anims = document.querySelectorAll(".anim");
+  for (var i = 0; i < anims.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = anims[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+    if (elementTop < windowHeight - elementVisible) {
+      anims[i].classList.add("active");
+    } else {
+      anims[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", anim);
+
+anim();
+
+
+
 
 
 
