@@ -253,5 +253,4 @@ function anim() {
 
 window.addEventListener("scroll", anim);
 
-// To check the scroll position on page load
 anim();
