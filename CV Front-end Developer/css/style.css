@@ -340,6 +340,7 @@ a {
 }
 
 .page-block-title {
+  margin-bottom: 76px;
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
@@ -360,6 +361,10 @@ a {
   gap: 50px;
   border-top: solid 1px #BCBEC2;
   opacity: 0;
+}
+
+.project-text-block li{
+  margin: 15px 0;
 }
 
 .project-title {
@@ -384,7 +389,7 @@ a {
 .project-about-list {
   margin-left: 30px;
   width: 100%;
-  max-width: 360px;
+  max-width: 550px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -414,17 +419,22 @@ a {
   text-decoration: underline;
 }
 
+.project-img {
+  border: 1px solid #E1E8EC;
+  border-radius: 10px;
+  box-shadow: 1.95px 1.95px 1px #bfbfbf;
+}
+
 .keto {
   display: none;
 }
 
-.active.vantage {
-  margin-top: 76px;
+.active.thermos {
   animation: project-slide-right 1.5s;
   opacity: 1;
 }
 
-.active.analitycs {
+.active.cv-project {
   animation: project-slide-left 1.5s;
   opacity: 1;
 }
@@ -433,6 +443,17 @@ a {
   animation: project-slide-right 1.5s;
   opacity: 1;
 }
+
+.active.vantage {
+  animation: project-slide-left 1.5s;
+  opacity: 1;
+}
+
+.active.analitycs {
+  animation: project-slide-right 1.5s;
+  opacity: 1;
+}
+
 
 .keto-plan {
   animation: project-slide-left 1.5s;
