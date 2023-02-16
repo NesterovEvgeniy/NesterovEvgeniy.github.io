@@ -333,29 +333,9 @@
 /*                                               EFFECTS-BLOCK */
 
 
-.active.effect-right-block {
-  animation-delay: 500ms;
-  animation: effects-block-video-increase 4s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes effects-block-video-increase {
-  0% {
-    width: 230px;
-    height: 381px;
-
-  }
-
-  100% {
-    width: 495px;
-    height: 820px;
-
-  }
-}
-
 .active.effects-title {
   animation: effects-title-increase 2s;
-  animation-delay: 500ms;
+  /* animation-delay: 500ms; */
   animation-fill-mode: forwards;
 }
 
@@ -375,7 +355,7 @@
 
 .active.effects-comment {
   animation: effects-comment-increase 2s;
-  animation-delay: 500ms;
+  /* animation-delay: 500ms; */
   animation-fill-mode: forwards;
 }
 
@@ -396,7 +376,7 @@
 
 .active.effect-text {
   animation: effects-text-increase 2s;
-  animation-delay: 500ms;
+  /* animation-delay: 500ms; */
   animation-fill-mode: forwards;
 }
 
@@ -410,6 +390,26 @@
   100% {
     font-size: 15px;
     line-height: 19px;
+    opacity: 1;
+  }
+}
+
+.active.effect-right-block {
+  /* animation-delay: 500ms; */
+  animation: effects-block-video-increase 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes effects-block-video-increase {
+  0% {
+    width: 230px;
+    height: 381px;
+    opacity: 0;
+  }
+
+  100% {
+    width: 495px;
+    height: 820px;
     opacity: 1;
   }
 }
@@ -714,15 +714,18 @@
 
 @keyframes reviews-block-title-slide-down {
   0% {
+    opacity: 0;
     transform: translateY(-207px);
   }
 
   50% {
+    opacity: 0.5;
     transform: translateY(20px);
 
   }
 
   100% {
+    opacity: 1;
     transform: translateY(0);
 
   }
@@ -735,6 +738,7 @@
 
 @keyframes reviews-block-content-margaret-slide-up {
   0% {
+    opacity: 0;
     transform: translate(-207px, 207px);
 
   }
@@ -744,6 +748,7 @@
   }
 
   100% {
+    opacity: 1;
     transform: translate(0px, 0px);
   }
 }
@@ -755,6 +760,7 @@
 
 @keyframes reviews-block-content-peter-slide-up {
   0% {
+    opacity: 0;
     transform: translateY(207px);
   }
 
@@ -763,6 +769,7 @@
   }
 
   100% {
+    opacity: 1;
     transform: translateY(0px, 0px);
   }
 }
@@ -774,8 +781,8 @@
 
 @keyframes reviews-block-content-oisha-slide-up {
   0% {
+    opacity: 0;
     transform: translate(207px, 207px);
-
   }
 
   50% {
@@ -783,6 +790,7 @@
   }
 
   100% {
+    opacity: 1;
     transform: translate(0px, 0px);
   }
 }
@@ -828,9 +836,24 @@
   }
 }
 
+.active.social-block-image {
+  animation: social-block-image-increase 2.8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes social-block-image-increase {
+  0% {
+    scale: 1 0.00001;
+  }
+
+  100% {
+    scale: 1 1;
+  }
+}
+
 /*                                                                  FOOTER-BLOCK */
 
-.active.footer-block {
+/* .active.footer-block {
   animation: footer-block-slide-up 2s;
   animation-fill-mode: forwards;
 }
@@ -845,4 +868,4 @@
     opacity: 1;
     transform: translateY(0px);
   }
-}
+} */
