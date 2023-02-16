@@ -844,6 +844,7 @@ span.ant-dot {
   font-size: 18px;
   line-height: 22px;
   color: #FFFFFF;
+  z-index: 1;
 }
 
 .fairytale-block-title {
