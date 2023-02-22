@@ -33,9 +33,11 @@ a {
 }
 
 .development-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  background: url(../img/development-photo.png) no-repeat center center;
-  background-size: contain;
+  overflow: hidden;
 }
 
 .header-block { 
