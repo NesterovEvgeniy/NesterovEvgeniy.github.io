@@ -1,5 +1,5 @@
 /* Small-map visibile */
-/* const smallMap = document.querySelector('.header__location-map');
+const smallMap = document.querySelector('.header__location-map');
 const locationLink = document.querySelector('.header__location');
 
 locationLink.onmouseover = function () {
@@ -10,7 +10,7 @@ smallMap.addEventListener('mouseout', function () {
 })
 document.addEventListener('click', function () {
   smallMap.style.display = "none";
-}) */
+})
 
 /* PopUp OrderForm */
 const linkOrderCall = document.querySelector('.header__contacts');
@@ -26,11 +26,11 @@ closeOrderCallForm.addEventListener('click', function () {
   orderCallForm.style.display = "none";
 })
 
-/* var inputsTel = document.querySelectorAll('input[type="tel"]');
+var inputsTel = document.querySelectorAll('input[type="tel"]');
 Inputmask({
   "mask": "+7 (9 9 9) 9 9 9 - 9 9 - 9 9",
   showMaskOnHover: false
-}).mask(inputsTel); */
+}).mask(inputsTel);
 
 
 form.onchange = function () {
@@ -105,14 +105,14 @@ if (window.matchMedia("(max-width: 481px)").matches) {
 }
 
 /* PopUp Map */
-/* const popupMap = document.querySelector('.popup__map');
+const popupMap = document.querySelector('.popup__map');
 
 locationLink.addEventListener('click', function () {
   popupMap.style.display = "block";
 })
 popupMap.addEventListener('click', function () {
   popupMap.style.display = "none";
-}) */
+})
 
 /* Mouse scroll-down */
 let mouseDown = document.querySelector('.main__page-scroll-down-img');
