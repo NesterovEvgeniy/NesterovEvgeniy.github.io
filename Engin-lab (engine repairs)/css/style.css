@@ -744,7 +744,7 @@ body {
 .popup__conteiner {
   position: fixed;
   right: 0;
-  top: 200px;
+  top: 10.42vw;
   left: 0;
   margin: auto;
   width: 26.04vw;
@@ -916,7 +916,6 @@ form {
 .application-checkbox:checked+label::before {
   border-color: var(--decor-color);
   background-image: url(../img/icons/application-check.svg);
-  /* background: cover; */
 }
 
 .checkbox-text {
@@ -950,6 +949,7 @@ form {
     position: fixed;
     padding: 0 7.24vw;
     z-index: 1;
+    overflow-y: auto;
   }
 
   .header__top {
@@ -1316,7 +1316,6 @@ form {
     flex-direction: column;
     gap: 4.69vw;
     padding-bottom: 15.31vw;
-
   }
 
   .btn {
@@ -1413,5 +1412,115 @@ form {
 
   .main__conditions-text br {
     display: block;
+  }
+
+  .popup__conteiner {
+    top: 19.25vw;
+    width: 86.04vw;
+    height: 83.25vw;
+  }
+
+  .close-btn {
+    top: 3.92vw;
+    left: 76.07vw;
+    width: 6.25vw;
+    height: 6.25vw;
+  }
+
+  .close-btn:hover {
+    scale: 105%;
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+  }
+
+  form {
+    text-align: center;
+  }
+
+  .application-title {
+    max-width: 65.69vw;
+    padding-top: 10.34vw;
+    font-size: 5.67vw;
+    line-height: 6.29vw;
+  }
+
+  .application-text {
+    max-width: 58.91vw;
+    padding: 4.83vw 0 4.83vw 0;
+    font-size: 2.94vw;
+    line-height: 4.46vw;
+  }
+
+  .application-phone {
+    min-width: 55.46vw;
+    padding: 3.46vw 2.25vw;
+    font-weight: 400;
+    font-size: 3.94vw;
+    line-height: 1.25vw;
+    letter-spacing: 0.03em;
+    color: #B0B0B1;
+    text-align: center;
+    text-decoration: none;
+    background: #FAFAFA;
+    -webkit-box-shadow: inset 0px 0px 21px rgb(255 255 255 / 40%);
+    box-shadow: inset 0px 0px 21px rgb(255 255 255 / 40%);
+    border: none;
+    border-radius: 7.8vw;
+    outline: none;
+  }
+
+  .application-btn {
+    width: 60.46vw;
+    margin: 4.3vw auto;
+    padding: 5.96vw 2.15vw;
+    font-size: 3.54vw;
+    line-height: 0.25vw;
+    border-radius: 7.8vw;
+  }
+
+  .conteiner-checkbox {
+    gap: 3.73vw;
+  }
+
+  .application-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  .application-checkbox+label::before {
+    width: 3.94vw;
+    height: 3.94vw;
+    border: 0.35vw solid var(--decor-color);
+    border-radius: 1.5vw;
+  }
+
+  .checkbox-text {
+    text-align: left;
+    font-weight: 400;
+    font-size: 2.33vw;
+    line-height: 3.99vw;
+    color: #FFFFFF;
+  }
+
+  .checkbox-text span {
+    color: var(--decor-color);
+  }
+
+  .answer-text {
+    display: none;
+    position: absolute;
+    margin-top: 10.60vw;
+    padding: 0 2.34vw;
+    font-weight: 400;
+    font-size: 1.41vw;
+    line-height: 2.34vw;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
   }
 }

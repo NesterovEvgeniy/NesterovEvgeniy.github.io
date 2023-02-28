@@ -23,7 +23,8 @@ linkOrderCall.addEventListener('click', function () {
 const closeOrderCallForm = document.querySelector('.close-btn');
 
 closeOrderCallForm.addEventListener('click', function () {
-  orderCallForm.style.display = "none";
+  orderCallForm.style.display = "none"
+
 })
 
 var inputsTel = document.querySelectorAll('input[type="tel"]');
@@ -32,17 +33,18 @@ Inputmask({
   showMaskOnHover: false
 }).mask(inputsTel);
 
-
 form.onchange = function () {
   var button = document.body.getElementsByClassName('application-btn')[0];
-  if (button.disabled) button.disabled = false;
-  else button.disabled = true;
-
-  popupApplicationFormBtn.style.background = "var(--decor-color)";
-
-  popupApplicationFormBtn.addEventListener('mousedown', function () {
-    popupApplicationFormBtn.style.scale = "99%";
-  })
+  if (button.disabled) {
+    button.disabled = false;
+    popupApplicationFormBtn.style.background = "var(--decor-color)";
+  } else {
+    button.disabled = true;
+    popupApplicationFormBtn.style.background = "#2a2a2a";
+    popupApplicationFormBtn.addEventListener('mousedown', function () {
+      popupApplicationFormBtn.style.scale = "99%";
+    })
+  }
 }
 
 popupApplicationFormBtn = document.querySelector('.application-btn');
@@ -61,6 +63,7 @@ const burgerMenu = document.querySelector('.conteiner-burger');
 const mobileMenu = document.querySelector('.header__bottom')
 const bottomMobileMenu = document.querySelector('.bottom__mobile-menu');
 const mainPageMobile = document.querySelector('.main__page');
+const burgerMenuView = document.querySelector('.header');
 
 let countMenu = 0;
 burgerMenu.addEventListener('click', function () {
@@ -73,6 +76,7 @@ burgerMenu.addEventListener('click', function () {
     mobileMenu.style.display = "block"
     bottomMobileMenu.style.display = "block";
     mainPageMobile.style.display = "none";
+    burgerMenuView.style.height = "100vh";
 
   } else {
     contactInfo.forEach(item => {
@@ -82,6 +86,7 @@ burgerMenu.addEventListener('click', function () {
     mobileMenu.style.display = "none"
     bottomMobileMenu.style.display = "none";
     mainPageMobile.style.display = "block";
+    burgerMenuView.style.height = "auto";
   }
 })
 
