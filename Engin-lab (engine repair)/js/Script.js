@@ -58,7 +58,7 @@ popupApplicationFormBtn.addEventListener('click', function () {
 /* Burger menu */
 const contactInfo = document.querySelectorAll('.js-mob-txt-color');
 const burgerMenu = document.querySelector('.conteiner-burger');
-const mobileMenu = document.querySelector('.header__bottom')
+const mobileMenu = document.querySelector('.header__bottom');
 const bottomMobileMenu = document.querySelector('.bottom__mobile-menu');
 const mainPageMobile = document.querySelector('.main__page');
 
