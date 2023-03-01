@@ -1059,7 +1059,7 @@ form {
   }
 
   .header__order-call-text {
-    width: 16.25vw;
+    min-width: 16.25vw;
     font-size: 1.88vw;
     line-height: 4vw;
     color: #fff;
@@ -1239,6 +1239,7 @@ form {
     align-items: flex-start;
     gap: 5.63vw;
     width: 75vw;
+    padding-bottom: 20vw;
   }
 
   .mobile__menu-questions-img {
@@ -1350,7 +1351,7 @@ form {
   .main__conditions-block {
     position: absolute;
     top: 164.58vw;
-    padding: 0 22px;
+    padding: 6.875vw;
   }
 
   .main__conditions-block ul {
