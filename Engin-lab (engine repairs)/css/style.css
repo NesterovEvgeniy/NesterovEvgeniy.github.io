@@ -1512,15 +1512,10 @@ form {
   }
 
   .answer-text {
-    display: none;
-    position: absolute;
-    margin-top: 10.60vw;
-    padding: 0 2.34vw;
-    font-weight: 400;
-    font-size: 1.41vw;
-    line-height: 2.34vw;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #fff;
+    margin-top: 26.6vw;
+    padding: 0 7.34vw;
+    font-weight: 700;
+    font-size: 6.41vw;
+    line-height: 9.34vw;
   }
 }

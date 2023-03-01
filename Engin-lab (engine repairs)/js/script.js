@@ -20,11 +20,23 @@ linkOrderCall.addEventListener('click', function () {
   orderCallForm.style.display = "block";
 })
 
-const closeOrderCallForm = document.querySelector('.close-btn');
+popupApplicationFormBtn = document.querySelector('.application-btn');
+popupApplicationForm = document.querySelector('.application-form');
+popupAnswer = document.querySelector('.answer-text');
 
+popupApplicationFormBtn.addEventListener('click', function () {
+  popupApplicationForm.style.display = "none";
+  popupApplicationFormBtn.style.display = "block";
+  popupAnswer.style.display = "block";
+})
+popupApplicationForm.addEventListener('submit', handleFormSubmit)
+function handleFormSubmit(event) {
+  event.preventDefault()
+}
+
+const closeOrderCallForm = document.querySelector('.close-btn');
 closeOrderCallForm.addEventListener('click', function () {
   orderCallForm.style.display = "none"
-
 })
 
 var inputsTel = document.querySelectorAll('input[type="tel"]');
@@ -46,16 +58,6 @@ form.onchange = function () {
     })
   }
 }
-
-popupApplicationFormBtn = document.querySelector('.application-btn');
-popupApplicationForm = document.querySelector('.application-form');
-popupAnswer = document.querySelector('.answer-text');
-
-popupApplicationFormBtn.addEventListener('click', function () {
-  popupApplicationForm.style.display = "none";
-  popupApplicationFormBtn.style.display = "block";
-  popupAnswer.style.display = "block";
-})
 
 /* Burger menu */
 const contactInfo = document.querySelectorAll('.js-mob-txt-color');
