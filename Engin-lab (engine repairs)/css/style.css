@@ -354,6 +354,7 @@ body {
 
 .header__order-call-text {
   width: 100%;
+  width: 17vw;
   width: 5.94vw;
   width: 5.94vw;
   font-weight: 400;
@@ -1059,7 +1060,7 @@ form {
   }
 
   .header__order-call-text {
-    min-width: 16.25vw;
+    min-width: 17vw;
     font-size: 1.88vw;
     line-height: 4vw;
     color: #fff;
