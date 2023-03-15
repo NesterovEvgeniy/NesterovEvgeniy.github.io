@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+
+  <!-- Useful meta tags -->
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="robots" content="index, follow">
+  <meta name="google" content="notranslate">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="">
+
+  <title>Home</title>
+</head>
+
+<body>
+
+  <div class="page" id="page">
+    <!-- Header -->
+    <header class="header">
+      <div class="header__left">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link has-subnav" href="#">Статьи</a>
+
+              <ul class="subnav">
+                <li>
+                  <a class="subnav__link" href="#">Создание сайтов</a>
+                </li>
+                <li>
+                  <a class="subnav__link" href="#">Интерент-маркетинг</a>
+                </li>
+                <li>
+                  <a class="subnav__link" href="#">Продвижение видео</a>
+                </li>
+              </ul>
+
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="text.html">Обо мне</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="profile.html">Профиль</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Выйти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="burger" type="button" id="sidebarToggle">
+          <span>Открыть навигацию</span>
+        </button>
+
+      </div>
+      <div class="header__right">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="profile.html">Профиль</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Выйти</a>
+            </li>
+          </ul>
+        </nav>
+        <form class="search" action="search.html" method="get">
+          <input class="search__input" type="text" placeholder="Поиск по блогу">
+        </form>
+      </div>
+    </header>
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar__header">
+        <img src="assets/images/sidebar-header.jpg" alt="">
+      </div>
+
+      <div class="sidebar__content">
+        <div class="profile">
+          <img class="profile__avatar" src="assets/images/main-photo.jpg" alt="Нестеров Евгений фото">
+          <div class="profile__header">
+            <div class="profile__name">Нестеров Евгений</div>
+            <div class="profile__prof">блог front-end разработчика</div>
+          </div>
+
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="https://www.instagram.com/nesterov_evgeniy_happy_life/" target="_blank">
+                <img src="assets/images/instagram-icon.svg" alt="instagram Нестеров Евгений">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link"
+                href="https://nesterovevgeniy.github.io/CV%20Front-end%20Developer/development-page.html"
+                target="_blank">
+                <img src="assets/images/vk-icon.svg" alt="vk Нестеров Евгений">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://t.me/NesterEM" target="_blank">
+                <img src="assets/images/telegram-icon.svg" alt="telegram Нестеров Евгений">
+              </a>
+            </li>
+          </ul>
+
+          <div class="profile__text">
+            <p>Front-end разработчик. Практик верстки сайтов. Созданием сайтов занимаюсь с 2022 года. Работаю напрямую с
+              заказчиками, выполняю работу на фрилансе, наработал более 10 000 часов в создании сайтов различной
+              сложности.
+            </p>
+          </div>
+        </div><!-- /.profile -->
+        <nav class="nav nav--mobile">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link has-subnav" href="#">Статьи</a>
+
+              <ul class="subnav">
+                <li>
+                  <a class="subnav__link" href="#">Создание сайтов</a>
+                </li>
+                <li>
+                  <a class="subnav__link" href="#">Интерент-маркетинг</a>
+                </li>
+                <li>
+                  <a class="subnav__link" href="#">Продвижение видео</a>
+                </li>
+              </ul>
+
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="text.html">Обо мне</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="text.html">Реклама</a>
+            </li>
+          </ul>
+        </nav>
+      </div><!-- /.sidebar__content -->
+
+      <div class="sidebar__footer">
+        <a class="btn btn--red" href="works.html">Мои работы</a>
+        <button class="btn btn--blue" type="button" data-modal="contact-modal">Написать мне</button>
+      </div>
+    </aside>
+    <!-- Main -->
+    <main class="main">
+      <div class="container">
+
+        <!-- Stories -->
+        <div class="stories">
+          <div class="stories__item" data-modal="story-modal">
+            <img class="stories__preview" src="assets/images/stories/stories-1.png"
+              alt="Нестеров Евгений московский марафон фото">
+            <div class="stories__title">Пробежал московский марафон 2020</div>
+            <time class="stories__date" datetime="2020-09-20 15:00">20.09.2020</time>
+          </div>
+          <div class="stories__item">
+            <img class="stories__preview" src="assets/images/stories/stories-2.png"
+              alt="Нестеров Евгений погружение с аквалангом фото">
+            <div class="stories__title">Первое погружение с аквалангом</div>
+            <time class="stories__date" datetime="2021-03-15 18:00">15.03.2021</time>
+          </div>
+          <div class="stories__item">
+            <img class="stories__preview" src="assets/images/stories/stories-3.png"
+              alt="Нестеров Евгений Прыжок с парашютом в Дубае">
+            <div class="stories__title">Прыжок с парашютом в Дубае</div>
+            <time class="stories__date" datetime="2020-03-05 11:00">05.03.2020</time>
+          </div>
+          <div class="stories__item">
+            <img class="stories__preview" src="assets/images/stories/stories-4.png"
+              alt="Нестеров Евгений в пустыне фото">
+            <div class="stories__title">В пустыне</div>
+            <time class="stories__date" datetime="2020-03-08 19:21">08.03.2020</time>
+          </div>
+        </div><!-- /.storyes -->
+
+        <!-- Add post -->
+        <div class="add-post">
+          <form class="add-post__form" action="/" method="post">
+            <textarea class="add-post__textarea" name="post-text" placeholder="Напишите что-нибудь" data-autoresize>
+                    </textarea>
+            <div class="add-post__form-actions">
+              <label class="add-post__file" for="add-post-file">
+                <input type="file" id="add-post-file">
+              </label>
+              <button class="add-post__send" type="submit">
+                Отправить
+              </button>
+            </div>
+          </form>
+        </div><!-- /.add-post -->
+
+        <!-- Post -->
+        <div class="post">
+          <div class="post__content">
+            <p class="post__description">Это первый короткий пост моего профессионального блога по Front-end разработке
+            </p>
+          </div>
+
+          <div class="post__footer">
+            <ul class="post__data">
+              <li class="post__data-item">
+                <time datetime="2020-06-21 19:20">21.06.2020</time>
+              </li>
+            </ul>
+          </div>
+        </div><!-- /.post -->
+
+
+        <!-- Post -->
+        <article class="post">
+          <div class="post__header post__header--preview">
+            <a href="post.html">
+              <img class="post__preview" src="assets/images/post-2.jpg" alt="Как писать код быстро и безболезненно?">
+            </a>
+          </div>
+
+          <div class="post__content">
+            <h2 class="post__title">
+              <a href="post.html">15 правил написания качественного кода</a>
+            </h2>
+            <p class="post__description">Есть мириады способов написать плохой код. К счастью, чтобы подняться до уровня
+              качественного кода, достаточно следовать 15 правилам. Их соблюдение не сделает из вас мастера, но позволит
+              убедительно имитировать его.<br>
+            <ul>
+              <li class="post__description"><strong>Правило 1.</strong> Следуйте стандартам оформления кода.
+                У каждого языка программирования есть свой стандарт оформления кода, который говорит, как надо делать
+                отступы,
+                где
+                ставить пробелы и скобки, как называть объекты, как комментировать код и т.д.
+
+                Например, в этом куске кода в соответствии со стандартом есть 12 ошибок:
+
+                for(i=0 ;i)
+                Изучайте стандарт внимательно, учите основы наизусть, следуйте правилам как заповедям, и ваши программы
+                станут
+                лучше, чем большинство, написанные выпускниками вузов.
+
+                Многие организации подстраивают стандарты под свои специфические нужды. Например, Google разработал
+                стандарты
+                для
+                более чем 12 языков программирования. Они хорошо продуманы, так что изучите их, если вам нужна помощь в
+                программировании под Google. Стандарты даже включают в себя настройки редактора, которые помогут вам
+                соблюдать
+                стиль, и специальные инструменты, верифицирующие ваш код на соответствию этому стилю. Используйте их.
+              </li>
+              <li class="post__description"><strong>Правило 2.</strong> Давайте наглядные имена.
+                Ограниченные медленными, неуклюжими телетайпами, программисты в древности использовали контракты для
+                имён
+                переменных и процедур, чтобы сэкономить время, стуки по клавишам, чернила и бумагу. Эта культура
+                присутствует
+                внекоторых сообществах ради сохранения обратной совместимости. Возьмите, например, ломающую язык функцию
+                C
+                wcscspn (wide character string complement span). Но такой подход неприменим в современном
+                коде.Используйте
+                длинные наглядные имена наподобие complementSpanLength, чтобы помочь себе и коллегам понять свой код в
+                будущем. Исключения составляют несколько важных переменных, используемых в теле метода, наподобие
+                итераторов
+                циклов, параметров, временных значений или результатов исполнения.
+                Гораздо важнее, чтобы вы долго и хорошо думали перед тем, как что-то назвать. Является ли имя точным?
+                Имели ли
+                вы
+                в виду highestPrice или bestPrice? Достаточно ли специфично имя, дабы избежать его использования в
+                других
+                контекстах для схожих по смыслу объектов? Не лучше ли назвать метод getBestPrice заместо getBest?
+                Подходит ли
+                оно
+                лучше других схожих имён? Если у вас есть метод ReadEventLog, вам не стоит называть другой
+                NetErrorLogRead. Если
+                вы называете функцию, описывает ли её название возвращаемое значение?
+                В заключение, несколько простых правил именования. Имена классов и типов должны быть существительными.
+                Название
+                метода должно содержать глагол. Если метод определяет, является ли какая-то информация об объекте
+                истинной или
+                ложной, его имя должно начинаться с «is». Методы, которые возвращают свойства объектов, должны
+                начинаться с
+                «get»,
+                а устанавливающие значения свойств — «set».</li>
+              <li class="post__description"><strong>Правило 3.</strong> Комментируйте и документируйте.
+                Начинайте каждый метод и процедуру с описания в комментарии того, что данный метод или процедура делает,
+                параметров, возвращаемого значения и возможных ошибок и исключений. Опишите в комментариях роль каждого
+                файла и
+                класса, содержимое каждого поля класса и основные шаги сложного кода. Пишите комментарии по мере
+                разработки
+                кода.
+                Если вы полагаете, что напишете их потом, то обманываете самого себя.
+                Вдобавок, убедитесь, что для вашего приложения или библиотеки есть руководство, объясняющее, что ваш код
+                делает,
+                определяющий его зависимости и предоставляющий инструкции для сборки, тестирования, установки и
+                использования.
+                Документ должен быть коротким и удобным; просто README-файла часто достаточно.</li>
+              <li class="post__description"><strong>Правило 4.</strong> Не повторяйтесь.
+                Никогда не копируйте и не вставляйте код. Вместо этого выделите общую часть в метод или класс (или
+                макрос, если
+                нужно), и используйте его с соответствующими параметрами. Избегайте использования похожих данных и
+                кусков кода.
+                Также используйте следующие техники:
+
+                Создание справочников API из комментариев, используя Javadoc и Doxygen.
+                Автоматическая генерация Unit-тестов на основе аннотаций или соглашений об именовании.
+                Генерация PDF и HTML из одного размеченного источника.
+                Получение структуры классов из базы данных (или наоборот).</li>
+              <li class="post__description"><strong>Правило 5.</strong> Проверяйте на ошибки и реагируйте на них.
+                Методы могут возвращать признаки ошибки или генерировать исключения. Обрабатывайте их. Не полагайтесь на
+                то, что
+                диск никогда не заполнится, ваш конфигурационный файл всегда будет на месте, ваше приложение будет
+                запущено со
+                всеми нужными правами, запросы на выделение памяти всегда будут успешно исполнены, или что соединение
+                никогда не
+                оборвётся. Да, хорошую обработку ошибок тяжело написать, и она делает код длиннее и труднее для чтения.
+                Но
+                игнорирование ошибок просто заметает проблему под ковёр, где ничего не подозревающий пользователь
+                однажды её
+                обнаружит.</li>
+              <li class="post__description"><strong>Правило 6.</strong> Разделяйте код на короткие, обособленные части.
+                Каждый метод, функция или блок кода должн умещаться в обычном экранном окне (25-50 строк). Если
+                получилось
+                длиннее, разделите на более короткие куски. Даже внутри метода разделяйте длинный код на блоки, суть
+                которых вы
+                можете описать в комментарии в начале каждого блока.
+
+                Более того, каждый класс, модуль, файл или процесс должен выполнять определённый род задач. Если часть
+                кода
+                выполняет совершенно разнородные задачи, то разделите его соответственно.</li>
+              <li class="post__description"><strong>Правило 7.</strong> Используйте API фреймворков и сторонние
+                библиотеки.
+                Изучите, какие функции доступны с помощью API вашего фреймворка. а также что могут делать развитые
+                сторонние
+                библиотеки. Если библиотеки поддерживаются вашим системным менеджером пакетов, то они скорее всего
+                окажутся
+                хорошим выбором. Используйте код, удерживающий от желания изобретать колесо (при том бесполезной
+                квадратной
+                формы).</li>
+              <li class="post__description"><strong>Правило 8.</strong> Не переусердствуйте с проектированием.
+                Проектируйте только то, что актуально сейчас. Ваш код можно делать довольно обобщённым, чтобы он
+                поддерживал
+                дальнейшее развитие, но только в том случае, если он не становится от этого слишком сложным. Не
+                создавайте
+                параметризованные классы, фабрики, глубокие иерархии и скрытые интерфейсы для решения проблем, которых
+                даже не
+                существует — вы не можете угадать, что случится завтра. С другой стороны, когда структура кода не
+                подходит под
+                задачу, не стесняйтесь рефакторить его.</li>
+              <li class="post__description"><strong>Правило 9.</strong> Будьте последовательны.
+                Делайте одинаковые вещи одинаковым образом. Если вы разрабатываете метод, функциональность которого
+                похожа на
+                функциональность уже существующего, то используйте похожее имя, похожий порядок параметров и схожую
+                структура
+                тела. То же самое относится и к классам. Создавайте похожие поля и методы, делайте им похожие
+                интерфейсы, и
+                сопоставляйте новые имена уже существующим в похожих классах.
+                Ваш код должен соответствовать соглашениям вашего фреймворка. Например, хорошей практикой является
+                делать
+                диапазоны полуоткрытыми: закрытыми (включающими) слева (в начале диапазона) и открытыми (исключающими)
+                справа (в
+                конце). Если для конкретного случая нет соглашений, то сделайте выбор и фанатично придерживайтесь его.
+              </li>
+              <li class="post__description"><strong>Правило 10.</strong> Избегайте проблем с безопасностью.
+                Современный код редко работает изолированно. У него есть неизбежный риск стать мишенью атак. Они
+                необязательно
+                должны приходить из интернета; атака может происходить через входные данные вашего приложения. В
+                зависимости от
+                вашего языка программирования и предметной области, вам возможно стоит побеспокоиться о переполнении
+                буфера,
+                кросс-сайтовых сценариях, SQL-инъекциях и прочих подобных проблемах. Изучите эти проблемы, и избегайте
+                их в
+                коде.
+                Это не сложно.</li>
+              <li class="post__description"><strong>Правило 11.</strong> Используйте эффективные структуры данных и
+                алгоритмы.
+                Простой код часто легче сопровождать, чем такой же, но изменённый ради эффективности. К счастью, вы
+                можете
+                совмещать сопровождаемость и эффективность, используя структуры данных и алгоритмы, которые даёт ваш
+                фреймворк.
+                Используйте map, set, vector и алгоритмы, которые работают с ними. Благодаря этому ваш код станет чище,
+                быстрее,
+                более масштабируемым и более экономным с памятью. Например, если вы сохраните тысячу значений в
+                отсортированном
+                множестве, то операция пересечения найдёт общие элементы с другим множеством за такое же число операций,
+                а не за
+                миллион сравнений.</li>
+              <li class="post__description"><strong>Правило 12.</strong> Используйте Unit-тесты.
+                Сложность современного ПО делает его установку дороже, а тестирование труднее. Продуктивным подходом
+                будет
+                сопровождение каждого куска кода тестами, которые проверяют корректность его работы. Этот подход
+                упрощает
+                отладку,
+                т.к. он позволяет обнаружить ошибки раньше. Unit-тестирование необходимо, когда вы программируете на
+                языках с
+                динамической типизацией, как Python и JavaScript, потому что они отлавливают любые ошибки только на
+                этапе
+                исполнения, в то время как языки со статической типизацией наподобие Java, C# и C++ могут поймать часть
+                из них
+                во
+                время компиляции. Unit-тестирование также позволяет рефакторить код уверенно. Вы можете использовать
+                XUnit для
+                упрощения написания тестов и автоматизации их запуска.</li>
+              <li class="post__description"><strong>Правило 13.</strong> Сохраняйте код портируемым.
+                Если у вас нет особой причины, не используйте функциональность, доступную только на определённой
+                платформе. Не
+                полагайтесь на то, что определённые типы данных (как integer, указатели и временные метки) будут иметь
+                конкретную
+                длину (например, 32 бита), потому что этот параметр отличается на разных платформах. Храните сообщения
+                программы
+                отдельно от кода и на зашивайте параметры, соответствующие определённой культуре (например, разделители
+                дробной
+                и
+                целой части или формат даты). Соглашения нужны для того, чтобы код мог запускаться в разных странах, так
+                что
+                сделайте локализацию настолько безболезненной, насколько это возможно.</li>
+              <li class="post__description"><strong>Правило 14.</strong> Делайте свой код собираемым.
+                Простая команда должна собирать ваш код в форму, готовую к распространению. Команда должна позволять вам
+                быстро
+                выполнять сборку и запускать необходимые тесты. Для достижения этой цели используйте средства
+                автоматической
+                сборки наподобие Make, Apache Maven, или Ant. В идеале, вы должны установить интеграционную систему,
+                которая
+                будет
+                проверять, собирать и тестировать ваш код при любом изменении.</li>
+              <li class="post__description"><strong>Правило 15.</strong> Размещайте всё в системе контроля версий.
+                Все ваши элементы — код, документация, исходники инструментов, сборочные скрипты, тестовые данные —
+                должны быть
+                в системе контроля версий. Git и GitHub делают эту задачу дешёвой и беспроблемной. Но вам также доступны
+                и
+                многие
+                другие мощные инструменты и сервисы. Вы должны быть способны собрать и протестировать вашу программу на
+                сконфигурированной системе, просто скачав её с репозитория.</li>
+              <li class="post__description">Сделав эти 15 правил частью вашей ежедневной практики, вы в конце концов
+                создадите
+                код, который легче читать,
+                который хорошо протестирован, с большей вероятностью запустится корректно и который будет гораздо проще
+                изменить, когда придёт время. Вы также убережёте себя и ваших пользователей от большого числа головных
+                болей.
+              </li>
+            </ul>
+            </p>
+          </div>
+
+          <div class="post__footer">
+            <ul class="post__data">
+              <li class="post__data-item">
+                <time datetime="2020-06-21 19:20">21.06.2020</time>
+              </li>
+              <li class="post__data-item">
+                <a href="#">cоздание сайтов</a>
+              </li>
+            </ul>
+
+            <a class="post__read" href="#">читать</a>
+          </div>
+        </article><!-- /.post -->
+
+        <!-- Post -->
+        <article class="post">
+          <div class="post__header">
+            <div class="embed">
+              <iframe src="https://www.youtube.com/embed/8A6Qle5pFNU" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="post__content">
+            <h2 class="post__title">
+              <a href="post.html">Кто такой и чем занимается Front-end разработчик</a>
+            </h2>
+          </div>
+
+          <div class="post__footer">
+            <ul class="post__data">
+              <li class="post__data-item">
+                <time datetime="2020-02-25 19:20">25.02.2020</time>
+              </li>
+              <li class="post__data-item">
+                <a href="#">продвижение видео</a>
+              </li>
+            </ul>
+
+            <a class="post__read" href="post.html">оставить комментарий</a>
+          </div>
+        </article><!-- /.post -->
+
+        <!-- Post -->
+        <article class="post">
+          <div class="post__header post__header--preview">
+            <a href="">
+              <img class="post__preview" src="assets/images/post-4.jpg" alt="Конференция">
+            </a>
+          </div>
+
+          <div class="post__content">
+            <h2 class="post__title">
+              <a href="post.html">Как я выбрал профессию - Front-end разработчик</a>
+            </h2>
+            <p class="post__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat
+              orci turpis
+              urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu
+              egestas.
+              Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
+              volutpat.
+            </p>
+          </div>
+
+          <div class="post__footer">
+            <ul class="post__data">
+              <li class="post__data-item">
+                <time datetime="2021-01-25 19:20">01.25.2021</time>
+              </li>
+              <li class="post__data-item">
+                <a href="#">cоздание сайтов</a>
+              </li>
+            </ul>
+
+            <a class="post__read" href="post.html">читать</a>
+          </div>
+        </article><!-- /.post -->
+
+        <!-- Pagination -->
+        <ul class="pagination">
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">&lt</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link active" href="#">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">3</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">&gt</a>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </div>
+
+  <div class="modal" id="story-modal">
+    <div class="modal__content modal__content--story">
+      <video class="modal__video" src="" poster="https:/placehold.it/420x580"></video>
+    </div>
+  </div>
+  <div class="modal" id="contact-modal">
+    <div class="modal__content modal__content--contact">
+      <button class="modal__close" type="button">
+        <img src="assets/images/close.svg" alt="Закрыть">
+      </button>
+
+      <form class="form" action="/" method="post">
+
+        <div class="form__group form__group--md">
+          <input class="form__control" type="text" placeholder="Ваше имя">
+          <span class="form__line"></span>
+        </div>
+
+        <div class="form__group form__group--md">
+          <input class="form__control" type="email" placeholder="Ваше e-mail">
+          <span class="form__line"></span>
+        </div>
+
+        <div class="form__group form__group--md">
+          <textarea class="form__control form__control--textarea" placeholder="Текст сообщения"></textarea>
+          <span class="form__line"></span>
+        </div>
+
+        <div class="form__footer">
+          <div class="form__group form__group--md">
+            <button class="btn btn--blue btn--rounded btn--small" type="submit">Отправить</button>
+          </div>
+        </div>
+      </form>
+
+      <ul class="modal__footer">
+        <li>
+          e-mail: <a href="mailto">info@website.ru</a>
+        </li>
+        <li>
+          тел: <a href="tel:+94323285622">+111-111-111-111</a>
+        </li>
+      </ul>
+    </div><!-- /.modal__content -->
+  </div>
+  <div class="modal">
+    <div class="modal__content">
+      <button class="modal__close" type="button">
+        <img src="../assets/images/close.svg" alt="Закрыть">
+      </button>
+
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="../assets/images/share/facebook.svg" alt="">
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="../assets/images/share/twitter.svg" alt="">
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="../assets/images/share/vk.svg" alt="">
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="../assets/images/share/copy.svg" alt="">
+          </a>
+        </li>
+      </ul>
+
+
+    </div><!-- /.modal__content -->
+  </div>
+  <!-- JS -->
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
