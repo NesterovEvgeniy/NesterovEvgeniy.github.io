@@ -68,10 +68,10 @@ let progress = document.querySelectorAll('.soft-skills-color-line');
 progress.forEach(function (item) {
   item.style.width = item.getAttribute('data-done') + '%';
   item.style.opacity = 1;
+  item.style.transition = "transform 5s ease 0.3s";
 })
 
-
-/* scroll amimation */
+/* scroll animation */
 function anim() {
   var anims = document.querySelectorAll(".anim");
   for (var i = 0; i < anims.length; i++) {

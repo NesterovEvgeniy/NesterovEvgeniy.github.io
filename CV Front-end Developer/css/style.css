@@ -501,23 +501,28 @@ a {
   opacity: 1;
 }
 
+.active.engin-lab {
+  animation: project-slide-left 1.5s;
+  opacity: 1;
+}
+
 /* .active.cv-project {
   animation: project-slide-left 1.5s;
   opacity: 1;
 } */
 
 .active.personal-blog {
-  animation: project-slide-left 1.5s;
-  opacity: 1;
-}
-
-.active.wooden {
   animation: project-slide-right 1.5s;
   opacity: 1;
 }
 
-.active.vantage {
+.active.wooden {
   animation: project-slide-left 1.5s;
+  opacity: 1;
+}
+
+.active.vantage {
+  animation: project-slide-right 1.5s;
   opacity: 1;
 }
 
@@ -621,13 +626,6 @@ a {
   line-height: 100%;
   color: #272727;
 }
-
-
-
-
-
-
-
 
 .text-uppercase {
   text-transform: uppercase;
@@ -876,10 +874,6 @@ a {
   list-style-type: none;
 }
 
-
-
-
-
 .soft-skills-blocks {
   margin-top: 30px;
   display: -ms-grid;
@@ -934,13 +928,13 @@ a {
   border-radius: 2px;  
 }
 
-.soft-skills-color-line {
+.active.soft-skills-color-line {
   display: flex;              
   height: 100%;
   border-radius: 2px; 
   width: 0;                  
-  opacity: 0;                 
-  transition: 1s ease 0.3s;
+  opacity: 0;         
+  transition: transform 5s ease 0.3s;
 }
 
 /* .active.soft-skills-color-line {
