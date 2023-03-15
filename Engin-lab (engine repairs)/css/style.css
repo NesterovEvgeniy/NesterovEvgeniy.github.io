@@ -277,6 +277,7 @@ body {
   align-items: center;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
+  cursor: pointer;
 }
 
 .js-mob-txt-color {
@@ -353,9 +354,6 @@ body {
 }
 
 .header__order-call-text {
-  width: 100%;
-  width: 17vw;
-  width: 5.94vw;
   width: 5.94vw;
   font-weight: 400;
   font-size: 0.63vw;
