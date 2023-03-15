@@ -19,8 +19,32 @@ moreProjectBtn.addEventListener('click', function (e) {
   projectNew.style.display = 'block';
 });
 
+/* hard-skills modal */
+const modal = document.querySelector('.modal');
+const skillBox = document.querySelectorAll('[skill-box-modal]');
+const modalClose = document.querySelectorAll('.modal-close');
+const skillDiscription = document.querySelectorAll('.description-element-block');
 
-/* sliler */
+skillBox.forEach(item => {
+  item.addEventListener('click', event => {
+    let $this = event.currentTarget;
+    let skillBoxId = $this.getAttribute('skill-box-modal');
+    let skillDiscription = document.getElementById(skillBoxId);
+
+    modal.style.display = "block";
+    skillDiscription.classList.add('show');
+
+    modalClose.forEach(item => {
+      item.addEventListener('click', event => {
+        modal.style.display = "none";
+        skillDiscription.classList.remove('show');
+      });
+    });
+  })
+})
+
+
+/* slider */
 const leftBtn = document.querySelector('#right');
 const rightBtn = document.querySelector('#left');
 
@@ -46,24 +70,8 @@ progress.forEach(function (item) {
   item.style.opacity = 1;
 })
 
-/* function increase() {
-  let SPEED = 10;
-  let limit = parseInt(document.querySelector('.soft-skills-persent').innerHTML, 10);
-  console.log(limit);
-
-  for (let i = 0; i <= limit; i++) {
-    setTimeout(function () {
-      document.querySelector('.soft-skills-persent').innerHTML = i + "%";
-    }, SPEED * i);
-  }
-}
-
-increase(); */
-
-
 
 /* scroll amimation */
-
 function anim() {
   var anims = document.querySelectorAll(".anim");
   for (var i = 0; i < anims.length; i++) {
