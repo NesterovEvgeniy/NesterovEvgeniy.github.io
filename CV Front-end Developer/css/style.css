@@ -2215,6 +2215,18 @@ display: block;
     line-height: 160%;
   }
 
+  .additional-stack-header {
+    font-size: 24px;
+    line-height: 100%;
+    text-align: left;
+  }
+
+  .additional-stack-text {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 160%;
+  }
+
   .target-comment ul {
     max-width: 700px;
     margin: 20px auto 0 auto;
