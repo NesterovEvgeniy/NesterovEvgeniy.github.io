@@ -527,13 +527,13 @@ a {
 }
 
 .active.analitycs {
-  animation: project-slide-right 1.5s;
+  animation: project-slide-left 1.5s;
   opacity: 1;
 }
 
 
 .keto-plan {
-  animation: project-slide-left 1.5s;
+  animation: project-slide-right 1.5s;
   opacity: 1;
 }
 
