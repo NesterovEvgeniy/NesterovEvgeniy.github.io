@@ -116,7 +116,7 @@ a {
 }
 
 .base-info-name-text {
-  margin-top: 249px;
+  margin-top: 225px;
   margin-bottom: 40px;
   width: 100%;
   max-width: 375px;
@@ -136,7 +136,7 @@ a {
   animation: base-slide-left 1.2s;
 }
 
-.base-info-phone-mail-text {
+.base-info-contacts-text {
   margin-left: 20px;
   width: 100%;
   max-width: 390px;
@@ -148,8 +148,12 @@ a {
   color: #272727;
 }
 
-.base-info-phone-mail-text span {
-  display: block;
+.base-info-contacts-text:hover {
+  color: var(--main-color);
+  scale: 102%;
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
 
 .base-info-mail {
@@ -158,6 +162,18 @@ a {
   display: flex;
   margin-top: 11px;
   animation: base-slide-left 1.3s;
+}
+
+.mail-center {
+  margin-top: 5px;
+}
+
+.base-info-github {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 11px;
+  animation: base-slide-left 1.4s;
 }
 
 .base-btn {
@@ -1199,7 +1215,7 @@ a {
   display: flex;
   gap: 15px;
   padding-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 65px;
   border-top: solid 1px #BCBEC2;
   border-bottom: solid 1px #BCBEC2;
 }
@@ -1210,7 +1226,7 @@ a {
   display: flex;
   gap: 15px;
   padding-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 65px;
   border-top: solid 1px #BCBEC2;
   border-bottom: solid 1px #BCBEC2;
 }
@@ -1221,7 +1237,7 @@ a {
   display: flex;
   gap: 15px;
   padding-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 65px;
   border-top: solid 1px #BCBEC2;
   border-bottom: solid 1px #BCBEC2;
 }
@@ -1723,6 +1739,22 @@ display: block;
     -ms-grid-row: 2;
     grid-row: 2;
   }
+
+  .contacts-phone {
+    padding-top: 33px;
+    margin-bottom: 40px;
+  }
+
+  .contacts-mail {
+    padding-top: 33px;
+    margin-bottom: 39px;
+  }
+
+  .contacts-website {
+    padding-top: 33px;
+    margin-bottom: 39px;
+  }
+
 
   .contacts-mesengers-links {
     padding: 32px 0;
