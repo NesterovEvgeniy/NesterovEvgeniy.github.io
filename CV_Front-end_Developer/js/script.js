@@ -11,19 +11,27 @@ menuButtonEl.addEventListener("click", function (e) {
 });
 
 
-/* more projects button */
-const projectNew = document.querySelector('.keto');
+// /* more projects button */
+const moreProject = document.querySelectorAll('.show-project');
 const moreProjectBtn = document.querySelector('.more-project-btn');
 
-moreProjectBtn.addEventListener('click', function (e) {
-  projectNew.style.display = 'block';
-});
+let num = 0;
+
+if (moreProjectBtn.addEventListener('click', function () {
+  moreProject[num].style.display = 'flex';
+  if (num === moreProject.length - 1) {
+    moreProjectBtn.style.visibility = 'hidden';
+  }
+  ++num;
+}));
 
 /* hard-skills modal */
 const modal = document.querySelector('.modal');
+const modalContent = document.querySelector('.modal-content');
 const skillBox = document.querySelectorAll('[skill-box-modal]');
 const modalClose = document.querySelectorAll('.modal-close');
 const skillDiscription = document.querySelectorAll('.description-element-block');
+
 
 skillBox.forEach(item => {
   item.addEventListener('click', event => {
@@ -31,18 +39,22 @@ skillBox.forEach(item => {
     let skillBoxId = $this.getAttribute('skill-box-modal');
     let skillDiscription = document.getElementById(skillBoxId);
 
-    modal.style.display = "block";
+    modal.style.display = "flex";
     skillDiscription.classList.add('show');
 
-    modalClose.forEach(item => {
-      item.addEventListener('click', event => {
-        modal.style.display = "none";
-        skillDiscription.classList.remove('show');
-      });
-    });
-  })
-})
+    /*     modalClose.forEach(item => {
+          item.addEventListener('click', function () {
+            modal.style.display = "none";
+            skillDiscription.classList.remove('show');
+          });
+        }); */
 
+    modal.addEventListener('click', function () {
+      modal.style.display = "none";
+      skillDiscription.classList.remove('show');
+    })
+  });
+});
 
 /* slider */
 const leftBtn = document.querySelector('#right');
@@ -81,7 +93,7 @@ function anim() {
     if (elementTop < windowHeight - elementVisible) {
       anims[i].classList.add("active");
     } else {
-      anims[i].classList.remove("active");
+      /* anims[i].classList.remove("active"); */
     }
   }
 }
@@ -89,6 +101,7 @@ function anim() {
 window.addEventListener("scroll", anim);
 
 anim();
+
 
 
 
