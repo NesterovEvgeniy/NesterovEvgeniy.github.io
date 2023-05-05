@@ -1,0 +1,65 @@
+@import "vendor/normalize";
+@import "vars.scss";
+@import "mixins";
+@import "fonts";
+@import "lib/jquery.formstyler";
+@import "lib/jquery.formstyler.theme";
+
+
+/* Default Styles */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: $font-color;
+  display: inline-block;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  @include main-font;
+  color: $font-color;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/*Blocks*/
+@import "blocks/header.scss";
+@import "blocks/main.scss";
+@import "blocks/catalog.scss";
+@import "blocks/product-card.scss";
+@import "blocks/footer.scss";
+@import "blocks/menu-mobile.scss";
+@import "media.scss";
