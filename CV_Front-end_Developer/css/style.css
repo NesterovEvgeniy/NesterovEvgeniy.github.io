@@ -461,7 +461,6 @@ a {
   color: #272727;
 }
 
-
 .target-comment {
   font-family: 'Roboto';
   font-style: normal;
@@ -570,22 +569,22 @@ a {
   display: none;
 }
 
+.active.drive-moto {
+  animation: project-slide-left 1.5s;
+  opacity: 1;
+}
+
 .active.thermos {
   animation: project-slide-right 1.5s;
   opacity: 1;
 }
 
-.active.engin-lab {
+.active.personal-blog {
   animation: project-slide-left 1.5s;
   opacity: 1;
 }
 
-/* .active.cv-project {
-  animation: project-slide-left 1.5s;
-  opacity: 1;
-} */
-
-.active.personal-blog {
+.active.engin-lab {
   animation: project-slide-right 1.5s;
   opacity: 1;
 }
