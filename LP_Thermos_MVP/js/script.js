@@ -1,3 +1,6 @@
+console.log('Привет');
+
+
 // Slick-slider
 
 $(document).ready(function () {
