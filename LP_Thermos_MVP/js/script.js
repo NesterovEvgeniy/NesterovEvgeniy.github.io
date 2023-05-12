@@ -1,21 +1,7 @@
 console.log('Привет');
 
 
-// Slick-slider
 
-$(document).ready(function () {
-  $('.slider-carousel').slick({
-    dots: true,
-    infinite: true,
-    speed: 500,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    centerMode: true,
-    variableWidth: true
-  });
-});
 
 
 // Scroll-animation GSAP
@@ -359,7 +345,21 @@ tlSochialBlock.to(".social-block-title", { "font-size": rem(40), "line-height": 
 
 
 
+// Slick-slider
 
+$(document).ready(function () {
+  $('.slider-carousel').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    centerMode: true,
+    variableWidth: true
+  });
+});
 
 
 
