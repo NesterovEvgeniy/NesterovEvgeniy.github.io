@@ -8,12 +8,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 /* animateOnClick */
 
-/* window.addEventListener("scroll", animateOnClick); */
+window.addEventListener("scroll", animateOnClick);
 window.addEventListener("click", animateOnClick);
 
 function animateOnClick() {
 
-  gsap.to(".main-bottel", { duration: 2, ease: CustomEase.create("custom", "M0,0 C0,0.21 0.66,0.99 1,1 "), y: 207 });
+  gsap.to(".main-bottel", { y: 107, duration: 2, ease: CustomEase.create("custom", "M0,0 C0,0.21 0.66,0.99 1,1 ") });
 
   gsap.to(".main-bottel-half-stopper, .main-bottel-stopper", {
     y: rem(-291),
@@ -29,7 +29,7 @@ let tlMainBottel = gsap.timeline({
   scrollTrigger: {
     start: "top top",
     end: "12% center",
-    scrub: true,
+    scrub: 0.5,
     toggleActions: "play none none none",
     /*     markers: {
           startColor: "purple",
@@ -39,8 +39,8 @@ let tlMainBottel = gsap.timeline({
   }
 })
 
-tlMainBottel.to(".main-bottel", { y: rem(-290), duration: 2, })
-  .to(".main-title-text, .btn-main", { opacity: 0, duration: 1 })
+tlMainBottel.to(".main-bottel", { y: rem(-290), duration: 20, })
+  .to(".main-title-text, .btn-main", { opacity: 0, duration: 2 })
 
 
 tlMainBottel.to(".main-bottel, .main-bottel-half-stopper, .main-bottel-stopper", {
