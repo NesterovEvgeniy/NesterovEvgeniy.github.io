@@ -1,243 +1,386 @@
-function Ant(crslId) {
+// Scroll-animation GSAP
 
-  let id = document.getElementById(crslId);
-  if (id) {
-    this.crslRoot = id
+const rem = (px, base = 16) => {
+  return (1 / base) * px + 'rem'
+}
+
+gsap.registerPlugin(ScrollTrigger);
+
+/* animateOnClick */
+
+/* window.addEventListener("scroll", animateOnClick); */
+window.addEventListener("click", animateOnClick);
+
+function animateOnClick() {
+
+  gsap.to(".main-bottel", { duration: 2, ease: CustomEase.create("custom", "M0,0 C0,0.21 0.66,0.99 1,1 "), y: 207 });
+
+  gsap.to(".main-bottel-half-stopper, .main-bottel-stopper", {
+    y: rem(-291),
+    duration: 2
+  });
+
+  gsap.to(".main-circle", { width: rem(515), height: rem(515), "margin-top": rem(15), "margin-bottom": rem(259), duration: 2 });
+
+  gsap.to(".btn-main, .main-title-text, .main-text", { opacity: 1, duration: 2.4, delay: 1 });
+}
+
+let tlMainBottel = gsap.timeline({
+  scrollTrigger: {
+    start: "top top",
+    end: "12% center",
+    scrub: true,
+    toggleActions: "play none none none",
+    /*     markers: {
+          startColor: "purple",
+          endColor: "fuchsia",
+          fontSize: "1rem"
+        } */
   }
-  else {
-    this.crslRoot = document.querySelector('.ant-carousel')
-  };
+})
 
-  // Carousel objects
-  this.crslList = this.crslRoot.querySelector('.ant-carousel-list');
-  this.crslElements = this.crslList.querySelectorAll('.ant-carousel-element');
-  this.crslElemFirst = this.crslList.querySelector('.ant-carousel-element');
-  this.leftArrow = this.crslRoot.querySelector('div.ant-carousel-arrow-left');
-  this.rightArrow = this.crslRoot.querySelector('div.ant-carousel-arrow-right');
-  this.indicatorDots = this.crslRoot.querySelector('div.ant-carousel-dots');
+tlMainBottel.to(".main-bottel", { y: rem(-290), duration: 2, })
+  .to(".main-title-text, .btn-main", { opacity: 0, duration: 1 })
 
-  // Initialization
-  this.options = Ant.defaults;
-  Ant.initialize(this)
-};
 
-Ant.defaults = {
+tlMainBottel.to(".main-bottel, .main-bottel-half-stopper, .main-bottel-stopper", {
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".use-block",
+    start: "bottom bottom",
+    end: "bottom top",
+    scrub: true,
+    toggleActions: "restart none none none",
+    /*     markers: {
+          startColor: "purple",
+          endColor: "fuchsia",
+          fontSize: "1rem"
+        } */
+  }
+});
 
-  // Default options for the carousel
-  elemVisible: 6, // Кол-во отображаемых элементов в карусели
-  loop: true,     // Бесконечное зацикливание карусели 
-  auto: true,     // Автоматическая прокрутка
-  interval: 2000, // Интервал между прокруткой элементов (мс)
-  speed: 1000,     // Скорость анимации (мс)
-  touch: true,    // Прокрутка  прикосновением
-  arrows: true,   // Прокрутка стрелками
-  dots: true      // Индикаторные точки
-};
+/* let tlMainElem = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".use-block",
+    start: "top bottom",
+    end: "center center",
+    scrub: true,
+    toggleActions: "restart none none none", */
+/*     markers: {
+      startColor: "purple",
+      endColor: "fuchsia",
+      fontSize: "1rem"
+    } */
+/*   }
+}); */
 
-Ant.prototype.elemPrev = function (num) {
-  num = num || 1;
 
-  if (this.options.dots) this.dotOn(this.currentElement);
-  this.currentElement -= num;
-  if (this.currentElement < 0) this.currentElement = this.dotsVisible - 1;
-  if (this.options.dots) this.dotOff(this.currentElement);
 
-  if (!this.options.loop) {  // сдвиг вправо без цикла
-    this.currentOffset += this.elemWidth * num;
-    this.crslList.style.marginLeft = this.currentOffset + 'px';
-    if (this.currentElement == 0) {
-      this.leftArrow.style.display = 'none'; this.touchPrev = false
+/* tlMainElem.to(".btn-main", { opacity: 1, duration: 1, delay: 0.5 })
+  .to(".main - title - text", { opacity: 1, duration: 1 }) */
+
+/* gsap.to(".about-text-quality", { x: 0, opacity: 1, duration: 1.2 });
+gsap.to(".about-text-tightness", { x: 0, opacity: 1, duration: 1.4 });
+gsap.to(".about-text-temperature", { x: 0, opacity: 1, duration: 1.6 }); */
+
+/* About-block */
+
+let tlAboutText = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".about",
+    start: "top bottom",
+    end: "center center",
+    scrub: true,
+    toggleActions: "restart none none none",
+    /*     markers: {
+          startColor: "purple",
+          endColor: "fuchsia",
+          fontSize: "1rem"
+        } */
+  }
+});
+
+tlAboutText.to(".about-text-quality", { x: 0, opacity: 1, duration: 1, delay: 0.5 })
+  .to(".about-text-tightness", { x: 0, opacity: 1, duration: 1 })
+  .to(".about-text-temperature", { x: 0, opacity: 1, duration: 1 });
+
+/* Use-block */
+
+let tlUseText = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".use-block",
+    start: "top bottom",
+    end: "center center",
+    scrub: true,
+    toggleActions: "restart none none none",
+    /*     markers: {
+          startColor: "purple",
+          endColor: "fuchsia",
+          fontSize: "1rem"
+        } */
+  }
+});
+
+tlUseText.to(".use-text-nature", { x: 0, opacity: 1, duration: 1, delay: 0.5 })
+  .to(".use-text-gym", { x: 0, opacity: 1, duration: 1 })
+  .to(".use-text-color", { x: 0, opacity: 1, duration: 1 });
+
+/* Color-bottle-block */
+
+let tlColorBottle = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".color-bottel-block",
+    start: "top center",
+    end: "center center",
+    scrub: true,
+    toggleActions: "restart none none none",
+    /*     markers: {
+          startColor: "purple",
+          endColor: "fuchsia",
+          fontSize: "1rem"
+        } */
+  }
+});
+
+tlColorBottle.to(".color-bottel-title", { x: 0, opacity: 1, duration: 100 })
+  .to(".color-bottel-text", { x: 0, opacity: 1, duration: 100 });
+
+/* Pocket-content-block */
+
+let tlPocket = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".pocket-content-block",
+    start: "50% center",
+    end: "80% center",
+    scrub: 8,
+    toggleActions: "restart none none none",
+    /*     markers: {
+          startColor: "purple",
+          endColor: "fuchsia",
+          fontSize: "1rem"
+        } */
+  }
+});
+
+tlPocket.to(".pocket-backgroung-video-box", { height: rem(840), duration: 10, delay: 3 })
+  .to(".pocket-block-btn", { opacity: 1, duration: 10, delay: 8 })
+  .to(".pocket-block-title", { opacity: 1, "font-size": rem(52), "line-height": rem(63), duration: 10, delay: 10 })
+  .to(".pocket-woman-img, .pocket-yellow-bottel-img", { opacity: 1, duration: 2, delay: 1 })
+
+
+/* effects-block */
+
+let tlEffectsBlock = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".effects-block",
+    start: "60% center",
+    end: "80% center",
+    scrub: 8,
+    toggleActions: "restart none none none",
+    /*     markers: {
+          startColor: "purple",
+          endColor: "fuchsia",
+          fontSize: "1rem"
+        } */
+  }
+});
+
+tlEffectsBlock
+  .to(".effects-title", { "font-size": rem(40), "line-height": rem(48), opacity: 1, duration: 2 })
+  .to(".effects-comment", { "font-size": rem(14), "line-height": rem(17), opacity: 1, color: "#d01717", duration: 2 })
+  .to(".effect-text", { "font-size": rem(15), "line-height": rem(19), opacity: 1, duration: 2 })
+  .to(".effect-right-block", { width: rem(495), height: rem(820), opacity: 1, duration: 1 })
+
+/* Slider-block */
+
+let tlSliderBlock = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".slider-block",
+    start: "50% center",
+    end: "100% center",
+    scrub: 8,
+    toggleActions: "restart none none none",
+    /*     markers: {
+          startColor: "purple",
+          endColor: "fuchsia",
+          fontSize: "1rem"
+        } */
+  }
+});
+
+tlSliderBlock
+  .to(".slider-block-text", { "font-size": rem(18), duration: 2 })
+  .to(".slider-block-title", { "font-size": rem(50), duration: 2 });
+
+
+/* Drink-bottle-block */
+
+let tlDrinkBottelBlock = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".drink-main-info",
+    start: "60% center",
+    end: "135% center",
+    scrub: 5,
+    toggleActions: "restart none none none",
+    /*     markers: {
+          startColor: "purple",
+          endColor: "fuchsia",
+          fontSize: "1rem"
+        } */
+  }
+});
+
+tlDrinkBottelBlock
+  .to(".drink-block-waterfull", { opacity: 1, duration: 2.8, delay: 5.2 })
+  .to(".drink-block-question, .drink-block-text", { "font-size": rem(18), "line-height": rem(22), opacity: 1, duration: 2.8 })
+  .to(".drink-block-title", { "font-size": rem(60), "line-height": rem(73), opacity: 1, duration: 2.8 })
+  .to(".btn-buy", { "max-width": rem(200), "min-width": rem(200), "padding-top": rem(13), "padding-right": rem(58), "padding-bottom": rem(13), "padding-left": rem(58), "font-size": rem(20), "line-height": rem(24), "border-radius": rem(30), opacity: 1, duration: 2.8 })
+  .to(".btn-what", { "min-width": rem(271), "padding-top": rem(13), "padding-right": rem(35), "padding-bottom": rem(13), "padding-left": rem(35), "font-size": rem(20), "line-height": rem(24), "border-radius": rem(30), opacity: 1, duration: 2.8 });
+
+
+/* fairytale-block */
+
+/* let tlFairyTaleBlock = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".drink-main-info",
+    start: "60% center",
+    end: "135% center",
+    scrub: 5,
+    toggleActions: "restart none none none",
+    markers: {
+      startColor: "purple",
+      endColor: "fuchsia",
+      fontSize: "1rem"
     }
-    this.rightArrow.style.display = 'block'; this.touchNext = true
   }
-  else {                    // сдвиг вправо с циклом
-    let elm, buf, this$ = this;
-    for (let i = 0; i < num; i++) {
-      elm = this.crslList.lastElementChild;
-      buf = elm.cloneNode(true);
-      this.crslList.insertBefore(buf, this.crslList.firstElementChild);
-      this.crslList.removeChild(elm)
-    };
-    this.crslList.style.marginLeft = '-' + this.elemWidth * num + 'px';
-    let compStyle = window.getComputedStyle(this.crslList).marginLeft;
-    this.crslList.style.cssText = 'transition:margin ' + this.options.speed + 'ms ease;';
-    this.crslList.style.marginLeft = '0px';
-    setTimeout(function () {
-      this$.crslList.style.cssText = 'transition:none;'
-    }, this.options.speed)
+});
+
+tlFairyTaleBlock.to(".drink-block-waterfull", { opacity: 1, duration: 2.8, delat: 5.2 })
+  .to(".drink-block-question, .drink-block-text", { "font-size": rem(18), "line-height": rem(22), opacity: 1, duration: 2.8 })
+  .to(".drink-block-title", { "font-size": rem(60), "line-height": rem(73), opacity: 1, duration: 2.8 })
+  .to(".btn-buy", { "max-width": rem(200), "min-width": rem(200), "padding-top": rem(13), "padding-right": rem(58), "padding-bottom": rem(13), "padding-left": rem(58), "font-size": rem(20), "line-height": rem(24), "border-radius": rem(30), opacity: 1, duration: 2.8 })
+  .to(".btn-what", { "min-width": rem(271), "padding-top": rem(13), "padding-right": rem(35), "padding-bottom": rem(13), "padding-left": rem(35), "font-size": rem(20), "line-height": rem(24), "border-radius": rem(30), opacity: 1, duration: 2.8 }); */
+
+/* CRAZYCAP-BLOCK */
+
+let tlCrazyCapBlock = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".crazycap-block",
+    start: "60% center",
+    end: "115% center",
+    scrub: 5,
+    toggleActions: "restart none none none",
+    /*     markers: {
+          startColor: "purple",
+          endColor: "fuchsia",
+          fontSize: "1rem"
+        } */
   }
-};
+});
 
-Ant.prototype.elemNext = function (num) {
-  num = num || 1;
+tlCrazyCapBlock.to(".crazycap-img", { width: rem(68), height: rem(89), "margin-top": rem(277), opacity: 1, duration: 2.8 })
+  .to(".crazycap-block-title", { "font-size": rem(40), "line-height": rem(48), "margin-top": rem(70), "margin-right": "auto", "margin-bottom": rem(28), "margin-left": "auto", opacity: 1, duration: 2.8 })
+  .to(".crazycap-block-text", { "font-size": rem(18), "line-height": rem(22), "margin-bottom": rem(90), opacity: 1, duration: 2.8 })
+  .to(".crazycap-block-btn", { "min-width": rem(282), "padding-top": rem(13), "padding-right": rem(39), "padding-bottom": rem(13), "padding-left": rem(39), "font-size": rem(20), "line-height": rem(24), "border-radius": rem(30), opacity: 1, duration: 2.8 })
 
-  if (this.options.dots) this.dotOn(this.currentElement);
-  this.currentElement += num;
-  if (this.currentElement >= this.dotsVisible) this.currentElement = 0;
-  if (this.options.dots) this.dotOff(this.currentElement);
+/* REVIEWS-BLOCK */
 
-  if (!this.options.loop) {  // сдвиг влево без цикла
-    this.currentOffset -= this.elemWidth * num;
-    this.crslList.style.marginLeft = this.currentOffset + 'px';
-    if (this.currentElement == this.dotsVisible - 1) {
-      this.rightArrow.style.display = 'none'; this.touchNext = false
-    }
-    this.leftArrow.style.display = 'block'; this.touchPrev = true
+let tlReviewsBlock = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".reviews-block",
+    start: "115% center",
+    end: "145% center",
+    scrub: 5,
+    toggleActions: "restart none none none",
+    /*     markers: {
+          startColor: "purple",
+          endColor: "fuchsia",
+          fontSize: "1rem"
+        } */
   }
-  else {                    // сдвиг влево с циклом
-    let elm, buf, this$ = this;
-    this.crslList.style.cssText = 'transition:margin ' + this.options.speed + 'ms ease;';
-    this.crslList.style.marginLeft = '-' + this.elemWidth * num + 'px';
-    setTimeout(function () {
-      this$.crslList.style.cssText = 'transition:none;';
-      for (let i = 0; i < num; i++) {
-        elm = this$.crslList.firstElementChild;
-        buf = elm.cloneNode(true); this$.crslList.appendChild(buf);
-        this$.crslList.removeChild(elm)
-      };
-      this$.crslList.style.marginLeft = '22px'
-    }, this.options.speed)
+});
+
+tlReviewsBlock
+  .to(".reviews-block-title", { y: 0, opacity: 0.5, duration: 1 })
+  .to(".reviews-block-title", { y: 20, opacity: 1, duration: 1 })
+  .to(".reviews-block-content-margaret", { x: 20, y: -20, opacity: 0.5, duration: 1 })
+  .to(".reviews-block-content-margaret", { x: 0, y: 0, opacity: 1, duration: 1 })
+  .to(".reviews-block-content-peter", { y: -20, opacity: 0.5, duration: 1 })
+  .to(".reviews-block-content-peter", { x: 0, y: 0, opacity: 1, duration: 1 })
+  .to(".reviews-block-content-oisha", { x: -20, y: -20, opacity: 0.5, duration: 1 })
+  .to(".reviews-block-content-oisha", { x: 0, y: 0, opacity: 1, duration: 1 })
+
+
+/* SOCIAL-BLOCK */
+
+let tlSochialBlock = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".social-block",
+    start: "30% center",
+    end: "60% center",
+    scrub: 5,
+    toggleActions: "restart none none none",
+    /*     markers: {
+          startColor: "purple",
+          endColor: "fuchsia",
+          fontSize: "1rem"
+        } */
   }
-};
+});
 
-Ant.prototype.dotOn = function (num) {
-  this.indicatorDotsAll[num].style.cssText = 'background-color:D9D9D9; cursor:pointer;'
-};
+tlSochialBlock.to(".social-block-title", { "font-size": rem(40), "line-height": rem(48), opacity: 1, duration: 2.8 })
+  .to(".social-block-text", { "font-size": rem(18), "line-height": rem(22), opacity: 1, duration: 2.8 })
+  .to(".social-block-image", { "scaleX": 1, "scaleY": 1, duration: 1 })
 
-Ant.prototype.dotOff = function (num) {
-  this.indicatorDotsAll[num].style.cssText = 'background-color:#D01717; cursor:default;'
-};
 
-Ant.initialize = function (that) {
+// Slick-slider
 
-  // Constants
-  that.elemCount = that.crslElements.length; // Количество элементов
-  that.dotsVisible = that.elemCount;         // Число видимых точек
-  let elemStyle = window.getComputedStyle(that.crslElemFirst);
-  that.elemWidth = that.crslElemFirst.offsetWidth +  // Ширина элемента (без margin)
-    parseInt(elemStyle.marginLeft) + parseInt(elemStyle.marginRight);
-
-  // Variables
-  that.currentElement = 0; that.currentOffset = 0;
-  that.touchPrev = true; that.touchNext = true;
-  let xTouch, yTouch, xDiff, yDiff, stTime, mvTime;
-  let bgTime = getTime();
-
-  // Functions
-  function getTime() {
-    return new Date().getTime();
-  };
-  function setAutoScroll() {
-    that.autoScroll = setInterval(function () {
-      let fnTime = getTime();
-      if (fnTime - bgTime + 10 > that.options.interval) {
-        bgTime = fnTime; that.elemNext()
-      }
-    }, that.options.interval)
-  };
-
-  // Start initialization
-  if (that.elemCount <= that.options.elemVisible) {   // Отключить навигацию
-    that.options.auto = false; that.options.touch = false;
-    that.options.arrows = false; that.options.dots = false;
-    that.leftArrow.style.display = 'none'; that.rightArrow.style.display = 'none'
-  };
-
-  if (!that.options.loop) {       // если нет цикла - уточнить количество точек
-    that.dotsVisible = that.elemCount - that.options.elemVisible + 1;
-    that.leftArrow.style.display = 'none';  // отключить левую стрелку
-    that.touchPrev = false;    // отключить прокрутку прикосновением вправо
-    that.options.auto = false; // отключить автопркрутку
-  }
-  else if (that.options.auto) {   // инициализация автопрокруки
-    setAutoScroll();
-    // Остановка прокрутки при наведении мыши на элемент
-    that.crslList.addEventListener('mouseenter', function () {
-      clearInterval(that.autoScroll)
-    }, false);
-    that.crslList.addEventListener('mouseleave', setAutoScroll, false)
-  };
-
-  if (that.options.touch) {   // инициализация прокрутки прикосновением
-    that.crslList.addEventListener('touchstart', function (e) {
-      xTouch = parseInt(e.touches[0].clientX);
-      yTouch = parseInt(e.touches[0].clientY);
-      stTime = getTime()
-    }, false);
-    that.crslList.addEventListener('touchmove', function (e) {
-      if (!xTouch || !yTouch) return;
-      xDiff = xTouch - parseInt(e.touches[0].clientX);
-      yDiff = yTouch - parseInt(e.touches[0].clientY);
-      mvTime = getTime();
-      if (Math.abs(xDiff) > 15 && Math.abs(xDiff) > Math.abs(yDiff) && mvTime - stTime < 75) {
-        stTime = 0;
-        if (that.touchNext && xDiff > 0) {
-          bgTime = mvTime; that.elemNext()
-        }
-        else if (that.touchPrev && xDiff < 0) {
-          bgTime = mvTime; that.elemPrev()
-        }
-      }
-    }, false)
-  };
-
-  if (that.options.arrows) {  // инициализация стрелок
-    if (!that.options.loop) that.crslList.style.cssText =
-      'transition:margin ' + that.options.speed + 'ms ease;';
-    that.leftArrow.addEventListener('click', function () {
-      let fnTime = getTime();
-      if (fnTime - bgTime > that.options.speed) {
-        bgTime = fnTime; that.elemPrev()
-      }
-    }, false);
-    that.rightArrow.addEventListener('click', function () {
-      let fnTime = getTime();
-      if (fnTime - bgTime > that.options.speed) {
-        bgTime = fnTime; that.elemNext()
-      }
-    }, false)
-  }
-  else {
-    that.leftArrow.style.display = 'none';
-    that.rightArrow.style.display = 'none'
-  };
-
-  if (that.options.dots) {  // инициализация индикаторных точек
-    let sum = '', diffNum;
-    for (let i = 0; i < that.dotsVisible; i++) {
-      sum += '<span class="ant-dot"></span>'
-    };
-    that.indicatorDots.innerHTML = sum;
-    that.indicatorDotsAll = that.crslRoot.querySelectorAll('span.ant-dot');
-    // Назначаем точкам обработчик события 'click'
-    for (let n = 0; n < that.dotsVisible; n++) {
-      that.indicatorDotsAll[n].addEventListener('click', function () {
-        diffNum = Math.abs(n - that.currentElement);
-        if (n < that.currentElement) {
-          bgTime = getTime(); that.elemPrev(diffNum)
-        }
-        else if (n > that.currentElement) {
-          bgTime = getTime(); that.elemNext(diffNum)
-        }
-        // Если n == that.currentElement ничего не делаем
-      }, false)
-    };
-    that.dotOff(0);  // точка[0] выключена, остальные включены
-    for (let i = 1; i < that.dotsVisible; i++) {
-      that.dotOn(i)
-    }
-  }
-};
-
-new Ant();
+$(document).ready(function () {
+  $('.slider-carousel').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    centerMode: true,
+    variableWidth: true
+  });
+});
 
 
 
 
 
-// Анимация по скроллу
 
-function anim() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Аnimation by scroll
+
+/* function anim() {
   var anims = document.querySelectorAll(".anim");
   for (var i = 0; i < anims.length; i++) {
     var windowHeight = window.innerHeight;
@@ -253,4 +396,4 @@ function anim() {
 
 window.addEventListener("scroll", anim);
 
-anim();
+anim(); */
