@@ -1,3 +1,20 @@
+// Slick-slider
+
+$(document).ready(function () {
+  $('.slider-carousel').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    centerMode: true,
+    variableWidth: true
+  });
+});
+
+
 // Scroll-animation GSAP
 
 const rem = (px, base = 16) => {
@@ -333,21 +350,7 @@ tlSochialBlock.to(".social-block-title", { "font-size": rem(40), "line-height": 
   .to(".social-block-image", { "scaleX": 1, "scaleY": 1, duration: 1 })
 
 
-// Slick-slider
 
-$(document).ready(function () {
-  $('.slider-carousel').slick({
-    dots: true,
-    infinite: true,
-    speed: 500,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    centerMode: true,
-    variableWidth: true
-  });
-});
 
 
 
