@@ -36,10 +36,6 @@ a {
   box-sizing: border-box;
 }
 
-.wrapper {
-  /* border: 0.1px solid red; */
-}
-
 /* header */
 
 .header-block {
@@ -183,7 +179,7 @@ a {
   z-index: 3;
 }
 
-.main-bottel-stopper {
+.main-bottle-stopper {
   position: fixed;
   top: rem(396);
   width: rem(92);
@@ -191,7 +187,7 @@ a {
   z-index: 1;
 }
 
-.main-bottel-half-stopper {
+.main-bottle-half-stopper {
   position: fixed;
   top: rem(396);
   width: rem(86);
@@ -199,7 +195,7 @@ a {
   z-index: 3;
 }
 
-.main-bottel {
+.main-bottle {
   position: fixed;
   top: rem(412);
   margin-left: rem(-6);
@@ -218,7 +214,6 @@ a {
   position: relative;
   width: 100%;
   height: 100%;
-  /* max-width: rem(1370); */
   height: rem(900);
   overflow: hidden;
 }
@@ -227,25 +222,25 @@ a {
   position: absolute;
   right: rem(-250);
   height: 100%;
-  /* object-fit: cover; */
+  object-fit: cover;
 }
 
 video {
   &::-webkit-media-controls-panel {
-    display: none;
     display: none;
   }
 }
 
 .about-right {
   position: relative;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  /*   min-width: rem(685); */
+  min-width: rem(685);
   height: rem(900);
   background-color: #333333;
+  overflow: hidden;
 
   ul {
     display: flex;
@@ -274,7 +269,6 @@ video {
     background-size: cover;
     background-position: center;
     content: "";
-    /* left: rem(-20); */
   }
 }
 
@@ -306,7 +300,6 @@ video {
   justify-content: center;
   align-items: center;
   width: 100%;
-  /*   min-width: rem(685); */
   height: rem(900);
   background-color: #333333;
 
@@ -340,15 +333,15 @@ video {
   }
 }
 
-/* Color-bottel-block */
+/* Color-bottle-block */
 
-.color-bottel-block {
+.color-bottle-block {
   position: relative;
   display: flex;
   justify-content: center;
 }
 
-.color-bottel-title {
+.color-bottle-title {
   position: absolute;
   width: 100%;
   max-width: rem(444);
@@ -363,7 +356,7 @@ video {
   transform: translateX(rem(-3000));
 }
 
-.color-bottel-text {
+.color-bottle-text {
   position: absolute;
   width: 100%;
   max-width: rem(270);
@@ -381,7 +374,7 @@ video {
   margin-top: rem(499);
 }
 
-.color-bottel-main-img {
+.color-bottle-main-img {
   margin: rem(147) rem(102) rem(147) rem(58);
 
   img {
@@ -390,13 +383,13 @@ video {
   }
 }
 
-.color-bottel-images {
+.color-bottle-images {
   display: flex;
   flex-direction: column;
   margin-top: rem(102);
 }
 
-.color-bottel-small-img {
+.color-bottle-small-img {
   width: rem(140);
   height: rem(170);
   margin-bottom: rem(35);
@@ -476,7 +469,7 @@ video {
   opacity: 0;
 }
 
-.pocket-yellow-bottel-img {
+.pocket-yellow-bottle-img {
   position: absolute;
   height: rem(272);
   width: rem(305);
@@ -489,7 +482,6 @@ video {
 .effects-block {
   min-height: rem(900);
   display: flex;
-  /* margin: rem(149) rem(109) rem(122) rem(157); */
   justify-content: center;
   align-items: center;
   gap: rem(118);
@@ -572,14 +564,11 @@ video {
 /* slider-block */
 
 .slider-block {
-  overflow: hidden;
-  height: 100vh;
-}
-
-.slider-block {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
+  height: rem(900);
 }
 
 .slider-block-text {
@@ -625,7 +614,7 @@ video {
 .carousel-element-1 {
   height: rem(355);
   width: rem(464);
-  background-image: url(../img/slider-block-1.png);
+  background-image: url(../img/slider-block-1.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -634,7 +623,7 @@ video {
 .carousel-element-2 {
   height: rem(355);
   width: rem(290);
-  background-image: url(../img/slider-block-2.1.png);
+  background-image: url(../img/slider-block-2.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -643,7 +632,7 @@ video {
 .carousel-element-3 {
   height: rem(355);
   width: rem(464);
-  background-image: url(../img/slider-block-3.png);
+  background-image: url(../img/slider-block-3.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -652,7 +641,7 @@ video {
 .carousel-element-4 {
   height: rem(355);
   width: rem(464);
-  background-image: url(../img/slider-block-4.png);
+  background-image: url(../img/slider-block-4.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -661,7 +650,7 @@ video {
 .carousel-element-5 {
   height: rem(355);
   width: rem(600);
-  background-image: url(../img/slider-block-5.png);
+  background-image: url(../img/slider-block-5.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -670,7 +659,7 @@ video {
 .carousel-element-6 {
   height: rem(355);
   width: rem(464);
-  background-image: url(../img/slider-block-6.png);
+  background-image: url(../img/slider-block-6.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -679,7 +668,7 @@ video {
 .carousel-element-7 {
   height: rem(355);
   width: rem(464);
-  background-image: url(../img/slider-block-7.png);
+  background-image: url(../img/slider-block-7.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -836,8 +825,7 @@ video {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  /*   width: 100%;
-  height: 100%; */
+  height: rem(900);
 }
 
 .winter-backgroung-video {
@@ -858,6 +846,7 @@ video {
   line-height: rem(22);
   color: #ffffff;
   z-index: 1;
+  opacity: 0;
 }
 
 .fairytale-block-title {
@@ -869,18 +858,19 @@ video {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  font-size: rem(40);
-  line-height: rem(55);
+  font-size: rem(27);
+  line-height: rem(37);
   text-align: center;
   color: #ffffff;
   z-index: 1;
+  opacity: 0;
 
   span {
     color: #05a0a8;
   }
 }
 
-.fairytale-block-bottel-img {
+.fairytale-block-bottle-img {
   position: absolute;
   bottom: 0;
   margin-bottom: rem(35);
@@ -953,14 +943,19 @@ video {
 
 .reviews-block-content-margaret {
   opacity: 0;
+  margin-top: 200px;
+  margin-right: 400px;
 }
 
 .reviews-block-content-peter {
   opacity: 0;
+  margin-top: 200px;
 }
 
 .reviews-block-content-oisha {
   opacity: 0;
+  margin-top: 200px;
+  margin-left: 400px;
 }
 
 .reviews-block-title {
@@ -1020,6 +1015,7 @@ video {
   line-height: rem(48);
   text-align: center;
   color: #333333;
+  opacity: 0;
 }
 
 .social-block-text {
@@ -1033,6 +1029,7 @@ video {
   line-height: rem(22);
   text-align: center;
   color: #d01717;
+  opacity: 0;
 }
 
 .social-block-image {

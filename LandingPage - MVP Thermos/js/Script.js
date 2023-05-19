@@ -1,3 +1,16 @@
+// Reload page on top
+
+$(document).ready(function () {
+  $('html, body').scrollTop(0);
+
+  $(window).on('load', function () {
+    setTimeout(function () {
+      $('html, body').scrollTop(0);
+    }, 0);
+  });
+});
+
+
 // Slick-slider
 
 $(document).ready(function () {
@@ -14,7 +27,6 @@ $(document).ready(function () {
   });
 });
 
-
 // Scroll-animation GSAP
 
 const rem = (px, base = 16) => {
@@ -23,144 +35,87 @@ const rem = (px, base = 16) => {
 
 gsap.registerPlugin(ScrollTrigger);
 
-/* animateOnClick */
+let tl = gsap.timeline({ defaults: { duration: 1, ease: CustomEase.create("custom", "M0,0 C0,0.21 0.66,0.99 1,1 ") } })
 
-window.addEventListener("scroll", animateOnClick);
-window.addEventListener("click", animateOnClick);
+tl.to(".main-bottle", { y: rem(107) })
+  .to(".main-bottle-half-stopper, .main-bottle-stopper", { y: rem(-291), delay: -1 })
+  .to(".main-circle", { width: rem(515), height: rem(515), "margin-top": rem(15), "margin-bottom": rem(259), delay: -1 })
+  .to(".btn-main, .main-title-text, .main-text", { opacity: 1, delay: 0 });
 
-function animateOnClick() {
 
-  gsap.to(".main-bottel", { y: 107, duration: 2, ease: CustomEase.create("custom", "M0,0 C0,0.21 0.66,0.99 1,1 ") });
-
-  gsap.to(".main-bottel-half-stopper, .main-bottel-stopper", {
-    y: rem(-291),
-    duration: 2
-  });
-
-  gsap.to(".main-circle", { width: rem(515), height: rem(515), "margin-top": rem(15), "margin-bottom": rem(259), duration: 2 });
-
-  gsap.to(".btn-main, .main-title-text, .main-text", { opacity: 1, duration: 2.4, delay: 1 });
-}
-
-let tlMainBottel = gsap.timeline({
+let tlMainbottle = gsap.timeline({
   scrollTrigger: {
-    start: "top top",
+    start: ".5% top",
     end: "12% center",
     scrub: 0.5,
     toggleActions: "play none none none",
-    /*     markers: {
-          startColor: "purple",
-          endColor: "fuchsia",
-          fontSize: "1rem"
-        } */
   }
 })
 
-tlMainBottel.to(".main-bottel", { y: rem(-290), duration: 20, })
-  .to(".main-title-text, .btn-main", { opacity: 0, duration: 2 })
+tlMainbottle.to(".main-bottle", { y: rem(-290), duration: 20, })
+  .to(".main-title-text, .btn-main", { opacity: 0, duration: 10 })
 
 
-tlMainBottel.to(".main-bottel, .main-bottel-half-stopper, .main-bottel-stopper", {
+tlMainbottle.to(".main-bottle, .main-bottle-half-stopper, .main-bottle-stopper", {
   opacity: 0,
   scrollTrigger: {
     trigger: ".use-block",
     start: "bottom bottom",
     end: "bottom top",
-    scrub: true,
+    scrub: 1,
     toggleActions: "restart none none none",
-    /*     markers: {
-          startColor: "purple",
-          endColor: "fuchsia",
-          fontSize: "1rem"
-        } */
   }
 });
-
-/* let tlMainElem = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".use-block",
-    start: "top bottom",
-    end: "center center",
-    scrub: true,
-    toggleActions: "restart none none none", */
-/*     markers: {
-      startColor: "purple",
-      endColor: "fuchsia",
-      fontSize: "1rem"
-    } */
-/*   }
-}); */
-
-
-
-/* tlMainElem.to(".btn-main", { opacity: 1, duration: 1, delay: 0.5 })
-  .to(".main - title - text", { opacity: 1, duration: 1 }) */
-
-/* gsap.to(".about-text-quality", { x: 0, opacity: 1, duration: 1.2 });
-gsap.to(".about-text-tightness", { x: 0, opacity: 1, duration: 1.4 });
-gsap.to(".about-text-temperature", { x: 0, opacity: 1, duration: 1.6 }); */
 
 /* About-block */
 
 let tlAboutText = gsap.timeline({
+  defaults: { x: 0, opacity: 1, ease: "power4.out" },
   scrollTrigger: {
     trigger: ".about",
-    start: "top bottom",
-    end: "center center",
+    start: "50px center",
+    end: "45% center",
     scrub: true,
     toggleActions: "restart none none none",
-    /*     markers: {
-          startColor: "purple",
-          endColor: "fuchsia",
-          fontSize: "1rem"
-        } */
   }
 });
 
-tlAboutText.to(".about-text-quality", { x: 0, opacity: 1, duration: 1, delay: 0.5 })
-  .to(".about-text-tightness", { x: 0, opacity: 1, duration: 1 })
-  .to(".about-text-temperature", { x: 0, opacity: 1, duration: 1 });
+tlAboutText.to(".about-text-quality", { duration: 10 })
+  .to(".about-text-tightness", { duration: 10, delay: 1 })
+  .to(".about-text-temperature", { duration: 10, delay: 2 });
 
 /* Use-block */
 
 let tlUseText = gsap.timeline({
+  defaults: { x: 0, opacity: 1, ease: "power4.out" },
   scrollTrigger: {
     trigger: ".use-block",
-    start: "top bottom",
-    end: "center center",
-    scrub: true,
+    start: "50px center",
+    end: "45% center",
+    scrub: 1,
     toggleActions: "restart none none none",
-    /*     markers: {
-          startColor: "purple",
-          endColor: "fuchsia",
-          fontSize: "1rem"
-        } */
   }
 });
 
-tlUseText.to(".use-text-nature", { x: 0, opacity: 1, duration: 1, delay: 0.5 })
-  .to(".use-text-gym", { x: 0, opacity: 1, duration: 1 })
-  .to(".use-text-color", { x: 0, opacity: 1, duration: 1 });
+tlUseText.to(".use-text-nature", { duration: 10 })
+  .to(".use-text-gym", { duration: 10, delay: 1 })
+  .to(".use-text-color", { duration: 10, delay: 2 });
 
 /* Color-bottle-block */
 
 let tlColorBottle = gsap.timeline({
+  defaults: { x: 0, opacity: 1 },
   scrollTrigger: {
-    trigger: ".color-bottel-block",
+    trigger: ".color-bottle-block",
     start: "top center",
-    end: "center center",
+    end: "45% center",
     scrub: true,
     toggleActions: "restart none none none",
-    /*     markers: {
-          startColor: "purple",
-          endColor: "fuchsia",
-          fontSize: "1rem"
-        } */
   }
 });
 
-tlColorBottle.to(".color-bottel-title", { x: 0, opacity: 1, duration: 100 })
-  .to(".color-bottel-text", { x: 0, opacity: 1, duration: 100 });
+tlColorBottle.to(".color-bottle-title", { duration: 100, ease: "power4.out" })
+  .to(".color-bottle-text", { duration: 5, ease: "power4.out" });
 
 /* Pocket-content-block */
 
@@ -171,114 +126,86 @@ let tlPocket = gsap.timeline({
     end: "80% center",
     scrub: 8,
     toggleActions: "restart none none none",
-    /*     markers: {
-          startColor: "purple",
-          endColor: "fuchsia",
-          fontSize: "1rem"
-        } */
   }
 });
 
-tlPocket.to(".pocket-backgroung-video-box", { height: rem(840), duration: 10, delay: 3 })
-  .to(".pocket-block-btn", { opacity: 1, duration: 10, delay: 8 })
-  .to(".pocket-block-title", { opacity: 1, "font-size": rem(52), "line-height": rem(63), duration: 10, delay: 10 })
-  .to(".pocket-woman-img, .pocket-yellow-bottel-img", { opacity: 1, duration: 2, delay: 1 })
+tlPocket.to(".pocket-backgroung-video-box", { height: rem(840), duration: 1, delay: 0 })
+  .to(".pocket-block-title", { opacity: 1, "font-size": rem(52), "line-height": rem(63), duration: 1, delay: 0 })
+  .to(".pocket-block-btn", { opacity: 1, duration: 1, delay: 0 })
+  .to(".pocket-woman-img, .pocket-yellow-bottle-img", { opacity: 1, duration: 1, delay: -2 })
 
 
-/* effects-block */
+/* Effects-block */
 
 let tlEffectsBlock = gsap.timeline({
   scrollTrigger: {
     trigger: ".effects-block",
-    start: "60% center",
+    start: "50% center",
     end: "80% center",
     scrub: 8,
     toggleActions: "restart none none none",
-    /*     markers: {
-          startColor: "purple",
-          endColor: "fuchsia",
-          fontSize: "1rem"
-        } */
   }
 });
 
 tlEffectsBlock
   .to(".effects-title", { "font-size": rem(40), "line-height": rem(48), opacity: 1, duration: 2 })
-  .to(".effects-comment", { "font-size": rem(14), "line-height": rem(17), opacity: 1, color: "#d01717", duration: 2 })
-  .to(".effect-text", { "font-size": rem(15), "line-height": rem(19), opacity: 1, duration: 2 })
-  .to(".effect-right-block", { width: rem(495), height: rem(820), opacity: 1, duration: 1 })
+  .to(".effects-comment", { "font-size": rem(14), "line-height": rem(17), opacity: 1, color: "#d01717", duration: 2, delay: -2 })
+  .to(".effect-text", { "font-size": rem(15), "line-height": rem(19), opacity: 1, duration: 2, delay: -2 })
+  .to(".effect-right-block", { width: rem(495), height: rem(820), opacity: 1, duration: 2, delay: -2 })
 
 /* Slider-block */
 
 let tlSliderBlock = gsap.timeline({
   scrollTrigger: {
     trigger: ".slider-block",
-    start: "50% center",
-    end: "100% center",
+    start: "40% center",
+    end: "80% center",
     scrub: 8,
     toggleActions: "restart none none none",
-    /*     markers: {
-          startColor: "purple",
-          endColor: "fuchsia",
-          fontSize: "1rem"
-        } */
   }
 });
 
 tlSliderBlock
   .to(".slider-block-text", { "font-size": rem(18), duration: 2 })
-  .to(".slider-block-title", { "font-size": rem(50), duration: 2 });
+  .to(".slider-block-title", { "font-size": rem(50), duration: 2, delay: -2 });
 
 
 /* Drink-bottle-block */
 
-let tlDrinkBottelBlock = gsap.timeline({
+let tlDrinkbottleBlock = gsap.timeline({
   scrollTrigger: {
     trigger: ".drink-main-info",
-    start: "60% center",
+    start: "30% center",
     end: "135% center",
     scrub: 5,
     toggleActions: "restart none none none",
-    /*     markers: {
-          startColor: "purple",
-          endColor: "fuchsia",
-          fontSize: "1rem"
-        } */
   }
 });
 
-tlDrinkBottelBlock
-  .to(".drink-block-waterfull", { opacity: 1, duration: 2.8, delay: 5.2 })
-  .to(".drink-block-question, .drink-block-text", { "font-size": rem(18), "line-height": rem(22), opacity: 1, duration: 2.8 })
-  .to(".drink-block-title", { "font-size": rem(60), "line-height": rem(73), opacity: 1, duration: 2.8 })
-  .to(".btn-buy", { "max-width": rem(200), "min-width": rem(200), "padding-top": rem(13), "padding-right": rem(58), "padding-bottom": rem(13), "padding-left": rem(58), "font-size": rem(20), "line-height": rem(24), "border-radius": rem(30), opacity: 1, duration: 2.8 })
-  .to(".btn-what", { "min-width": rem(271), "padding-top": rem(13), "padding-right": rem(35), "padding-bottom": rem(13), "padding-left": rem(35), "font-size": rem(20), "line-height": rem(24), "border-radius": rem(30), opacity: 1, duration: 2.8 });
+tlDrinkbottleBlock
+  .to(".drink-block-waterfull", { opacity: 1, duration: 3, delay: 3 })
+  .to(".drink-block-question, .drink-block-text", { "font-size": rem(18), "line-height": rem(22), opacity: 1, duration: 3 })
+  .to(".drink-block-title", { "font-size": rem(60), "line-height": rem(73), opacity: 1, duration: 3, delay: -3 })
+  .to(".btn-buy", { "max-width": rem(200), "min-width": rem(200), "padding-top": rem(13), "padding-right": rem(58), "padding-bottom": rem(13), "padding-left": rem(58), "font-size": rem(20), "line-height": rem(24), "border-radius": rem(30), opacity: 1, duration: 3 })
+  .to(".btn-what", { "min-width": rem(271), "padding-top": rem(13), "padding-right": rem(35), "padding-bottom": rem(13), "padding-left": rem(35), "font-size": rem(20), "line-height": rem(24), "border-radius": rem(30), opacity: 1, duration: 3, delay: -3 });
 
 
-/* fairytale-block */
+/* Fairytale-block */
 
-/* let tlFairyTaleBlock = gsap.timeline({
+let tlFairyTaleBlock = gsap.timeline({
   scrollTrigger: {
-    trigger: ".drink-main-info",
-    start: "60% center",
-    end: "135% center",
+    trigger: ".fairytale-block",
+    start: "55% center",
+    end: "95% center",
     scrub: 5,
     toggleActions: "restart none none none",
-    markers: {
-      startColor: "purple",
-      endColor: "fuchsia",
-      fontSize: "1rem"
-    }
   }
 });
 
-tlFairyTaleBlock.to(".drink-block-waterfull", { opacity: 1, duration: 2.8, delat: 5.2 })
-  .to(".drink-block-question, .drink-block-text", { "font-size": rem(18), "line-height": rem(22), opacity: 1, duration: 2.8 })
-  .to(".drink-block-title", { "font-size": rem(60), "line-height": rem(73), opacity: 1, duration: 2.8 })
-  .to(".btn-buy", { "max-width": rem(200), "min-width": rem(200), "padding-top": rem(13), "padding-right": rem(58), "padding-bottom": rem(13), "padding-left": rem(58), "font-size": rem(20), "line-height": rem(24), "border-radius": rem(30), opacity: 1, duration: 2.8 })
-  .to(".btn-what", { "min-width": rem(271), "padding-top": rem(13), "padding-right": rem(35), "padding-bottom": rem(13), "padding-left": rem(35), "font-size": rem(20), "line-height": rem(24), "border-radius": rem(30), opacity: 1, duration: 2.8 }); */
+tlFairyTaleBlock.to(".fairytale-block-text", { opacity: 1, duration: 3 })
+  .to(".fairytale-block-title", { "font-size": rem(40), "line-height": rem(55), opacity: 1, duration: 3, delay: -3 })
 
-/* CRAZYCAP-BLOCK */
+/* Crazycap-block */
 
 let tlCrazyCapBlock = gsap.timeline({
   scrollTrigger: {
@@ -287,67 +214,48 @@ let tlCrazyCapBlock = gsap.timeline({
     end: "115% center",
     scrub: 5,
     toggleActions: "restart none none none",
-    /*     markers: {
-          startColor: "purple",
-          endColor: "fuchsia",
-          fontSize: "1rem"
-        } */
   }
 });
 
-tlCrazyCapBlock.to(".crazycap-img", { width: rem(68), height: rem(89), "margin-top": rem(277), opacity: 1, duration: 2.8 })
-  .to(".crazycap-block-title", { "font-size": rem(40), "line-height": rem(48), "margin-top": rem(70), "margin-right": "auto", "margin-bottom": rem(28), "margin-left": "auto", opacity: 1, duration: 2.8 })
-  .to(".crazycap-block-text", { "font-size": rem(18), "line-height": rem(22), "margin-bottom": rem(90), opacity: 1, duration: 2.8 })
-  .to(".crazycap-block-btn", { "min-width": rem(282), "padding-top": rem(13), "padding-right": rem(39), "padding-bottom": rem(13), "padding-left": rem(39), "font-size": rem(20), "line-height": rem(24), "border-radius": rem(30), opacity: 1, duration: 2.8 })
+tlCrazyCapBlock.to(".crazycap-img", { width: rem(68), height: rem(89), "margin-top": rem(277), opacity: 1, duration: 3 })
+  .to(".crazycap-block-title", { "font-size": rem(40), "line-height": rem(48), "margin-top": rem(70), "margin-right": "auto", "margin-bottom": rem(28), "margin-left": "auto", opacity: 1, duration: 3, delay: -3 })
+  .to(".crazycap-block-text", { "font-size": rem(18), "line-height": rem(22), "margin-bottom": rem(90), opacity: 1, duration: 3, delay: -3 })
+  .to(".crazycap-block-btn", { "min-width": rem(282), "padding-top": rem(13), "padding-right": rem(39), "padding-bottom": rem(13), "padding-left": rem(39), "font-size": rem(20), "line-height": rem(24), "border-radius": rem(30), opacity: 1, duration: 3, delay: -3 })
 
-/* REVIEWS-BLOCK */
+/* Reviews-block */
 
 let tlReviewsBlock = gsap.timeline({
   scrollTrigger: {
     trigger: ".reviews-block",
-    start: "115% center",
-    end: "145% center",
+    start: "55% center",
+    end: "75% center",
     scrub: 5,
     toggleActions: "restart none none none",
-    /*     markers: {
-          startColor: "purple",
-          endColor: "fuchsia",
-          fontSize: "1rem"
-        } */
   }
 });
 
 tlReviewsBlock
-  .to(".reviews-block-title", { y: 0, opacity: 0.5, duration: 1 })
-  .to(".reviews-block-title", { y: 20, opacity: 1, duration: 1 })
-  .to(".reviews-block-content-margaret", { x: 20, y: -20, opacity: 0.5, duration: 1 })
-  .to(".reviews-block-content-margaret", { x: 0, y: 0, opacity: 1, duration: 1 })
-  .to(".reviews-block-content-peter", { y: -20, opacity: 0.5, duration: 1 })
-  .to(".reviews-block-content-peter", { x: 0, y: 0, opacity: 1, duration: 1 })
-  .to(".reviews-block-content-oisha", { x: -20, y: -20, opacity: 0.5, duration: 1 })
-  .to(".reviews-block-content-oisha", { x: 0, y: 0, opacity: 1, duration: 1 })
+  .to(".reviews-block-title", { y: 20, opacity: 1, duration: 1, ease: "power4.out" })
+  .to(".reviews-block-content-margaret", { x: 400, y: -200, opacity: 1, duration: 1 })
+  .to(".reviews-block-content-peter", { x: 0, y: -200, opacity: 1, duration: 1, delay: -1 })
+  .to(".reviews-block-content-oisha", { x: -400, y: -200, opacity: 1, duration: 1, delay: -1 })
 
 
-/* SOCIAL-BLOCK */
+/* Social-block*/
 
 let tlSochialBlock = gsap.timeline({
   scrollTrigger: {
     trigger: ".social-block",
-    start: "30% center",
-    end: "60% center",
+    start: "40% center",
+    end: "100% center",
     scrub: 5,
     toggleActions: "restart none none none",
-    /*     markers: {
-          startColor: "purple",
-          endColor: "fuchsia",
-          fontSize: "1rem"
-        } */
   }
 });
 
-tlSochialBlock.to(".social-block-title", { "font-size": rem(40), "line-height": rem(48), opacity: 1, duration: 2.8 })
-  .to(".social-block-text", { "font-size": rem(18), "line-height": rem(22), opacity: 1, duration: 2.8 })
-  .to(".social-block-image", { "scaleX": 1, "scaleY": 1, duration: 1 })
+tlSochialBlock.to(".social-block-title", { opacity: 1, duration: 1 })
+  .to(".social-block-text", { opacity: 1, duration: 1, delay: -1 })
+  .to(".social-block-image", { "scaleX": 1, "scaleY": 1, duration: 1, delay: -1 })
 
 
 
@@ -357,46 +265,3 @@ tlSochialBlock.to(".social-block-title", { "font-size": rem(40), "line-height": 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Аnimation by scroll
-
-/* function anim() {
-  var anims = document.querySelectorAll(".anim");
-  for (var i = 0; i < anims.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = anims[i].getBoundingClientRect().top;
-    var elementVisible = 150;
-    if (elementTop < windowHeight - elementVisible) {
-      anims[i].classList.add("active");
-    } else {
-      anims[i].classList.remove("active");
-    }
-  }
-}
-
-window.addEventListener("scroll", anim);
-
-anim(); */
