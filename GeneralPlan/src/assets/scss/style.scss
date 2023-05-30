@@ -1,0 +1,104 @@
+@import "vendor/normalize";
+@import "fonts";
+@import "vars.scss";
+
+/* @import "mixins"; */
+
+/* Functions */
+
+@function rem($value) {
+    @return (($value)/16) + rem;
+}
+
+/* Default Styles */
+
+html {
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /*     color: $font-color; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    /* @include main-font; */
+    /*     color: $font-color; */
+    min-width: rem(320);
+    max-width: rem(1440);
+    /* padding: 0 rem(10); */
+    margin: 0 auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.page__wrapper {
+    max-width: rem(1440);
+    padding: 0 rem(20);
+    background-color: #2a2a2a;
+    box-sizing: border-box;
+}
+
+.container__part-info {
+    max-width: rem(270);
+    padding-right: rem(20);
+}
+
+.container__main-info {
+    width: rem(1130);
+}
+
+.title__block-num {
+    margin-top: rem(13);
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: rem(14);
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+/*Blocks*/
+@import "blocks/header.scss";
+@import "blocks/menu-mobile.scss";
+@import "blocks/main.scss";
+@import "blocks/about.scss";
+@import "blocks/area.scss";
+@import "blocks/benefit.scss";
+@import "blocks/cases.scss";
+@import "blocks/projects.scss";
+@import "blocks/reviews.scss";
+@import "blocks/values.scss";
+@import "blocks/customers.scss";
+@import "blocks/contact-form.scss";
+@import "blocks/footer.scss";
+@import "media.scss";

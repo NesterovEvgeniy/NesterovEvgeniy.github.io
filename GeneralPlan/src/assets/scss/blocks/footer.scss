@@ -1,0 +1,132 @@
+/*footer */
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+
+  margin-bottom: 30px;
+  border: 1px dashed #9b9b9b;
+}
+
+.footer__logo-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 15px;
+}
+
+.logo__img {
+  width: 131px;
+  height: 34px;
+  background-image: url(../img/header-logo.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.footer__copyright {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.footer__copyright-mob {
+  display: none;
+}
+
+.footer__nav ul {
+  padding: 20px 25px;
+  border-left: 1px dashed #9b9b9b;
+  border-right: 1px dashed #9b9b9b;
+  & li {
+    margin-bottom: 10px;
+
+    a {
+      flex-wrap: nowrap;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+  }
+
+  & li:nth-child(8) {
+    margin-bottom: 0px;
+  }
+}
+
+.footer__contact-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 25px;
+}
+
+.footer__address,
+.footer__phone,
+.footer__mail {
+  position: relative;
+  padding-left: 23px;
+  padding-bottom: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.footer__address::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  background-image: url(../img/footer-location-icon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer__phone::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 15px;
+  top: 3px;
+  left: 0;
+  background-image: url(../img/footer-phone-icon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer__mail::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 12px;
+  top: 6px;
+  left: 0;
+  background-image: url(../img/footer-mail-icon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer__social-block a {
+  display: inline-flex;
+  padding-right: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  text-transform: uppercase;
+}

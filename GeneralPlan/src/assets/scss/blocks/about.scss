@@ -1,0 +1,38 @@
+/* About block */
+
+.about__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: rem(80);
+}
+
+.title__text-wrapper {
+  position: relative;
+}
+
+.title__block {
+  max-width: rem(1019);
+  font-family: "Akrobat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: rem(45);
+  line-height: 110%;
+  letter-spacing: 0.03em;
+  text-indent: rem(60);
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.title__block::before {
+  position: absolute;
+  content: "";
+  width: rem(10);
+  height: rem(10);
+  left: 0;
+  top: rem(24);
+  background-color: $color-decor;
+  border-radius: 50%;
+}

@@ -1,0 +1,155 @@
+/* Contact-form block */
+
+.contact-form__inner {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: rem(120);
+  gap: rem(50);
+}
+
+.title__block {
+  margin-bottom: rem(40);
+  font-family: "Akrobat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: rem(45);
+  line-height: 110%;
+  letter-spacing: 0.03em;
+  text-indent: rem(60);
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.9;
+
+  ::before {
+    position: absolute;
+    content: "";
+    width: rem(10);
+    height: rem(10);
+    left: 0;
+    top: rem(24);
+    background-color: $color-decor;
+    border-radius: 50%;
+  }
+}
+
+.contact-form__title {
+  max-width: rem(978);
+}
+
+.contact-form {
+  min-height: rem(337);
+  padding: rem(20);
+  border: rem(1) dashed #9b9b9b;
+}
+
+.contact-form__input-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.form__personal-data input {
+  display: flex;
+  width: rem(531);
+  padding: rem(11);
+  margin-bottom: rem(20);
+  color: #ffffff;
+  background-color: #2a2a2a;
+  border: rem(1) solid #ffffff;
+  outline: none;
+
+  &::placeholder {
+    color: #ffffff;
+    opacity: 0.3;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  &:focus::placeholder {
+    color: transparent;
+  }
+}
+
+.legend__person-name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: rem(14);
+  line-height: rem(15);
+  color: #ffffff;
+
+  span {
+    color: $color-decor;
+  }
+}
+
+.form__personal-message textarea {
+  display: flex;
+  width: rem(527);
+  height: rem(166);
+  padding: rem(11);
+  margin-top: rem(15);
+  margin-bottom: rem(20);
+  color: #ffffff;
+  background-color: #2a2a2a;
+  border: rem(1) solid #ffffff;
+  outline: none;
+  resize: none;
+
+  &::placeholder {
+    color: #ffffff;
+    opacity: 0.3;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  &:focus::placeholder {
+    color: transparent;
+  }
+}
+
+.btn {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: rem(14);
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: $color-decor;
+  border-radius: rem(20);
+  cursor: pointer;
+}
+
+.application-btn {
+  width: 100%;
+  padding: rem(12) 0;
+}
+
+.conteiner-checkbox {
+  display: flex;
+  margin-top: rem(10);
+  gap: rem(10);
+
+  .application-checkbox {
+    background-color: #2a2a2a;
+    border: rem(1) solid #ffffff;
+  }
+
+  .checkbox-text {
+    max-width: 410px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(13);
+    line-height: rem(16);
+    color: #ffffff;
+    opacity: 0.7;
+
+    span {
+      color: rgb(172, 172, 208);
+    }
+  }
+}

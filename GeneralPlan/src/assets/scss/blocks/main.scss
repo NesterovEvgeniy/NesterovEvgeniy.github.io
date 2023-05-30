@@ -1,0 +1,46 @@
+/* Main block */
+
+.main-page__wrapper {
+  position: relative;
+}
+
+.main__inner {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: rem(23);
+}
+
+.main__title {
+  max-width: 790px;
+  display: inline-block;
+  font-family: "Akrobat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: rem(65);
+  line-height: rem(65);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  span {
+    display: block;
+  }
+}
+
+.main__img {
+  max-width: rem(1400);
+  height: rem(386);
+  margin-bottom: rem(113);
+  background-image: url(../img/main-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-info__wrapper {
+  position: relative;
+}
+
+.btn__main {
+  display: none;
+}
