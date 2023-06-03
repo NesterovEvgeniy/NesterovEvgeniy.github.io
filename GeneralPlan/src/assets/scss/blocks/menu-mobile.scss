@@ -3,13 +3,11 @@
   z-index: 10;
   right: 0;
 
-  display: block;
-
   width: rem(250);
   margin: rem(10) rem( 0) rem( 10) rem( 10);
   padding: rem(30) rem( 30) rem( 0) rem( 30);
 
-  transition: all 0.3s;
+  transition: all .5s;
   transform: translateX(1000%);
 
   border: rem(1) dashed rgb( 255, 255, 255);

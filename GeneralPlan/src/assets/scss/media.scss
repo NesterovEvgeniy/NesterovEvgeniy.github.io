@@ -130,6 +130,10 @@
     }
   }
 
+  .work__area ul li {
+    flex-basis: calc(100% / 2);
+  }
+
   .title__block {
     font-size: 42px;
     line-height: 46px;
@@ -383,6 +387,14 @@
   }
 }
 
+// 640px
+
+@media(max-width: 540px) {
+  .work__area ul li {
+    width: 100%;
+  }
+}
+
 // /540px
 
 @media(max-width: 540px) {
@@ -414,7 +426,7 @@
   }
 
   .btn__main {
-    right: 63px;
+    right: 188px;
     bottom: -50px;
 
     margin: auto;
@@ -428,6 +440,10 @@
 
   .area__inner {
     padding-bottom: rem(60);
+  }
+
+  .work__area ul li {
+    flex-basis: calc(100% / 1);
   }
 
   .benefit__inner {
@@ -465,7 +481,7 @@
 
   .projects__tabs {
     position: absolute;
-    top: 195px;
+    top: 165px;
 
     width: 1000px;
   }
