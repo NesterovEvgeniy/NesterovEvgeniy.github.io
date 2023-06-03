@@ -1,23 +1,27 @@
-/*footer */
+/* ooter */
 
 .footer__inner {
   display: grid;
-  grid-template-columns: 40% 20% 40%;
 
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+
   border: 1px dashed #9b9b9b;
+
+  grid-template-columns: 40% 20% 40%;
 }
 
 .footer__logo-block {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   padding: 20px 15px;
 }
 
 .logo__img {
   width: 131px;
   height: 34px;
+
   background-image: url(../img/header-logo.svg);
   background-repeat: no-repeat;
   background-size: auto;
@@ -25,11 +29,13 @@
 
 .footer__copyright {
   font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
   line-height: 21px;
+
   text-align: left;
+
   color: #ffffff;
 }
 
@@ -39,20 +45,25 @@
 
 .footer__nav ul {
   padding: 20px 25px;
-  border-left: 1px dashed #9b9b9b;
+
   border-right: 1px dashed #9b9b9b;
+  border-left: 1px dashed #9b9b9b;
+
   & li {
     margin-bottom: 10px;
 
     a {
-      flex-wrap: nowrap;
       font-family: "Inter";
-      font-style: normal;
-      font-weight: 500;
       font-size: 14px;
+      font-weight: 500;
+      font-style: normal;
       line-height: 17px;
+
+      flex-wrap: nowrap;
+
       letter-spacing: -0.01em;
       text-transform: uppercase;
+
       color: #ffffff;
     }
   }
@@ -66,30 +77,37 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   padding: 20px 25px;
 }
 
 .footer__address,
 .footer__phone,
 .footer__mail {
-  position: relative;
-  padding-left: 23px;
-  padding-bottom: 10px;
   font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
   line-height: 21px;
+
+  position: relative;
+
+  padding-bottom: 10px;
+  padding-left: 23px;
+
   color: #ffffff;
 }
 
 .footer__address::before {
   position: absolute;
-  content: "";
-  width: 14px;
-  height: 20px;
   top: 0;
   left: 0;
+
+  width: 14px;
+  height: 20px;
+
+  content: "";
+
   background-image: url(../img/footer-location-icon.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -97,11 +115,14 @@
 
 .footer__phone::before {
   position: absolute;
-  content: "";
-  width: 16px;
-  height: 15px;
   top: 3px;
   left: 0;
+
+  width: 16px;
+  height: 15px;
+
+  content: "";
+
   background-image: url(../img/footer-phone-icon.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -109,24 +130,35 @@
 
 .footer__mail::before {
   position: absolute;
-  content: "";
-  width: 16px;
-  height: 12px;
   top: 6px;
   left: 0;
+
+  width: 16px;
+  height: 12px;
+
+  content: "";
+
   background-image: url(../img/footer-mail-icon.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .footer__social-block a {
-  display: inline-flex;
-  padding-right: 10px;
   font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
   line-height: 21px;
-  color: #ffffff;
+
+  display: inline-flex;
+
+  padding-right: 10px;
+
   text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer__bottom {
+  background-color: #2a2a2a;
 }

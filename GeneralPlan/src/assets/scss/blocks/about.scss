@@ -12,7 +12,8 @@
   position: relative;
 }
 
-.title__block {
+.title__block-about {
+  display: flex;
   max-width: rem(1019);
   font-family: "Akrobat";
   font-style: normal;
