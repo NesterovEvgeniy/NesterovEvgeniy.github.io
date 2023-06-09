@@ -1,8 +1,16 @@
 // burger-button
 
-$(function () {
+const menuBtn = document.querySelector('.menu__btn');
+const menuList = document.querySelector('.menu-mobile__list');
 
-  $('.menu__btn').on('click', function () {
-    $('.menu-mobile__list').toggleClass('menu-mobile__list--active');
-  });
+menuBtn.addEventListener('click', function () {
+  menuList.classList.toggle('menu-mobile__list--active');
+});
+
+document.addEventListener('click', function (event) {
+  const сlickInsideMenu = menuList.contains(event.target) || menuBtn.contains(event.target);
+
+  if (!сlickInsideMenu) {
+    menuList.classList.remove('menu-mobile__list--active');
+  }
 });

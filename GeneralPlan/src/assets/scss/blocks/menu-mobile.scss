@@ -7,7 +7,7 @@
   margin: rem(10) rem( 0) rem( 10) rem( 10);
   padding: rem(30) rem( 30) rem( 0) rem( 30);
 
-  transition: all .5s;
+  transition: all 1.5s;
   transform: translateX(1000%);
 
   border: rem(1) dashed rgb( 255, 255, 255);
@@ -19,8 +19,13 @@
   position: relative;
 
   width: 100%;
+  margin-bottom: rem(30);
 
   border-bottom: rem(1) solid rgba( 0, 0, 0, 0.1);
+
+  a {
+    display: inline;
+  }
 }
 
 .menu-mobile__link {
@@ -30,13 +35,17 @@
   font-style: normal;
   line-height: 1rem;
 
+  display: inline;
   display: block;
 
-  margin-bottom: rem(30);
-
+  transition: color .5s ease;
   text-transform: uppercase;
 
   color: #fff;
+}
+
+.menu-mobile__link:hover {
+  color: $color-decor;
 }
 
 .menu-mobile__list--active {

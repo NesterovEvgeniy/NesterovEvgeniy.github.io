@@ -65,6 +65,12 @@
       text-transform: uppercase;
 
       color: #ffffff;
+
+      &:hover {
+        transition: color .5s ease;
+
+        color: $color-decor;
+      }
     }
   }
 
@@ -95,7 +101,15 @@
   padding-bottom: 10px;
   padding-left: 23px;
 
+  cursor: pointer;
+
   color: #ffffff;
+
+  &:hover {
+    transition: color .5s ease;
+
+    color: $color-decor;
+  }
 }
 
 .footer__address::before {
@@ -157,8 +171,29 @@
   text-transform: uppercase;
 
   color: #ffffff;
+
+  &:hover {
+    transition: color .5s ease;
+
+    color: $color-decor;
+  }
 }
 
 .footer__bottom {
   background-color: #2a2a2a;
 }
+
+/*
+.footer__location-map {
+  position: absolute;
+  top: -500px;
+  left: 0;
+
+  display: none;
+}
+
+.footer__location-map iframe {
+  width: 29.17vw;
+  height: 20.83vw;
+}
+*/

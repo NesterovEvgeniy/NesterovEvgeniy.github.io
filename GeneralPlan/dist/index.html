@@ -58,29 +58,31 @@
         
           <!-- mobile menu -->
           <ul class="menu-mobile__list">
-            <li class="menu-mobile__item"><a class="menu-mobile__link" href="#about">
-                <p>about</p>
-              </a></li>
+            <li class="menu-mobile__item">
+              <a class="menu-mobile__link" href="#about">
+                about
+              </a>
+            </li>
             <li class="menu-mobile__item"><a class="menu-mobile__link" href="#workarea">
-                <p>area of work</p>
+                area of work
               </a></li>
             <li class="menu-mobile__item"><a class="menu-mobile__link" href="#benefit">
-                <p>benefit</p>
+                benefit
               </a></li>
             <li class="menu-mobile__item"><a class="menu-mobile__link" href="#cases">
-                <p>cases</p>
+                cases
               </a></li>
             <li class="menu-mobile__item"><a class="menu-mobile__link" href="#projects">
-                <p>projects</p>
+                projects
               </a></li>
             <li class="menu-mobile__item"><a class="menu-mobile__link" href="#reviews">
-                <p>reviews</p>
+                reviews
               </a></li>
             <li class="menu-mobile__item"><a class="menu-mobile__link" href="#customers">
-                <p>customers</p>
+                customers
               </a></li>
             <li class="menu-mobile__item"><a class="menu-mobile__link" href="#contacts">
-                <p>contact us</p>
+                contact us
               </a></li>
           </ul>
         </header>
@@ -101,7 +103,7 @@
         </section>
         <!-- About block-->
         
-        <section>
+        <section id="about">
           <div class="about__inner">
             <div class="container__part-info">
               <p class="title__block-num">01/ about</p>
@@ -117,7 +119,7 @@
 
         <!-- Area of work - block-->
         
-        <section>
+        <section id="workarea">
           <div class="area__inner">
             <div class="container__part-info">
               <p class="area__block-num">02/ area of work</p>
@@ -132,7 +134,7 @@
                         landscape
                         architecture projects.</p>
                     </div>
-                    <a class="work__area-link" href="#popup">Learn more</a>
+                    <button class="work__area-popup-btn">Learn more</button>
                   </li>
                   <li>
                     <div>
@@ -143,7 +145,7 @@
                         out.
                       </p>
                     </div>
-                    <a class="work__area-link" href="#popup">Learn more</a>
+                    <button class="work__area-popup-btn">Learn more</button>
                   </li>
                   <li>
                     <div>
@@ -152,7 +154,7 @@
                         is
                         a key stage in the construction of residential and non—residential facilities.</p>
                     </div>
-                    <a class="work__area-link" href="#popup">Learn more</a>
+                    <button class="work__area-popup-btn">Learn more</button>
                   </li>
                 </ul>
               </div>
@@ -160,9 +162,125 @@
             </div>
           </div>
         </section>
-        <!-- benefit block-->
+        <!-- 02/ Area of work (Popup landscape)-->
         
         <section>
+          <div class="popup__area-wrapper">
+            <div class="popup__landscape js-form">
+              <div class="close-btn"></div>
+              <h2 class="popup__main-title">Landscape design</h2>
+              <div class="popup__inner-block">
+                <div class="popup__main-info">
+                  <h3 class="popup__main-subtitle landscape__subtitle--tab">One of the activities of our company is the development of urban landscape architecture projects.</h3>
+                  <div class="popup__main-text">
+                    <p>These can be both landscape concepts and working documentation based on concepts previously created by other contractors.
+                    </p>
+                    <p>Each of our projects combines the accumulated experience, the latest trends in the field of landscape design, as well as the wishes of the customer on stylistics, small architectural forms and landscaping.</p>
+                  </div>
+                </div>
+                <div class="popup__additional-info">
+                  <div>
+                    <p class="popup__additional-text">
+                      Concept development: selection of the style of the project, development of an improvement plan, placement of small architectural forms and preparation of visualizations.
+                    </p>
+                  </div>
+                  <div>
+                    <p class="popup__additional-text">
+                      Development of working drawings taking into account GOST 21.508-93.
+                    </p>
+                  </div>
+                  <div>
+                    <p class="popup__additional-text">
+                      Author's supervision. At this stage, we control the quality of materials and the implementation of engineering solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+
+        <!-- 02/ Area of work (Popup genplan)-->
+        
+        <section>
+          <div class="popup__area-wrapper">
+            <div class="popup__genplan js-form">
+              <div class="close-btn"></div>
+              <h2 class="popup__main-title">general plan</h2>
+              <div class="popup__inner-block">
+                <div class="popup__main-info">
+                  <h3 class="popup__main-subtitle genplan__subtitle--tab">Preparation of ROM and GP sections is the main specialization of our company.</h3>
+                  <div class="popup__main-text">
+                    <p>The presence of 5 general planners in the staff allows you to carry out projects of different scales and levels of complexity. We develop a master plan for residential and non-residential facilities, as well as recreational areas, industrial and agricultural facilities. We give a guarantee of obtaining a positive expert opinion.
+                    </p>
+                  </div>
+                </div>
+                <div class="popup__additional-info">
+                  <div>
+                    <p class="popup__additional-text">
+                      At the stage of "Project documentation" development of section 2 "Scheme of the planning organization of the land plot" (ROM).
+                    </p>
+                  </div>
+                  <div>
+                    <p class="popup__additional-text">
+                      At the stage of "Working documentation" development of the main set of working drawings of the GP brand.
+                    </p>
+                  </div>
+                  <div>
+                    <p class="popup__additional-text">
+                      Technical support of project documentation with approvals in departments and expertise.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 02/ Area of work(Popup design)-->
+        
+        <section>
+          <div class="popup__area-wrapper">
+            <div class="popup__design js-form">
+              <div class="close-btn"></div>
+              <h2 class="popup__main-title popup__main-title--tab">Design of external engineering networks</h2>
+              <div class="popup__inner-block">
+                <div class="popup__main-info">
+                  <h3 class="popup__main-subtitle popup__main-subtitle--tab">The design of external engineering networks is a key stage in the construction of residential and non—residential facilities.</h3>
+                  <div class="popup__main-text">
+                    <p>More than 10 years of successful work in the construction design market allows us to develop outdoor engineering networks for projects of any degree of complexity. We can act as the chief designer, or work on the project as a subcontractor.
+                    </p>
+                  </div>
+                </div>
+                <div class="popup__additional-info">
+                  <div>
+                    <p class="popup__additional-text">
+                      Development of schematic diagrams of engineering networks and coordination in departments
+                    </p>
+                  </div>
+                  <div>
+                    <p class="popup__additional-text">
+                      Development of project documentation in accordance with the Decree of the Government of the Russian Federation of 16.02.2008 No. 87 "On the composition of sections of project documentation and requirements for their content"
+                    </p>
+                  </div>
+                  <div>
+                    <p class="popup__additional-text">
+                      Development of working documentation in accordance with GOST R 21.101-2020, consisting of the following sets of working drawings intended for the production of construction and installation works
+                    </p>
+                  </div>
+                  <div>
+                    <p class="popup__additional-text">
+                      Development of working documentation in accordance with GOST R 21.101-2020, consisting of the following sets of working drawings intended for the production of construction and installation works
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- benefit block-->
+        
+        <section id="benefit">
           <div class="benefit__inner">
             <div class="container__part-info">
               <p class="title__block-num">03/ benefit</p>
@@ -220,7 +338,7 @@
         </section>
         <!-- cases block-->
         
-        <section>
+        <section id="cases">
           <div class="cases__inner">
             <div class="container__part-info">
               <p class="title__block-num">04/ cases</p>
@@ -234,23 +352,23 @@
                   <li>
                     <div>
                       <h3 class="work__case-title case-title__saving">A case about saving on displaced span soils for LSR</h3>
-                      <div class="work-case__saving"></div>
+                      <a href="#!"><div class="work-case__saving case-popup-link"></div></a>
                       <p class="work__case-description">One of the ways to save money without loss of quality is to adjust the
                         directive marks at the stage of engineering preparation of the territory</p>
                     </div>
-                    <a class="work__case-link" href="#popup">Learn more</a>
+                    <button class="work__cases-popup-btn">Learn more</button>
                   </li>
         
                   <li>
                     <div>
                       <h3 class="work__case-title case-title__territory">A case about designing on the inter-fleet territory
                       </h3>
-                      <div class="work-case__design"></div>
+                      <a href="#!"><div class="work-case__design case-popup-link"></div></a>
                       <p class="work__case-description">The design of interlot territories is one of the specializations of our
                         company
                       </p>
                     </div>
-                    <a class="work__case-link" href="#popup">Learn more</a>
+                    <button class="work__cases-popup-btn">Learn more</button>
                   </li>
         
                 </ul>
@@ -261,125 +379,119 @@
         </section>
         <!-- projects block-->
         
-        <section>
-          <div class="projects__inner">
+        <section id="projects">
+          <div class="projects__inner projects__inner-tabs">
             <div class="container__part-info">
               <p class="title__block-num">05/ projects</p>
             </div>
             <div class="container__main-info title__text-wrapper">
               <h2 class="title__block title__projects">We work in the market of Moscow, St. Petersburg and other
                 regions of Russia. We have developed more than 1000 projects</h2>
-        
-              <div>
-                <div class="projects__tabs-inner">
-                  <div class="tabs projects__tabs">
-                    <a class="tab tab--active" href="#landscape-tab">landscape</a>
-                    <a class="tab" href="#outdoor-tab">outdoor networks</a>
-                    <a class="tab" href="#general-tab">general plan</a>
+            </div>
+          </div>
+          <div class="projects__tabs-wrapper">
+            <div class="projects__tabs-inner">
+              <div class="tabs projects__tabs">
+                <a class="tab tab--active" href="#landscape-tab">landscape</a>
+                <a class="tab" href="#outdoor-tab">outdoor networks</a>
+                <a class="tab" href="#general-tab">general plan</a>
+              </div>
+            </div>
+          </div>  
+          <div class="tabs-conteiner">
+            <div class="tabs-content tabs-content--active" id="landscape-tab">
+              <div class="landscape__block">
+                <div class="project">
+                  <div class="project__text-block">
+                    <div>
+                      <h3 class="project__case-title">Project «Yanino»
+                      </h3>
+                      <p class="project__case-description">Yanino Drive is a comfortable modern residential quarter in the
+                        Vsevolozhsky district of the Leningrad region.</p>
+                    </div>
+                    <button class="project__popup-btn">Learn more</button>
                   </div>
+                  <a class="landscape__yanino-main-img project__img-link" href="#!"></a>
                 </div>
         
-                <div>
-                  <div class="tabs-content tabs-content--active" id="landscape-tab">
-                    <div class="landscape__block">
-                      <div class="project">
-                        <div class="project__text-block">
-                          <div>
-                            <h3 class="project__case-title">Project «Yanino»
-                            </h3>
-                            <p class="project__case-description">Yanino Drive is a comfortable modern residential quarter in the
-                              Vsevolozhsky district of the Leningrad region.</p>
-                          </div>
-                          <a class="project__case-link" href="#popup">Learn more</a>
-                        </div>
-                        <div class="landscape__yanino-img"></div>
-                        <a class="project__case-mob-link" href="#popup">Learn more</a>
-                      </div>
-        
-                      <div class="project">
-                        <div class="project__text-block">
-                          <div>
-                            <h3 class="project__case-title">Project «Idealist»
-                            </h3>
-                            <p class="project__case-description">Yanino Drive is a comfortable modern residential quarter in the
-                              Vsevolozhsky district of the Leningrad region.</p>
-                          </div>
-                          <a class="project__case-link" href="#popup">Learn more</a>
-                        </div>
-                        <div class="landscape__idealist-img"></div>
-                        <a class="project__case-mob-link" href="#popup">Learn more</a>
-                      </div>
+                <div class="project">
+                  <div class="project__text-block">
+                    <div>
+                      <h3 class="project__case-title">Project «Idealist»
+                      </h3>
+                      <p class="project__case-description">The Idealist Club House is located in the historical center of St. Petersburg, between the embankment of the Obvodny Canal and Moskovsky Prospekt.</p>
                     </div>
+                    <button class="project__popup-btn">Learn more</button>
                   </div>
-        
-                  <div class="tabs-content" id="outdoor-tab">
-                    <div class="outdoor__block">
-                      <div class="project">
-                        <div class="project__text-block">
-                          <div>
-                            <h3 class="project__case-title">Project «Yanino»
-                            </h3>
-                            <p class="project__case-description">Yanino Drive is a comfortable modern residential quarter in the
-                              Vsevolozhsky district of the Leningrad region.</p>
-                          </div>
-                          <a class="project__case-link" href="#popup">Learn more</a>
-                        </div>
-                        <img src="assets/img/project-outdoor-1.png" alt="фото комплекс Яннино">
-                      </div>
-        
-                      <div class="project">
-                        <div class="project__text-block">
-                          <div>
-                            <h3 class="project__case-title">Project «Idealist»
-                            </h3>
-                            <p class="project__case-description">Yanino Drive is a comfortable modern residential quarter in the
-                              Vsevolozhsky district of the Leningrad region.</p>
-                          </div>
-                          <a class="project__case-link" href="#popup">Learn more</a>
-                        </div>
-                        <img src="assets/img/project-outdoor-2.png" alt="фото комплекс Идеалист">
-                      </div>
-                    </div>
-                  </div>
-        
-                  <div class="tabs-content" id="general-tab">
-                    <div class="generalplan__block">
-                      <div class="project">
-                        <div class="project__text-block">
-                          <div>
-                            <h3 class="project__case-title">Project «Yanino»
-                            </h3>
-                            <p class="project__case-description">Yanino Drive is a comfortable modern residential quarter in the
-                              Vsevolozhsky district of the Leningrad region.</p>
-                          </div>
-                          <a class="project__case-link" href="#popup">Learn more</a>
-                        </div>
-                        <img src="assets/img/project-genplan-1.png" alt="фото комплекс Яннино">
-        
-                      </div>
-        
-                      <div class="project">
-                        <div class="project__text-block">
-                          <div>
-                            <h3 class="project__case-title">Project «Idealist»
-                            </h3>
-                            <p class="project__case-description">Yanino Drive is a comfortable modern residential quarter in the
-                              Vsevolozhsky district of the Leningrad region.</p>
-                          </div>
-                          <a class="project__case-link" href="#popup">Learn more</a>
-                        </div>
-                        <img src="assets/img/project-genplan-2.png" alt="фото комплекс Идеалист">
-                      </div>
-                    </div>
-                  </div>
-        
-                  <a class="btn btn__cases" href="#contacts">discuss the project<a>
+                  <a class="landscape__idealist-main-img project__img-link" href="#!"></a>
                 </div>
               </div>
+            </div>
+        
+            <div class="tabs-content" id="outdoor-tab">
+              <div class="outdoor__block">
+                <div class="project">
+                  <div class="project__text-block">
+                    <div>
+                      <h3 class="project__case-title">Project «Mountain view estates»
+                      </h3>
+                      <p class="project__case-description">Mountain View Estates is a contemporary and luxurious residential community nestled in the scenic hills of the Cascade Valley, offering breathtaking views and serene surroundings.</p>
+                    </div>
+                    <button class="project__popup-btn">Learn more</button>
+                  </div>
+                  <a class="outdoor__mountain-main-img project__img-link" href="#!"></a>
+                </div>
+                
+                <div class="project">
+                  <div class="project__text-block">
+                    <div>
+                      <h3 class="project__case-title">Project «Riverbank residences»
+                      </h3>
+                      <p class="project__case-description">Riverbank Residences is an elegant and modern residential complex situated along the tranquil banks of the Riverdale River, offering residents a serene waterfront living experience.</p>
+                    </div>
+                    <button class="project__popup-btn">Learn more</button>
+                  </div>
+                  <a class="outdoor__riverbank-main-img project__img-link" href="#!"></a>
+                </div>
+              </div>
+            </div>
+        
+            <div class="tabs-content" id="general-tab">
+              <div class="generalplan__block">
+                <div class="project">
+                  <div class="project__text-block">
+                    <div>
+                      <h3 class="project__case-title">Project «Harmony Grove»
+                      </h3>
+                      <p class="project__case-description">Yanino Drive is a comfortable modern residential quarter in the
+                        Vsevolozhsky district of the Leningrad region.</p>
+                    </div>
+                    <button class="project__popup-btn">Learn more</button>
+                  </div>
+                  <a class="generalplan__harmony-main-img project__img-link" href="#!"></a>
+                </div>
+                
+                <div class="project">
+                  <div class="project__text-block">
+                    <div>
+                      <h3 class="project__case-title">Project «Urban retreat»
+                      </h3>
+                      <p class="project__case-description">Urban Retreat is a modern residential complex located in the heart of a bustling city, providing residents with a tranquil oasis amidst the urban landscape.</p>
+                    </div>
+                    <button class="project__popup-btn">Learn more</button>
+                  </div>
+                  <a class="generalplan__urban-main-img project__img-link" href="#!"></a>
+                </div>
+              </div>
+            </div>
+        
+            <a class="btn btn__cases" href="#contacts">discuss the project<a>
+          </div>
         </section>
+
         <!-- reviews block-->
         
-        <section>
+        <section id="reviews">
           <div class="reviews__inner">
             <div class="container__part-info">
               <p class="title__block-num">06/ reviews</p>
@@ -437,7 +549,7 @@
         </section>
         <!-- Customer block-->
         
-        <section>
+        <section id="customers">
           <div class="customer__inner">
             <div class="container__part-info">
               <p class="title__block-num">08/ customers</p>
@@ -481,7 +593,7 @@
         </section>
         <!-- Contact-form block-->
         
-        <section>
+        <section id="contacts">
           <div class="contact-form__inner">
             <div class="container__part-info">
             </div>
@@ -494,21 +606,24 @@
                 <div class="contact-form__input-fields">
                   <div class="form__personal-data">
                     <legend class="legend__person-name">First name, Last Name <span>*</span></legend>
-                    <input class="form__person-name" type="text" placeholder="Your name">
-                    <input class="form__person-phone" type="tel" name="phone" required placeholder="Telephone">
-                    <input class="form__person-email" type="email" placeholder="Email">
+                    <input class="form__person-name" type="text" placeholder="Your name" required="required" maxlength="80" pattern="^[a-zA-Z]+$">
+        
+                    <input class="form__person-phone" type="tel" name="phone" required="required" placeholder="Telephone">
+        
+                    <input class="form__person-email" value="" type="text" required="required" placeholder="Email">
+        
                   </div>
                   <div class="form__personal-message">
-                    <textarea class="form__person-text" placeholder="I want to order a project"></textarea>
+                    <textarea class="form__person-text" placeholder="I want to order a project" required="required" maxlength="600"></textarea>
                   </div>
                 </div>
         
                 <div class="contact-form__footer">
                   <input class="btn application-btn" value="submit" type="submit" disabled="">
                   <div class="conteiner-checkbox">
-                    <input class="application-checkbox" required="" type="checkbox" id="form">
+                    <input class="application-checkbox" required="required" type="checkbox" id="form">
                     <label for="form"></label>
-                    <p class="checkbox-text">By clicking the "Submit" button, you agree to the <a href=""><span>Privacy
+                    <p class="checkbox-text">By clicking the "Submit" button, you agree to the <a href="https://drive.google.com/file/d/10XQ_FV8XZoX5UpzNBwvCl52MXVwUftZp/view?usp=sharing" target="_blank"><span>Privacy
                           Policy</span></a> of Personal Data Processing</p>
                   </div>
                 </div>
@@ -516,6 +631,370 @@
             </div>
           </div>
         </section>
+        <!-- 04/ Cases(popup saving case)-->
+        
+        <section>
+          <div class="popup__cases-wrapper">
+            <div class="popup__saving js-form">
+              <div class="close-btn"></div>
+              <h2 class="popup__main-title">A case about saving on displaced soils for LSR</h2>
+              <div class="popup__inner-block">
+                <div class="popup-designing__main-info">
+        
+                  <div class="popup__main-block">
+                    <h3 class="popup__main-subtitle">Large scale development of the territory is always a big financial burden for the developer.</h3>
+                    <p class="popup__main-text popup-saving__text-tab">One of the nonobviousness but effective ways to save money without loss of quality is to adjust the directive marks at the stage of engineering preparation of the territory.</p>
+                    <p class="popup__main-text popup-saving__text-tab">Rough vertical layout with incorrect directive marks a few centimeters above the existing relief leads to an increase in the developer's costs.
+                    <p class="popup__main-text popup-saving__text-tab">Correction of directive marks at the stage of engineering preparation of the territory is you know how which saves up to 70% of customers' funds on the removal of earth masses.</p> 
+                  </div>
+        
+                  <div class="popup__additional-block popup-saving__additional-block">
+                    <div>
+                      <p class="popup__additional-text popup-saving__additional-text">
+                        We were the general contractor of the LSR holding during the engineering preparation of the territory of the former Rzhevka airport (territory of 160 hectares) and offered the developer a new approach to integrated design in terms of adjusting the directive marks. The developer gave the go-ahead.
+                      </p>
+                    </div>
+                    <div>
+                      <p class="popup__additional-text popup-saving__additional-text">
+                        As a result of the adjustment, the total volume of exported soil was reduced by 700,000 m3, which saved the developer about 203 million rubles.
+                      </p>
+                    </div>
+                    <div>
+                      <p class="popup__additional-text popup-saving__additional-text">
+                        For which projects is it relevant?
+                      </p>
+                      <ul class="popup__additional-list popup-saving__additional-text">
+                        <li class="popup__list-text">district-scale</li>
+                        <li class="popup__list-text">development quarterly development</li>
+                        <li class="popup__list-text">terminal and production arrays</li>
+                      </ul>
+                    </div>
+                  </div>
+        
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 04/ Cases(popup designing case)-->
+        
+        <section>
+          <div class="popup__cases-wrapper">
+            <div class="popup__designing js-form">
+              <div class="close-btn"></div>
+              <h2 class="popup__main-title">A case about designing on the inter-fleet territory</h2>
+              <div class="popup__inner-block">
+                <div class="popup-designing__main-info">
+                  <div class="popup__main-block">
+                    <h3 class="popup__main-subtitle">The design of interlot territories is one of the specializations of our company.</h3>
+                    <p class="popup__main-text popup-desiging__text-tab">An integrated approach to the design of the inter-site territory includes coordination, control and coordination of design decisions on the master plan and external engineering networks of various design organizations in the quarterly development. This eliminates the difficulties that developers face when working with different contractors when building blocks and gives the following advantages:</p>
+                    <ul class="popup__main-list">
+                      <li>reducing the number of errors in the work;</li>
+                      <li>saving time on coordination of documentation between contractors;</li>
+                      <li>simplification of control by the customer;</li>
+                      <li>reduction of the project implementation period.</li>
+                      <li>What does the project of the interlot territory include?</li>
+                      <li>the development of the ROM section at the “P” stage and a set of working drawings of the GP brand at the “RD” stage, including:</li>
+                      <li>the development of a consolidated plan of intra-block engineering networks;</li>
+                      <li>design of intra-block engineering networks;</li>
+                      <li>design of engineering structures.</li>
+                    </ul>
+                  </div>
+        
+                  <div class="popup__additional-block">
+                    <div>
+                      <p class="popup__additional-text">
+                        We have been developing a project of an interlot territory for a residential quarter at:
+                      </p>
+                      <p class="popup__address-text">St. Petersburg, Blucher Ave., 12</p>
+                    </div>
+                    <div>
+                      <p class="popup__additional-text">
+                        The project consisted of:
+                      </p>
+                    </div>
+                    <div>
+                      <ul class="popup__additional-list">
+                        <li class="popup__list-text">linking and coordinating design solutions for the general plan of the interlot territory and adjacent sites of various developers</li>
+                        <li class="popup__list-text">development quarterly development</li>
+                        <li class="popup__list-text">linking and coordinating design solutions of third-party contractors for main engineering networks in the interlot territory</li>
+                      </ul>
+                    </div>
+                    <div class="popup__designing-img" ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 05/ Projects (popup yanino project)-->
+        
+        <section>
+          <div class="popup__projects-wrapper">
+            <div class="popup__yanino js-form">
+              <div class="close-btn"></div>
+              <h2 class="popup__yanino-title">Project «Yanino»</h2>
+              <div class="popup__yanino-title-info">
+                <p class="popup__yanino-info-text">Developer: <span>Lenstroytrest</span></p>
+                <p class="popup__yanino-info-text">Period: <span>2023</span></p>
+              </div>
+        
+              <div class="popup__yanino-block">
+                  <div class="popup__yanino-text-block">
+                    <h3 class="popup__yanino-subtitle">Yanino Drive is a comfortable modern residential quarter in the Vsevolozhsky district of the Leningrad region.</h3>
+                    <h4 class="popup__yanino-stages-title">Stage of participation:</h4>
+                    <ol class="popup__yanino-stages-inner">
+                      <li class="popup__yanino-stages-text">Development of the concept of integrated landscaping of the house and courtyard territory;</li>
+                      <li class="popup__yanino-stages-text">Development of "Working documentation" for the architectural concept of the project. The set of working documentation consists of the following drawings:
+                        <ul class="popup__yanino-text-list">
+                          <li>general data;</li>
+                          <li>situational plan;</li>
+                          <li>the scheme of the planning organization of the land plot;</li>
+                          <li>dendrological plan;</li>
+                          <li>plan of small architectural forms with explication of landscaping elements;</li>
+                          <li>drawing of the vertical layout of the landscaping object;</li>
+                          <li>center plan;</li>
+                          <li>landing plan;</li>
+                          <li>coverage plan;</li>
+                          <li>tile layout schemes;</li>
+                          <li>structural sections of coatings.</li>
+                        </ul> 
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="popup__yanino-images-block">
+                    <div class="popup__yanino-image-top"></div>
+                    <div class="popup__yanino-image-bottom"></div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+        <!-- 05/ Projects (popup idealist project)-->
+        
+        <section>
+          <div class="popup__projects-wrapper">
+            <div class="popup__idealist js-form">
+              <div class="close-btn"></div>
+              <h2 class="popup__idealist-title">Project «Idealist»</h2>
+              <div class="popup__idealist-title-info">
+                <p class="popup__idealist-info-text">Developer: <span>Eurostroy</span></p>
+                <p class="popup__idealist-info-text">Period: <span>2022</span></p>
+              </div>
+        
+              <div class="popup__idealist-block">
+                  <div class="popup__idealist-text-block">
+                    <h3 class="popup__idealist-subtitle">The Idealist Club House is located in the historical center of St. Petersburg, between the embankment of the Obvodny Canal and Moskovsky Prospekt.</h3>
+                    <h4 class="popup__idealist-stages-title">Stage of participation:</h4>
+                    <ol class="popup__idealist-stages-inner">
+                      <li class="popup__idealist-stages-text">Development of the concept of integrated landscaping of the house and courtyard territory;</li>
+                      <li class="popup__idealist-stages-text">Development of "Working documentation" for the architectural concept of the project. The set of working documentation consists of the following drawings:
+                        <ul class="popup__idealist-text-list">
+                          <li>general data;</li>
+                          <li>situational plan;</li>
+                          <li>the scheme of the planning organization of the land plot;</li>
+                          <li>dendrological plan;</li>
+                          <li>plan of small architectural forms with explication of landscaping elements;</li>
+                          <li>drawing of the vertical layout of the landscaping object;</li>
+                          <li>center plan;</li>
+                          <li>landing plan;</li>
+                          <li>coverage plan;</li>
+                          <li>tile layout schemes;</li>
+                          <li>structural sections of coatings.</li>
+                        </ul> 
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="popup__idealist-images-block">
+                    <div class="popup__idealist-image-top"></div>
+                    <div class="popup__idealist-image-bottom"></div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+        <!-- 05/ Projects (popup mountain project)-->
+        
+        <section>
+          <div class="popup__projects-wrapper">
+            <div class="popup__mountain js-form">
+              <div class="close-btn"></div>
+              <h2 class="popup__mountain-title">Project «Mountain view estates»</h2>
+              <div class="popup__mountain-title-info">
+                <p class="popup__mountain-info-text">Developer: <span>Summit developments</span></p>
+                <p class="popup__mountain-info-text">Period: <span>2023</span></p>
+              </div>
+        
+              <div class="popup__mountain-block">
+                  <div class="popup__mountain-text-block">
+                    <h3 class="popup__mountain-subtitle">Mountain view estates is a comfortable modern residential quarter in the cascade valley, offering spectacular views and a peaceful living environment.</h3>
+                    <h4 class="popup__mountain-stages-title">Stage of participation:</h4>
+                    <ol class="popup__mountain-stages-inner">
+                      <li class="popup__mountain-stages-text">Development of the concept of integrated landscaping of the house and courtyard territory;</li>
+                      <li class="popup__mountain-stages-text">Development of "Working documentation" for the architectural concept of the project. The set of working documentation consists of the following drawings:
+                        <ul class="popup__mountain-text-list">
+                          <li>general data;</li>
+                          <li>situational plan;</li>
+                          <li>the scheme of the planning organization of the land plot;</li>
+                          <li>dendrological plan;</li>
+                          <li>plan of small architectural forms with explication of landscaping elements;</li>
+                          <li>drawing of the vertical layout of the landscaping object;</li>
+                          <li>center plan;</li>
+                          <li>landing plan;</li>
+                          <li>coverage plan;</li>
+                          <li>tile layout schemes;</li>
+                          <li>structural sections of coatings.</li>
+                        </ul> 
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="popup__mountain-images-block">
+                    <div class="popup__mountain-image-top"></div>
+                    <div class="popup__mountain-image-bottom"></div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+        <!-- 05/ Projects (popup riverbank project)-->
+        
+        <section>
+          <div class="popup__projects-wrapper">
+            <div class="popup__riverbank js-form">
+              <div class="close-btn"></div>
+              <h2 class="popup__riverbank-title">Project «Riverbank residences»</h2>
+              <div class="popup__riverbank-title-info">
+                <p class="popup__riverbank-info-text">Developer: <span>Waterfront properties</span></p>
+                <p class="popup__riverbank-info-text">Period: <span>2021</span></p>
+              </div>
+        
+              <div class="popup__riverbank-block">
+                  <div class="popup__riverbank-text-block">
+                    <h3 class="popup__riverbank-subtitle">Riverbank residences is a comfortable modern residential quarter on the scenic riverdale river, providing a tranquil waterfront living environment.</h3>
+                    <h4 class="popup__riverbank-stages-title">Stage of participation:</h4>
+                    <ol class="popup__riverbank-stages-inner">
+                      <li class="popup__riverbank-stages-text">Development of the concept of integrated landscaping of the house and courtyard territory;</li>
+                      <li class="popup__riverbank-stages-text">Development of "Working documentation" for the architectural concept of the project. The set of working documentation consists of the following drawings:
+                        <ul class="popup__riverbank-text-list">
+                          <li>general data;</li>
+                          <li>situational plan;</li>
+                          <li>the scheme of the planning organization of the land plot;</li>
+                          <li>dendrological plan;</li>
+                          <li>plan of small architectural forms with explication of landscaping elements;</li>
+                          <li>drawing of the vertical layout of the landscaping object;</li>
+                          <li>center plan;</li>
+                          <li>landing plan;</li>
+                          <li>coverage plan;</li>
+                          <li>tile layout schemes;</li>
+                          <li>structural sections of coatings.</li>
+                        </ul> 
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="popup__riverbank-images-block">
+                    <div class="popup__riverbank-image-top"></div>
+                    <div class="popup__riverbank-image-bottom"></div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+        <!-- 05/ Projects (popup harmony project)-->
+        
+        <section>
+          <div class="popup__projects-wrapper">
+            <div class="popup__harmony js-form">
+              <div class="close-btn"></div>
+              <h2 class="popup__harmony-title">Project «Harmony Grove»</h2>
+              <div class="popup__harmony-title-info">
+                <p class="popup__harmony-info-text">Developer: <span>Greenscape developments</span></p>
+                <p class="popup__harmony-info-text">Period: <span>2023</span></p>
+              </div>
+        
+              <div class="popup__harmony-block">
+                  <div class="popup__harmony-text-block">
+                    <h3 class="popup__harmony-subtitle">harmony grove is a comfortable modern residential quarter surrounded by lush green landscapes, offering a harmonious living environment.</h3>
+                    <h4 class="popup__harmony-stages-title">Stage of participation:</h4>
+                    <ol class="popup__harmony-stages-inner">
+                      <li class="popup__harmony-stages-text">Development of the concept of integrated landscaping of the house and courtyard territory;</li>
+                      <li class="popup__harmony-stages-text">Development of "Working documentation" for the architectural concept of the project. The set of working documentation consists of the following drawings:
+                        <ul class="popup__harmony-text-list">
+                          <li>general data;</li>
+                          <li>situational plan;</li>
+                          <li>the scheme of the planning organization of the land plot;</li>
+                          <li>dendrological plan;</li>
+                          <li>plan of small architectural forms with explication of landscaping elements;</li>
+                          <li>drawing of the vertical layout of the landscaping object;</li>
+                          <li>center plan;</li>
+                          <li>landing plan;</li>
+                          <li>coverage plan;</li>
+                          <li>tile layout schemes;</li>
+                          <li>structural sections of coatings.</li>
+                        </ul> 
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="popup__harmony-images-block">
+                    <div class="popup__harmony-image-top"></div>
+                    <div class="popup__harmony-image-bottom"></div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+        <!-- 05/ Projects (popup urban project)-->
+        
+        <section>
+          <div class="popup__projects-wrapper">
+            <div class="popup__urban js-form">
+              <div class="close-btn"></div>
+              <h2 class="popup__urban-title">Project «Urban retreat»</h2>
+              <div class="popup__urban-title-info">
+                <p class="popup__urban-info-text">Developer: <span>CityScape Properties</span></p>
+                <p class="popup__urban-info-text">Period: <span>2022</span></p>
+              </div>
+        
+              <div class="popup__urban-block">
+                  <div class="popup__urban-text-block">
+                    <h3 class="popup__urban-subtitle">Urban Retreat is a modern residential complex located in the heart of a bustling city, providing residents with a tranquil oasis amidst the urban landscape.</h3>
+                    <h4 class="popup__urban-stages-title">Stage of participation:</h4>
+                    <ol class="popup__urban-stages-inner">
+                      <li class="popup__urban-stages-text">Development of the concept of integrated landscaping of the house and courtyard territory;</li>
+                      <li class="popup__urban-stages-text">Development of "Working documentation" for the architectural concept of the project. The set of working documentation consists of the following drawings:
+                        <ul class="popup__urban-text-list">
+                          <li>general data;</li>
+                          <li>situational plan;</li>
+                          <li>the scheme of the planning organization of the land plot;</li>
+                          <li>dendrological plan;</li>
+                          <li>plan of small architectural forms with explication of landscaping elements;</li>
+                          <li>drawing of the vertical layout of the landscaping object;</li>
+                          <li>center plan;</li>
+                          <li>landing plan;</li>
+                          <li>coverage plan;</li>
+                          <li>tile layout schemes;</li>
+                          <li>structural sections of coatings.</li>
+                        </ul> 
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="popup__urban-images-block">
+                    <div class="popup__urban-image-top"></div>
+                    <div class="popup__urban-image-bottom"></div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+        <!-- popup-map -->
+        
+        <div class="popup__map">
+          <div class="popup__map-conteiner">
+            <div class="popup__location-map">
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A911571c5a0b599b3931f4f193a8cf12d49dbdc6a27d7821ee8e592f917f9f13e&amp;source=constructor" width="700" height="500" frameborder="0"></iframe>
+            </div>
+          </div>
+        </div>
         <!-- Footer block -->
         
         <footer>
@@ -528,24 +1007,40 @@
             </div>
             <nav class="footer__nav">
               <ul>
-                <li><a href="#about">about</a></li>
-                <li><a href="#workarea">area of work</a></li>
-                <li><a href="#benefit">benefit</a></li>
-                <li><a href="#cases">cases</a></li>
-                <li><a href="#projects">projects</a></li>
-                <li><a href="#reviews">reviews</a></li>
-                <li><a href="#customers">customers</a></li>
-                <li><a href="#contacts">contact us</a></li>
+                <li>
+                  <a href="#about">about</a>
+                </li>
+                <li>
+                  <a href="#workarea">area of work</a>
+                </li>
+                <li>
+                  <a href="#benefit">benefit</a>
+                </li>
+                <li>
+                  <a href="#cases">cases</a>
+                </li>
+                <li>
+                  <a href="#projects">projects</a>
+                </li>
+                <li>
+                  <a href="#reviews">reviews</a>
+                </li>
+                <li>
+                  <a href="#customers">customers</a>
+                </li>
+                <li>
+                  <a href="#contacts">contact us</a>
+                </li>
               </ul>
             </nav>
             <div class="footer__contact-block">
               <ul>
                 <li class="footer__address">
-                  <p>St. Petersburg, Pulkovskoe highway, 30, room 4</p>
+                  <p>St. Petersburg, Vysotnaya St., 1, room 435</p>
                 </li>
                 <li>
                   <a href="tel:88003021976">
-                    <div class="footer__phone">8 800 302 19 76</div>
+                    <div class="footer__phone">+7 (812) 448-31-61</div>
                   </a>
                 </li>
                 <li>
@@ -555,11 +1050,11 @@
                 </li>
               </ul>
               <div class="footer__social-block">
-                <a href="">
-                  <p class="footer__social">telegram</p>
+                <a class="footer__social" href="https://telegram.org" target="_blank">
+                  telegram
                 </a>
-                <a href="">
-                  <p class="footer__social">behance</p>
+                <a class="footer__social" href="https://behance.net" target="_blank">
+                  behance
                 </a>
               </div>
               <p class="footer__copyright-mob">© 2007–2023 GeneralPlan</p>
@@ -572,6 +1067,10 @@
 
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- INPUTMASK -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
 
     <!-- SLICK SLIDER -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>

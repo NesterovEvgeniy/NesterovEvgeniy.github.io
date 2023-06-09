@@ -7,19 +7,24 @@
 .main__inner {
   display: flex;
   justify-content: space-between;
+
   padding-bottom: rem(23);
 }
 
 .main__title {
-  max-width: 790px;
-  display: inline-block;
   font-family: "Akrobat";
-  font-style: normal;
-  font-weight: 700;
   font-size: rem(65);
+  font-weight: 700;
+  font-style: normal;
   line-height: rem(65);
+
+  display: inline-block;
+
+  max-width: 790px;
+
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
   color: #ffffff;
 
   span {
@@ -31,10 +36,11 @@
   max-width: rem(1400);
   height: rem(386);
   margin-bottom: rem(113);
-  background-image: url(../img/main-img.png);
-  background-size: cover;
+
+  background-image: url(../img/main-img.webp);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .main-info__wrapper {
