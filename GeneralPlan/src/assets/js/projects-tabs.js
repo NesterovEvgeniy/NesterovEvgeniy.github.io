@@ -1,15 +1,22 @@
 // Projects-tabs
 
-$(function () {
+document.addEventListener('DOMContentLoaded', function() {
+  var tabs = document.querySelectorAll('.tab');
 
-  $('.tab').on('click', function (e) {
-    e.preventDefault();
+  tabs.forEach(function(tab) {
+    tab.addEventListener('click', function(e) {
+      e.preventDefault();
 
-    $($(this).siblings()).removeClass('tab--active');
+      tabs.forEach(function(t) {
+        t.classList.remove('tab--active');
+      });
 
-    $($(this).closest('.projects__tabs-inner').siblings().find('div')).removeClass('tabs-content--active')
+      document.querySelectorAll('.tabs-content').forEach(function(content) {
+        content.classList.remove('tabs-content--active');
+      });
 
-    $(this).addClass('tab--active')
-    $($(this).attr('href')).addClass('tabs-content--active');
+      tab.classList.add('tab--active');
+      document.querySelector(tab.getAttribute('href')).classList.add('tabs-content--active');
+    });
   });
 });

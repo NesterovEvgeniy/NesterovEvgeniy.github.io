@@ -1494,7 +1494,6 @@ body {
 .project {
     display: -ms-flexbox;
     display: flex;
-    max-width: calc(1130 / 16 * 1rem);
     margin-bottom: calc(30 / 16 * 1rem);
     padding: calc(20 / 16 * 1rem);
     border: calc(1 / 16 * 1rem) dashed #9b9b9b;
@@ -1581,7 +1580,6 @@ body {
 }
 
 .tabs-conteiner {
-    margin-left: 270px;
     padding-bottom: 120px;
 }
 
@@ -4094,10 +4092,6 @@ body {
 @media (max-width: 1305px) {
     .projects__tabs-wrapper {
         padding-left: 0px;
-    }
-
-    .tabs-conteiner {
-        margin-left: 0px;
     }
 }
 

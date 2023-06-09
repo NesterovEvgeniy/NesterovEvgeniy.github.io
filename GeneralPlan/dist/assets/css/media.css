@@ -135,10 +135,6 @@
     .projects__tabs-wrapper {
         padding-left: 0px;
     }
-
-    .tabs-conteiner {
-        margin-left: 0px;
-    }
 }
 
 @media (max-width: 1230px) {

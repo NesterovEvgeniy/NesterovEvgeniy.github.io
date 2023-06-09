@@ -75,7 +75,7 @@ eval("/* popup work-area */\r\n\r\nconst buttons = document.querySelectorAll('.w
   \****************************************/
 /***/ (function() {
 
-eval("// Projects-tabs\r\n\r\n$(function () {\r\n\r\n  $('.tab').on('click', function (e) {\r\n    e.preventDefault();\r\n\r\n    $($(this).siblings()).removeClass('tab--active');\r\n\r\n    $($(this).closest('.projects__tabs-inner').siblings().find('div')).removeClass('tabs-content--active')\r\n\r\n    $(this).addClass('tab--active')\r\n    $($(this).attr('href')).addClass('tabs-content--active');\r\n  });\r\n});\n\n//# sourceURL=webpack://gulp-site/./src/assets/js/projects-tabs.js?");
+eval("// Projects-tabs\r\n\r\ndocument.addEventListener('DOMContentLoaded', function() {\r\n  var tabs = document.querySelectorAll('.tab');\r\n\r\n  tabs.forEach(function(tab) {\r\n    tab.addEventListener('click', function(e) {\r\n      e.preventDefault();\r\n\r\n      tabs.forEach(function(t) {\r\n        t.classList.remove('tab--active');\r\n      });\r\n\r\n      document.querySelectorAll('.tabs-content').forEach(function(content) {\r\n        content.classList.remove('tabs-content--active');\r\n      });\r\n\r\n      tab.classList.add('tab--active');\r\n      document.querySelector(tab.getAttribute('href')).classList.add('tabs-content--active');\r\n    });\r\n  });\r\n});\r\n\n\n//# sourceURL=webpack://gulp-site/./src/assets/js/projects-tabs.js?");
 
 /***/ }),
 
