@@ -543,10 +543,11 @@ body {
     position: absolute;
     z-index: 10;
     right: 0;
+    display: none;
     width: calc(250 / 16 * 1rem);
     margin: calc(10 / 16 * 1rem) calc(0 / 16 * 1rem) calc(10 / 16 * 1rem) calc(10 / 16 * 1rem);
     padding: calc(30 / 16 * 1rem) calc(30 / 16 * 1rem) calc(0 / 16 * 1rem) calc(30 / 16 * 1rem);
-    transition: all 1.5s;
+    transition: all 0.5s;
     -webkit-transform: translateX(1000%);
     transform: translateX(1000%);
     border: calc(1 / 16 * 1rem) dashed rgb(255, 255, 255);
@@ -583,6 +584,7 @@ body {
 }
 
 .menu-mobile__list--active {
+    display: block;
     -webkit-transform: translateX(0%);
     transform: translateX(0%);
 }
@@ -801,7 +803,9 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
+    overflow-y: auto;
     max-width: calc(770 / 16 * 1rem);
+    max-height: 100vh;
     margin: auto;
     padding: 40px;
     -webkit-transform: translate(-50%, -50%);
@@ -926,7 +930,9 @@ body {
     z-index: 10;
     top: 50%;
     left: 50%;
+    overflow-y: auto;
     max-width: 770px;
+    max-height: 100vh;
     margin: auto;
     padding: 40px;
     -webkit-transform: translate(-50%, -50%);
@@ -1051,7 +1057,9 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
+    overflow-y: auto;
     max-width: 1100px;
+    max-height: 100vh;
     margin: auto;
     padding: 40px;
     -webkit-transform: translate(-50%, -50%);
@@ -2556,8 +2564,10 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
+    overflow-y: auto;
     width: 1280px;
     max-width: 90%;
+    max-height: 100vh;
     margin: auto;
     padding: 40px;
     -webkit-transform: translate(-50%, -50%);
@@ -2696,8 +2706,10 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
+    overflow-y: auto;
     width: 1280px;
     max-width: 90%;
+    max-height: 100vh;
     margin: auto;
     padding: 40px;
     -webkit-transform: translate(-50%, -50%);
@@ -2878,8 +2890,10 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
+    overflow-y: auto;
     width: 1280px;
     max-width: 90%;
+    max-height: 100vh;
     margin: auto;
     padding: 40px;
     -webkit-transform: translate(-50%, -50%);
@@ -3022,7 +3036,7 @@ body {
     width: 100%;
     min-height: 260px;
     margin-bottom: 10px;
-    background-image: url(../img/popup-yanino-top-img.png);
+    background-image: url(../img/popup-yanino-top-img.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -3031,7 +3045,7 @@ body {
 .popup__yanino-image-bottom {
     width: 100%;
     min-height: 260px;
-    background-image: url(../img/popup-yanino-bottom-img.png);
+    background-image: url(../img/popup-yanino-bottom-img.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -3054,8 +3068,10 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
+    overflow-y: auto;
     width: 1280px;
     max-width: 90%;
+    max-height: 100vh;
     margin: auto;
     padding: 40px;
     -webkit-transform: translate(-50%, -50%);
@@ -3198,7 +3214,7 @@ body {
     width: 100%;
     min-height: 260px;
     margin-bottom: 10px;
-    background-image: url(../img/popup-idealist-top-img.png);
+    background-image: url(../img/popup-idealist-top-img.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -3207,7 +3223,7 @@ body {
 .popup__idealist-image-bottom {
     width: 100%;
     min-height: 260px;
-    background-image: url(../img/popup-idealist-bottom-img.png);
+    background-image: url(../img/popup-idealist-bottom-img.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -3230,8 +3246,10 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
+    overflow-y: auto;
     width: 1280px;
     max-width: 90%;
+    max-height: 100vh;
     margin: auto;
     padding: 40px;
     -webkit-transform: translate(-50%, -50%);
@@ -3406,8 +3424,10 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
+    overflow-y: auto;
     width: 1280px;
     max-width: 90%;
+    max-height: 100vh;
     margin: auto;
     padding: 40px;
     -webkit-transform: translate(-50%, -50%);
@@ -3582,8 +3602,10 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
+    overflow-y: auto;
     width: 1280px;
     max-width: 90%;
+    max-height: 100vh;
     margin: auto;
     padding: 40px;
     -webkit-transform: translate(-50%, -50%);
@@ -3595,8 +3617,10 @@ body {
     position: absolute;
     top: 0;
     right: 0;
+    overflow-y: auto;
     width: 28px;
     height: 28px;
+    max-height: 100vh;
     margin-top: 15px;
     margin-right: 35px;
     cursor: pointer;
@@ -3758,8 +3782,10 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
+    overflow-y: auto;
     width: 1280px;
     max-width: 90%;
+    max-height: 100vh;
     margin: auto;
     padding: 40px;
     -webkit-transform: translate(-50%, -50%);

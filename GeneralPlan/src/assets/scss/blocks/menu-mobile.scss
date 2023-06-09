@@ -3,11 +3,13 @@
   z-index: 10;
   right: 0;
 
+  display: none;
+
   width: rem(250);
   margin: rem(10) rem( 0) rem( 10) rem( 10);
   padding: rem(30) rem( 30) rem( 0) rem( 30);
 
-  transition: all 1.5s;
+  transition: all 0.5s;
   transform: translateX(1000%);
 
   border: rem(1) dashed rgb( 255, 255, 255);
@@ -49,5 +51,7 @@
 }
 
 .menu-mobile__list--active {
+  display: block;
+
   transform: translateX(0%);
 }

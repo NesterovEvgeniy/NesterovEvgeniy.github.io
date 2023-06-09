@@ -21,7 +21,10 @@
   top: 50%;
   left: 50%;
 
+  overflow-y: auto;
+
   max-width: 770px;
+  max-height: 100vh;
   margin: auto;
   padding: 40px;
 

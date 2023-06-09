@@ -20,8 +20,11 @@
     top: 50%;
     left: 50%;
 
+    overflow-y: auto;
+
     width: 1280px;
     max-width: 90%;
+    max-height: 100vh;
     margin: auto;
     padding: 40px;
 
@@ -35,8 +38,11 @@
     top: 0;
     right: 0;
 
+    overflow-y: auto;
+
     width: 28px;
     height: 28px;
+    max-height: 100vh;
     margin-top: 15px;
     margin-right: 35px;
 
