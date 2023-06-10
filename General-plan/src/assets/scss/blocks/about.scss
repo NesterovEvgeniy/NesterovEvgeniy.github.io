@@ -1,0 +1,48 @@
+/* About block */
+
+.about__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding-bottom: rem(80);
+
+  gap: 20px;
+}
+
+.title__text-wrapper {
+  position: relative;
+}
+
+.title__block-about {
+  font-family: "Akrobat";
+  font-size: rem(45);
+  font-weight: 600;
+  font-style: normal;
+  line-height: 110%;
+
+  display: flex;
+
+  max-width: rem(1019);
+
+  text-indent: rem(60);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  opacity: 0.9;
+  color: #ffffff;
+}
+
+.title__block::before {
+  position: absolute;
+  top: rem(24);
+  left: 0;
+
+  width: rem(10);
+  height: rem(10);
+
+  content: "";
+
+  border-radius: 50%;
+  background-color: $color-decor;
+}

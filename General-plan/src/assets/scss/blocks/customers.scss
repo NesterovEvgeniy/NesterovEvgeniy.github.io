@@ -1,0 +1,252 @@
+/* Customer block */
+
+.customer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding-bottom: rem(120);
+
+  gap: 20px;
+}
+
+.title__area {
+  max-width: rem(908);
+}
+
+.title__customer {
+  font-family: "Inter";
+  font-size: rem(20);
+  font-weight: 500;
+  font-style: normal;
+  line-height: rem(24);
+
+  margin: rem(8) 0 rem( 25);
+
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.title__block {
+  font-family: "Akrobat";
+  font-size: rem(45);
+  font-weight: 600;
+  font-style: normal;
+  line-height: 110%;
+
+  margin-bottom: rem(40);
+
+  text-indent: rem(60);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  opacity: 0.9;
+  color: #ffffff;
+
+  ::before {
+    position: absolute;
+    top: rem(24);
+    left: 0;
+
+    width: rem(10);
+    height: rem(10);
+
+    content: "";
+
+    border-radius: 50%;
+    background-color: $color-decor;
+  }
+}
+
+.customer-studio__block {
+/*
+  display: grid;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-columns: repeat(auto-fill, rem(282));
+  margin-bottom: rem(
+45);
+*/
+
+  display: grid;
+
+  margin-bottom: rem(45);
+
+  grid-template-columns: repeat(4, 1fr);
+
+  div {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    min-height: rem(125);
+    padding: rem(10) rem( 10);
+
+    border: rem(1) dashed #9b9b9b;
+  }
+}
+
+.studio__block-1::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: rem(54);
+  height: rem(50);
+
+  content: "";
+  transform: translate(-50%, -50%);
+
+  background-image: url(../img/customer-studio-1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.studio__block-2::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: rem(50);
+  height: rem(31);
+
+  content: "";
+  transform: translate(-50%, -50%);
+
+  background-image: url(../img/customer-studio-2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.studio__block-3::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: rem(250);
+  height: rem(10);
+
+  content: "";
+  transform: translate(-50%, -50%);
+
+  background-image: url(../img/customer-studio-3.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.studio__block-4::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: rem(181);
+  height: rem(33);
+
+  content: "";
+  transform: translate(-50%, -50%);
+
+  background-image: url(../img/customer-studio-4.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.developer__block-1::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: rem(73);
+  height: rem(23);
+
+  content: "";
+  transform: translate(-50%, -50%);
+
+  background-image: url(../img/customer-developer-1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.developer__block-2::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: rem(57);
+  height: rem(42);
+
+  content: "";
+  transform: translate(-50%, -50%);
+
+  background-image: url(../img/customer-developer-2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.developer__block-3::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: rem(120);
+  height: rem(25);
+
+  content: "";
+  transform: translate(-50%, -50%);
+
+  background-image: url(../img/customer-developer-3.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.developer__block-4::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: rem(46);
+  height: rem(41);
+
+  content: "";
+  transform: translate(-50%, -50%);
+
+  background-image: url(../img/customer-developer-4.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.developer__block-5::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: rem(52);
+  height: rem(30);
+
+  content: "";
+  transform: translate(-50%, -50%);
+
+  background-image: url(../img/customer-developer-5.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.developer__block-6::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: rem(125);
+  height: rem(19);
+
+  content: "";
+  transform: translate(-50%, -50%);
+
+  background-image: url(../img/customer-developer-6.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
