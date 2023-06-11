@@ -1,0 +1,162 @@
+/* 04/ Cases(popup saving case) */
+
+.popup__cases-wrapper {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+
+    display: none;
+    overflow: auto;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup__saving {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    overflow-y: auto;
+
+    width: 1280px;
+    max-width: 90%;
+    max-height: 100vh;
+    margin: auto;
+    padding: 40px;
+
+    transform: translate(-50%, -50%);
+
+    background-color: #2a2a2a;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 28px;
+    height: 28px;
+    margin-top: 15px;
+    margin-right: 35px;
+
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    border: none;
+    background-image: url(../img/application-cross.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.close-btn:hover {
+    transform: scale(1.5);
+
+    scale: 110%;
+}
+
+.popup-designing__main-info {
+    display: flex;
+
+    padding: 0;
+
+    border: 1px dashed #9B9B9B;
+
+    div {
+        flex-basis: calc(100%/2);
+    }
+}
+
+.popup__main-title {
+    font-family: 'Akrobat';
+    font-size: 42px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 46px;
+
+    max-width: 1120px;
+    margin-bottom: 36px;
+
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.popup__main-block {
+    padding: 25px;
+}
+
+.popup__main-subtitle {
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 24px;
+
+    max-width: 572px;
+    padding-bottom: 14px;
+
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.popup__main-text {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 21px;
+
+    max-width: 500px;
+    padding-bottom: 10px;
+
+    opacity: 0.8;
+    color: #FFFFFF;
+
+    &:nth-child(4) {
+        padding-bottom: 0;
+    }
+}
+
+.popup__additional-block {
+    padding: 25px;
+
+    border-left: 1px dashed #9B9B9B;
+}
+
+.popup__additional-text {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 18px;
+
+    max-width: 480px;
+    padding-bottom: 10px;
+
+    opacity: 0.8;
+    color: #FFFFFF;
+}
+
+.popup__additional-list li {
+    margin-left: 14px;
+
+    list-style-type: disc;
+}
+
+.popup__list-text {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 18px;
+
+    opacity: 0.7;
+    color: #FFFFFF;
+}
