@@ -1,0 +1,85 @@
+/* application-block */
+
+.application {
+  background-image: url(../img/application/application-background.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 100px;
+}
+
+.application__title-block h3 {
+  padding-top: rem(55);
+  padding-bottom: rem(33);
+  font-family: "Ruberoid";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 45px;
+  color: #495e4c;
+}
+
+.application__form {
+  padding-bottom: rem(49);
+}
+
+.application__name,
+.application__phone {
+  padding: rem(20) rem(206) rem(20) rem(20);
+  margin-right: rem(30);
+  font-family: "Ruberoid";
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(14);
+  line-height: rem(17);
+  color: rgba(124, 163, 129, 0.7);
+  background: #ffffff;
+  box-shadow: 0px 0px rem(12) rgba(73, 93, 76, 0.15);
+  border: none;
+  border-radius: rem(15);
+  outline: none;
+
+  &::placeholder {
+    font-family: "Ruberoid";
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: rem(17);
+    color: rgba(124, 163, 129, 0.7);
+  }
+
+  &:focus::placeholder {
+    color: transparent;
+  }
+}
+
+.application__phone {
+  padding-right: rem(160);
+  margin-right: rem(60);
+}
+
+.application__btn-box {
+  display: inline-block;
+  border-radius: rem(20);
+  border: rem(10) solid rgba(255, 255, 255, 0.25);
+  background: #78c081;
+}
+
+.application__btn {
+  padding: rem(19) rem(50) rem(19);
+  border-radius: 17px;
+  background: #9cd3a3;
+  box-shadow: inset 2px -2px 12px rgba(34, 111, 33, 0.36);
+}
+
+.btn {
+  font-family: "Ruberoid";
+  font-style: normal;
+  font-weight: 600;
+  font-size: rem(15);
+  line-height: rem(21);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #5ccd6a;
+  cursor: pointer;
+}

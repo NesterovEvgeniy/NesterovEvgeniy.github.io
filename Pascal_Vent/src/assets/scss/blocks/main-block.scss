@@ -1,0 +1,283 @@
+/* Main-block */
+
+.main__block {
+  margin-bottom: rem(100);
+
+  background-image: url(../img/background-main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__main-block {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: rem(19) rem( 45) rem( 73);
+}
+
+.header__main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-right: rem(90);
+  padding-left: rem(10);
+
+  gap: rem(40);
+}
+
+.header__main-nav a {
+  font-family: "Proxima Nova";
+  font-size: rem(15);
+  font-weight: 400;
+  font-style: normal;
+  line-height: rem(18);
+
+  display: flex;
+  flex-wrap: nowrap;
+
+  text-transform: lowercase;
+
+  color: #495e4c;
+
+  &:hover {
+    transition: 0.5s;
+    transform: scale(110%);
+
+    color: #78c081;
+  }
+}
+
+.header__btn-box {
+  border: rem(10) solid rgba( 255, 255, 255, 0.1);
+  border-radius: rem(20);
+}
+
+.btn {
+  font-family: "Ruberoid";
+  font-size: rem(15);
+  font-weight: 400;
+  font-style: normal;
+  line-height: rem(21);
+
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  border: none;
+  background-color: #5ccd6a;
+}
+
+.btn__header {
+  padding: rem(19) rem( 42);
+
+  border-radius: rem(17);
+  box-shadow: inset rem(2) rem( -2) rem( 12) rgba( 34, 111, 33, 0.36);
+}
+
+.info__main-block {
+  max-width: rem(516);
+
+  h1 {
+    font-family: "Ruberoid";
+    font-size: rem(64);
+    font-weight: 600;
+    font-style: normal;
+    line-height: rem(74);
+
+    margin-bottom: rem(20);
+
+    text-transform: capitalize;
+
+    color: #495e4c;
+
+    .decor__line {
+      display: inline-block;
+
+      height: rem(3);
+
+      border-radius: rem(1.5);
+      background-color: #78c081;
+    }
+
+    .info__decor-line {
+      width: rem(148);
+      margin-right: rem(28);
+      margin-bottom: rem(16);
+    }
+
+    .info__company-name {
+      font-family: "Ruberoid";
+      font-size: rem(64);
+      font-weight: 700;
+      font-style: normal;
+      line-height: rem(74);
+
+      display: block;
+
+      letter-spacing: 0.112rem;
+      text-transform: uppercase;
+
+      color: #78c081;
+    }
+  }
+
+  .info__subtitle {
+    display: flex;
+
+    margin-bottom: rem(52);
+
+    gap: rem(12);
+  }
+
+  .info__subtitle-text {
+    font-family: "Proxima Nova";
+    font-size: rem(22);
+    font-weight: 400;
+    font-style: normal;
+    line-height: rem(32);
+
+    color: #7ca381;
+  }
+}
+
+.info__circle-block {
+  display: flex;
+
+  padding-top: rem(11);
+
+  gap: rem(10);
+}
+
+.circle__decor {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  display: inline-block;
+
+  width: rem(10);
+  height: rem(10);
+
+  border-radius: 50%;
+}
+
+.info__circle-left {
+  background-image: linear-gradient(to right, ( rgba( 120, 192, 129, 0) , rgba( 120, 192, 129, 0.45) ) );
+}
+
+.info__circle-center {
+  background-image: linear-gradient(to right, ( rgba( 120, 192, 129, 0.45) , rgba( 120, 192, 129, 0.75) ) );
+}
+
+.info__circle-right {
+  background-image: linear-gradient(to right, ( rgba( 120, 192, 129, 0.75) , rgba( 120, 192, 129, 1) ) );
+}
+
+.circle__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  overflow: hidden;
+
+  width: 50%;
+  height: 100%;
+}
+
+.circle__content {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  margin: rem(2);
+
+  border-radius: 50%;
+  background: linear-gradient(180deg, #f1f1f1 0%, #f0f2f1 16.25%, #ebedec 43.26%, #e6e8e7 72.5%, #dee2e1 100%);
+}
+
+.main__contacts {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 rem(39) rem( 63) rem( 62);
+}
+
+.main__region-text {
+  font-family: "Proxima Nova";
+  font-size: rem(16);
+  font-weight: 400;
+  font-style: normal;
+  line-height: rem(24);
+
+  position: relative;
+
+  max-width: rem(154);
+
+  color: #7b897d;
+
+  &::before {
+    position: absolute;
+    top: rem(8);
+    left: rem(-52);
+
+    width: rem(32);
+    height: rem(32);
+
+    content: "";
+
+    background-image: url(../img/main-location.svg);
+  }
+}
+
+.main__contacts-phone {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: rem(8);
+    left: rem(-52);
+
+    width: rem(32);
+    height: rem(32);
+
+    content: "";
+
+    background-image: url(../img/main-phone.svg);
+  }
+}
+
+.main__phone-text {
+  font-family: "Proxima Nova";
+  font-size: rem(16);
+  font-weight: 400;
+  font-style: normal;
+  line-height: rem(24);
+
+  position: relative;
+
+  color: #7b897d;
+}
+
+.main__btn-box {
+  display: inline-block;
+
+  margin-bottom: rem(64);
+  padding: rem(15);
+
+  border: none;
+  border-radius: rem(40);
+  background-color: rgba(120, 192, 129, 0.12);
+}
+
+.main__btn {
+  padding: rem(32) rem( 126);
+
+  border-radius: rem(30);
+  box-shadow: inset rem(2) rem( -2) rem( 12) rgba( 34, 111, 33, 0.36);
+}

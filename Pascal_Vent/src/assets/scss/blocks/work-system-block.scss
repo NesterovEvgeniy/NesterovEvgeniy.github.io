@@ -1,0 +1,278 @@
+/* work-system-block */
+
+.work-system__block {
+  margin-bottom: rem(100);
+}
+
+.work-system__title {
+  margin-bottom: rem(99);
+  font-family: "Ruberoid";
+  font-style: normal;
+  font-weight: 600;
+  font-size: rem(45);
+  line-height: rem(60);
+  text-transform: capitalize;
+  color: #495e4c;
+}
+
+.work-system__stages {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-system__stages li:nth-child(2n) {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.work-system__stages h3 {
+  padding-bottom: rem(15);
+  font-family: "Ruberoid";
+  font-style: normal;
+  font-weight: 600;
+  font-size: rem(35);
+  line-height: rem(47);
+  text-transform: capitalize;
+  color: #78c081;
+}
+
+.work-system__stages p {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(16);
+  line-height: rem(26);
+  color: #495e4c;
+}
+
+.work-system__stage-1 {
+  position: relative;
+  padding-bottom: rem(30);
+
+  & h3,
+  p {
+    max-width: rem(446);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: rem(238);
+    height: rem(219);
+    left: rem(198);
+    top: rem(-37);
+    background-image: url(../img/work-system/work-system-stage-1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    transform: rotate(25.68deg);
+    z-index: -2;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: rem(540);
+    height: rem(85);
+    left: rem(140);
+    top: rem(127);
+    background-image: url(../img/work-system/work-system-road-1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+}
+
+.work-system__stage-2 {
+  position: relative;
+  padding-bottom: rem(90);
+  text-align: end;
+  & h3,
+  p {
+    max-width: rem(540);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: rem(279);
+    height: rem(246);
+    right: rem(179);
+    top: rem(-66);
+    background-image: url(../img/work-system/work-system-stage-2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    transform: rotate(-5.68deg);
+    z-index: -2;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: rem(506);
+    height: rem(80);
+    right: rem(300);
+    top: rem(175);
+    background-image: url(../img/work-system/work-system-road-2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+}
+
+.work-system__stage-3 {
+  position: relative;
+  padding-bottom: rem(35);
+  & h3,
+  p {
+    max-width: rem(496);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: rem(413);
+    height: rem(254);
+    left: rem(64);
+    top: rem(-87);
+    background-image: url(../img/work-system/work-system-stage-3.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -2;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: rem(219);
+    height: rem(95);
+    right: rem(565);
+    top: rem(138);
+    background-image: url(../img/work-system/work-system-road-3.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(-4.4deg);
+    z-index: -1;
+  }
+}
+
+.work-system__stage-4 {
+  position: relative;
+  padding-bottom: rem(37);
+  text-align: end;
+  & h3,
+  p {
+    max-width: rem(625);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: rem(292);
+    height: rem(277);
+    right: rem(230);
+    top: rem(-68);
+    background-image: url(../img/work-system/work-system-stage-4.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    transform: rotate(-0.14deg);
+    z-index: -2;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: rem(587);
+    height: rem(139);
+    right: rem(196);
+    top: rem(170);
+    background-image: url(../img/work-system/work-system-road-4.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+}
+
+.work-system__stage-5 {
+  position: relative;
+  padding-bottom: rem(96);
+  & h3,
+  p {
+    max-width: rem(449);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: rem(222);
+    height: rem(252);
+    left: rem(146);
+    top: rem(-30);
+    background-image: url(../img/work-system/work-system-stage-5.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    transform: rotate(15deg);
+    z-index: -2;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: rem(700);
+    height: rem(170);
+    right: rem(222);
+    top: rem(246);
+    background-image: url(../img/work-system/work-system-road-5.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 20;
+  }
+}
+
+.work-system__stage-6 {
+  position: relative;
+  padding-bottom: rem(155);
+  text-align: end;
+  & h3,
+  p {
+    max-width: rem(397);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: rem(301);
+    height: rem(189);
+    right: rem(273);
+    top: rem(-9);
+    background-image: url(../img/work-system/work-system-stage-6.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -2;
+  }
+}
+
+.work-system__stage-7 {
+  position: relative;
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: rem(402);
+    height: rem(99);
+    right: rem(386);
+    top: rem(-3);
+    background-image: url(../img/work-system/work-system-stage-7.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -2;
+  }
+}

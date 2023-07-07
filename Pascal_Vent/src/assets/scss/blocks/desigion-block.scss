@@ -1,0 +1,140 @@
+/* Desigion-block */
+
+.container {
+  position: relative;
+}
+
+.desigion__lung-img {
+  position: absolute;
+  left: rem(-370);
+  top: rem(-58);
+  z-index: 0;
+}
+
+.desigion__title-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.desigion__title-block h2 {
+  font-family: "Ruberoid";
+  font-style: normal;
+  font-weight: 600;
+  font-size: rem(45);
+  line-height: rem(60);
+  text-transform: capitalize;
+  color: #495e4c;
+}
+
+.desigion__decor-line {
+  width: rem(236);
+  margin-top: rem(32);
+  margin-left: rem(35);
+}
+
+.decor__line {
+  height: rem(3);
+  background-color: #78c081;
+  border-radius: rem(1.5);
+}
+
+.desigion__card-wrapper {
+  background-image: url(../img/desigion/background-leaves.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: rem(100);
+}
+
+.desigion__card-list {
+  display: flex;
+  justify-content: space-between;
+  row-gap: rem(35);
+  flex-wrap: wrap;
+  gap: rem(35);
+  padding-top: rem(79);
+  padding-bottom: rem(43);
+}
+
+.desigion__card {
+  display: inline;
+  border-radius: 25px;
+  box-shadow: (0px 0px 10px rgba(73, 93, 76, 0.1));
+  z-index: 1;
+}
+
+.desigion__card-top {
+  max-width: rem(257);
+  min-height: rem(92);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px 25px 0px 0px;
+}
+
+.desigion__card-img-1 {
+  background-image: url(../img/desigion/desigion-card-1.png);
+}
+
+.desigion__card-img-2 {
+  background-image: url(../img/desigion/desigion-card-2.png);
+}
+
+.desigion__card-img-3 {
+  background-image: url(../img/desigion/desigion-card-3.png);
+}
+
+.desigion__card-img-4 {
+  background-image: url(../img/desigion/desigion-card-4.png);
+}
+
+.desigion__card-img-5 {
+  background-image: url(../img/desigion/desigion-card-5.png);
+}
+
+.desigion__card-img-6 {
+  background-image: url(../img/desigion/desigion-card-6.png);
+}
+
+.desigion__card-img-7 {
+  background-image: url(../img/desigion/desigion-card-7.png);
+}
+
+.desigion__card-img-8 {
+  background-image: url(../img/desigion/desigion-card-8.png);
+}
+
+.card-top__price {
+  padding-top: rem(14);
+}
+
+.card-top__price-text {
+  display: inline-block;
+  padding: rem(5) rem(15);
+  background: #d9fadd;
+  border-radius: 0px 10px 10px 0px;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 600;
+  font-size: rem(15);
+  line-height: rem(18);
+  color: #495d4c;
+}
+
+.desigion__card-bottom {
+}
+
+.desigion__type-text {
+  display: flex;
+  align-items: center;
+  height: rem(43);
+  width: rem(257);
+  padding-left: rem(15);
+  font-family: "Ruberoid";
+  font-style: normal;
+  font-weight: 500;
+  font-size: rem(16);
+  line-height: rem(21);
+  color: #78c081;
+  background: #ffffff;
+  border-radius: 0px 0px 25px 25px;
+  box-shadow: (0px 0px 10px rgba(73, 93, 76, 0.1));
+}

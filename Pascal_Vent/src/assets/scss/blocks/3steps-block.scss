@@ -1,0 +1,177 @@
+/* 3steps-block */
+
+.steps-block {
+  overflow-x: hidden;
+}
+
+.steps__text-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.steps__title-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.steps__title-block h2 {
+  font-family: "Ruberoid";
+  font-style: normal;
+  font-weight: 600;
+  font-size: rem(45);
+  line-height: rem(60);
+  text-transform: capitalize;
+  color: #495e4c;
+}
+
+.steps__decor-line {
+  width: rem(100);
+  margin-top: rem(32);
+  margin-left: rem(35);
+}
+
+.decor__line {
+  height: rem(3);
+  background-color: #78c081;
+  border-radius: rem(1.5);
+}
+
+.steps__description {
+  min-width: rem(572);
+}
+
+.steps__description h3 {
+  padding-bottom: rem(12);
+  font-family: "Ruberoid";
+  font-style: normal;
+  font-weight: 500;
+  font-size: rem(26);
+  line-height: rem(35);
+  text-transform: capitalize;
+  color: #78c081;
+}
+
+.steps__description ul li {
+  padding-bottom: rem(10);
+}
+
+.steps__description li {
+  position: relative;
+  padding-left: rem(27);
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(16);
+  line-height: rem(19);
+  color: #7ca381;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: rem(17);
+    height: rem(17);
+    left: rem(0);
+    background-image: url(../img/3steps/3steps-vent-img.svg);
+  }
+}
+
+.step__card-blocks {
+  display: flex;
+  justify-content: center;
+  margin: rem(84) rem(0) rem(100);
+}
+
+.step__card:nth-child(2) {
+  margin: 0 rem(300);
+}
+
+.step__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card__lamp-img {
+  position: relative;
+  width: rem(100);
+  height: rem(100);
+  background-image: url(../img/3steps/light-img.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: rem(280);
+    height: rem(48);
+    top: rem(20);
+    left: rem(-285);
+    background-image: url(../img/3steps/arrow-1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: rem(322);
+    height: rem(44);
+    top: rem(0);
+    left: rem(102);
+    background-image: url(../img/3steps/arrow-2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.card__list-img {
+  width: rem(100);
+  height: rem(100);
+  background-image: url(../img/3steps/list-img.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card__star-img {
+  position: relative;
+  width: rem(100);
+  height: rem(100);
+  background-image: url(../img/3steps/circle-img.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: rem(307);
+    height: rem(40);
+    top: rem(60);
+    left: rem(-310);
+    background-image: url(../img/3steps/arrow-3.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: rem(250);
+    height: rem(58);
+    top: rem(-20);
+    left: rem(102);
+    background-image: url(../img/3steps/arrow-4.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.step__card-text {
+  margin-top: 20px;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #495e4c;
+}

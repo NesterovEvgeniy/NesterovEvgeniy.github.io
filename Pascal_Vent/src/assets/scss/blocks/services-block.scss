@@ -1,0 +1,339 @@
+/* Services-block */
+
+.services__block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: rem(100);
+  gap: rem(20);
+}
+
+.services__description {
+  max-width: rem(444);
+  margin-left: rem(135);
+}
+
+.services__description-title {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services__description-title h2 {
+  font-family: "Ruberoid";
+  font-style: normal;
+  font-weight: 600;
+  font-size: rem(45);
+  line-height: rem(60);
+  text-transform: capitalize;
+  color: #495e4c;
+}
+
+.services__decor-line {
+  width: rem(245);
+  margin-top: rem(32);
+  margin-left: rem(35);
+}
+
+.decor__line {
+  height: rem(3);
+  background-color: #78c081;
+  border-radius: rem(1.5);
+}
+
+.description__text {
+  margin-top: rem(22);
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(16);
+  line-height: rem(26);
+  color: #848484;
+}
+
+.description__text p:nth-child(1) {
+  padding-bottom: 30px;
+}
+
+.description__text p:nth-child(2) {
+  padding-bottom: 30px;
+}
+
+.services__tabs-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.tabs {
+  display: flex;
+  writing-mode: vertical-lr;
+  rotate: 180deg;
+  border-width: 10px;
+  border-color: #d9fadd;
+  border-style: solid;
+  border-radius: 0px 45px 45px 0px;
+}
+
+.tab {
+  padding: rem(25) rem(24) rem(75) rem(24);
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7ca281;
+  background: #ffffff;
+}
+
+.vent-sistem__tab {
+  position: relative;
+  border-radius: 0px 0px 40px 0px;
+  border-top: none;
+}
+
+.vent-sistem__tab::after {
+  content: "";
+  position: absolute;
+  width: rem(33);
+  height: rem(33);
+  left: rem(14);
+  bottom: rem(25);
+  background-image: url(../img/services/vent-tab-icon-green.svg);
+}
+
+.conditioner__tab {
+  position: relative;
+  border-radius: 0px 40px 0px 0px;
+  border-bottom: none;
+}
+
+.conditioner__tab::after {
+  content: "";
+  position: absolute;
+  width: rem(33);
+  height: rem(27);
+  left: rem(14);
+  bottom: rem(25);
+  background-image: url(../img/services/conditionier-tab-icon-green.svg);
+  transform: rotate(180deg);
+}
+
+.tab--active {
+  color: #ffffff;
+  background: #5ccd6a;
+  box-shadow: inset 2px -2px 12px rgba(34, 111, 33, 0.36);
+
+  &.vent-sistem__tab::before {
+    content: "";
+    position: absolute;
+    width: rem(33);
+    height: rem(33);
+    left: rem(14);
+    bottom: rem(25);
+    background-image: url(../img/services/vent-tab-icon-white.svg);
+    z-index: 1;
+  }
+
+  &.conditioner__tab::before {
+    content: "";
+    position: absolute;
+    width: rem(33);
+    height: rem(27);
+    left: rem(14);
+    bottom: rem(25);
+    background-image: url(../img/services/conditionier-tab-icon-white.svg);
+    transform: rotate(180deg);
+    z-index: 1;
+  }
+}
+
+.tabs-content {
+  display: none;
+
+  &.tabs-content--active {
+    display: block;
+  }
+}
+
+.ventilation__block,
+.air-conditionier__block {
+  background: #d9fadd;
+  border-radius: 65px 0px 0px 65px;
+}
+
+.ventilation__card,
+.air-conditionier__card {
+  display: flex;
+}
+
+.card__list {
+  display: flex;
+  margin: rem(80) rem(40) rem(80) rem(89);
+  min-width: rem(215);
+}
+
+.card__list ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card__list li {
+  max-width: rem(307);
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #495d4c;
+}
+
+.ventilation__card-list-1 {
+  position: relative;
+}
+.ventilation__card-list-1::before {
+  content: "";
+  position: absolute;
+  width: rem(34);
+  height: rem(34);
+  left: rem(-49);
+  background-image: url(../img/services/vent-list-1.svg);
+}
+
+.ventilation__card-list-2 {
+  position: relative;
+}
+.ventilation__card-list-2::before {
+  content: "";
+  position: absolute;
+  width: rem(34);
+  height: rem(34);
+  left: rem(-49);
+  background-image: url(../img/services/vent-list-2.svg);
+}
+
+.ventilation__card-list-3 {
+  position: relative;
+}
+.ventilation__card-list-3::before {
+  content: "";
+  position: absolute;
+  width: rem(34);
+  height: rem(34);
+  left: rem(-49);
+  background-image: url(../img/services/vent-list-3.svg);
+}
+
+.ventilation__card-list-4 {
+  position: relative;
+}
+.ventilation__card-list-4::before {
+  content: "";
+  position: absolute;
+  width: rem(34);
+  height: rem(34);
+  left: rem(-49);
+  background-image: url(../img/services/vent-list-4.svg);
+}
+
+.ventilation__card-list-5 {
+  position: relative;
+}
+.ventilation__card-list-5::before {
+  content: "";
+  position: absolute;
+  width: rem(34);
+  height: rem(34);
+  left: rem(-49);
+  background-image: url(../img/services/vent-list-5.svg);
+}
+
+.ventilation__card-list-6 {
+  position: relative;
+}
+.ventilation__card-list-6::before {
+  content: "";
+  position: absolute;
+  width: rem(34);
+  height: rem(34);
+  left: rem(-49);
+  background-image: url(../img/services/vent-list-6.svg);
+}
+
+.ventilation__card-photo img,
+.air-conditionier__card-photo img {
+  filter: drop-shadow(-4px 0px 8px rgba(15, 44, 15, 0.35));
+  border-radius: 65px 0px 0px 65px;
+}
+
+.air-conditionier__card-list-1 {
+  position: relative;
+}
+.air-conditionier__card-list-1::before {
+  content: "";
+  position: absolute;
+  width: rem(34);
+  height: rem(34);
+  left: rem(-49);
+  background-image: url(../img/services/cond-list-1.svg);
+}
+
+.air-conditionier__card-list-2 {
+  position: relative;
+}
+.air-conditionier__card-list-2::before {
+  content: "";
+  position: absolute;
+  width: rem(34);
+  height: rem(34);
+  left: rem(-49);
+  background-image: url(../img/services/vent-list-2.svg);
+}
+
+.air-conditionier__card-list-3 {
+  position: relative;
+}
+.air-conditionier__card-list-3::before {
+  content: "";
+  position: absolute;
+  width: rem(34);
+  height: rem(34);
+  left: rem(-49);
+  background-image: url(../img/services/cond-list-3.svg);
+}
+
+.air-conditionier__card-list-4 {
+  position: relative;
+}
+.air-conditionier__card-list-4::before {
+  content: "";
+  position: absolute;
+  width: rem(34);
+  height: rem(34);
+  left: rem(-49);
+  background-image: url(../img/services/cond-list-4.svg);
+}
+
+.air-conditionier__card-list-5 {
+  position: relative;
+}
+.air-conditionier__card-list-5::before {
+  content: "";
+  position: absolute;
+  width: rem(34);
+  height: rem(34);
+  left: rem(-49);
+  background-image: url(../img/services/cond-list-5.svg);
+}
+
+.air-conditionier__card-list-6 {
+  position: relative;
+}
+.air-conditionier__card-list-6::before {
+  content: "";
+  position: absolute;
+  width: rem(34);
+  height: rem(34);
+  left: rem(-49);
+  background-image: url(../img/services/cond-list-6.svg);
+}

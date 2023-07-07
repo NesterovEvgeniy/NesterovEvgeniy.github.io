@@ -1,0 +1,78 @@
+@import "vendor/normalize";
+@import "fonts";
+/* @import "vars.scss"; */
+/* @import "mixins"; */
+
+/* Functions */
+
+@function rem($value) {
+    @return (($value)/16) + rem;
+}
+
+/* Default Styles */
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /*     color: $font-color; */
+    /* display: inline-block; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    /* @include main-font; */
+    /*     color: $font-color; */
+    min-width: rem(320);
+    max-width: rem(1470);
+    padding: 0 rem(15);
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: rem(1170);
+    margin: 0 auto;
+}
+
+/*Blocks*/
+/* @import "blocks/header.scss"; */
+@import "blocks/main-block.scss";
+@import "blocks/services-block.scss";
+@import "blocks/desigion-block.scss";
+@import "blocks/3steps-block.scss";
+@import "blocks/application-block.scss";
+@import "blocks/about-block.scss";
+@import "blocks/all-seasons-block.scss";
+@import "blocks/work-system-block.scss";
+@import "blocks/portfolio-block.scss";
+@import "blocks/clients-block.scss";
+@import "blocks/footer-block.scss";
+/* @import "media.scss"; */
