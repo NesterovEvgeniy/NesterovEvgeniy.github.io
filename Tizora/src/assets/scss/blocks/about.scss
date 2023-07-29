@@ -1,0 +1,287 @@
+/* About page */
+
+.about__main-info {
+  display: flex;
+
+  /*   flex-wrap: wrap; */
+
+  padding-left: 100px;
+
+  gap: 20px;
+}
+
+.about__info {
+  min-width: 490px;
+  margin-bottom: 100px;
+  padding: 100px 70px 70px;
+
+  border: 2px solid;
+  border-image: linear-gradient(rgba( 255, 255, 255, 0.0) 25%, rgba( 255, 255, 255, 0.1) 30.75%, rgba( 255, 255, 255, 1) 100%);
+  border-image-slice: 1;
+}
+
+.about__star {
+  position: relative;
+
+  width: 7px;
+  height: 7px;
+  margin-top: 93px;
+  margin-left: 175px;
+
+  border: none;
+  border-radius: 50%;
+  background-color: #FEFFD0;
+}
+
+.about__star:before {
+  position: absolute;
+  top: -13px;
+  left: -12px;
+
+  width: 32px;
+  height: 32px;
+
+  content: "";
+
+  border-radius: 50%;
+  background-color: #FEFFD0;
+
+  filter: blur(15px);
+}
+
+.about__title {
+  font-family: Montserrat;
+  font-size: 49px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: normal;
+
+  margin-bottom: 90px;
+
+  text-transform: uppercase;
+
+  color: #4D453A;
+}
+
+.about__description {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+
+  max-width: 346px;
+  margin-bottom: 20px;
+
+  color: #FFF;
+}
+
+.about__img-block {
+  display: grid;
+  justify-content: center;
+
+  margin-top: 93px;
+
+  grid-template-columns: repeat(2, 100px);
+  grid-template-rows: repeat(2, 100px);
+  row-gap: 45px;
+  column-gap: 40px;
+}
+
+.nft-frame {
+  position: absolute;
+  top: -155px;
+  left: 35px;
+}
+
+.about__nft-text {
+  position: relative;
+
+  max-width: 534px;
+  margin-left: 46px;
+
+  background: linear-gradient(360deg, #524A3E 0%, rgba( 82, 74, 62, 0.00) 100%);
+}
+
+.about__nft-title {
+  font-family: Montserrat;
+  font-size: 158px;
+  font-weight: 100;
+  font-style: normal;
+  line-height: normal;
+
+  padding-right: 35px;
+
+  text-align: right;
+  text-transform: uppercase;
+
+  background: linear-gradient(180deg, #FFF 0%, rgba( 255, 255, 255, 0.00) 87.40%);
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.about__nft-description {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+
+  max-width: 402px;
+  margin-top: 30px;
+  margin-left: 61px;
+  padding-bottom: 43px;
+
+  color: #000;
+}
+
+.mission__title {
+  font-family: Raleway;
+  font-size: 36px;
+  font-weight: 100;
+  font-style: normal;
+  line-height: normal;
+
+  max-width: 568px;
+  margin: 0 auto;
+  padding: 16px 0;
+
+  text-align: center;
+
+  color: #FFF;
+  border: 2px solid;
+  border-image: linear-gradient(90deg, rgba( 255, 255, 255, 0.00) 0%, #FFF 50%, rgba( 255, 255, 255, 0.00) 100%);
+  border-image-slice: 1;
+}
+
+.mission__points {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 80px;
+  padding-bottom: 160px;
+
+  gap: 150px;
+}
+
+.mission__save {
+  text-align: center;
+}
+
+.mission__support {
+  text-align: center;
+}
+
+.mission__save-text {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+
+  max-width: 302px;
+  margin-top: 40px;
+
+  text-align: center;
+
+  color: #FFF;
+}
+
+.mission__support-text {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+
+  max-width: 143px;
+  margin-top: 44px;
+
+  text-align: center;
+
+  color: #FFF;
+}
+
+.about__goal-block {
+  margin-bottom: 117px;
+}
+
+.goal__title {
+  font-family: Raleway;
+  font-size: 36px;
+  font-weight: 100;
+  font-style: normal;
+  line-height: normal;
+
+  max-width: 568px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  padding: 16px 0;
+
+  text-align: center;
+
+  color: #FFF;
+  border: 2px solid;
+  border-image: linear-gradient(90deg, rgba( 255, 255, 255, 0.00) 0%, #FFF 50%, rgba( 255, 255, 255, 0.00) 100%);
+  border-image-slice: 1;
+}
+
+.goal__points {
+  position: relative;
+
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+
+  margin-right: 60px;
+}
+
+.goal__img {
+  position: absolute;
+  left: 0;
+}
+
+.goal__garanty {
+  max-width: 890px;
+  margin-bottom: 70px;
+  padding: 50px 60px 50px 194px;
+
+  background-image: url(../img/about/background-goal.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.goal__comfort {
+  max-width: 890px;
+  padding: 50px 60px 50px 194px;
+
+  background-image: url(../img/about/background-goal.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.goal__text {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+
+  max-width: 637px;
+
+  color: #FFF;
+}
+
+.video__block {
+  width: 1240px;
+  height: 715px;
+  margin-top: 120px;
+
+  background-image: url(../img/about/about-large-picture.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  filter: brightness(20%);
+}

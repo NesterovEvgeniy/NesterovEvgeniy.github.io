@@ -1,0 +1,145 @@
+/* Main page */
+
+.main__inner {
+  padding-top: 93px;
+
+  background-image: url(../img/main-img.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.circle {
+  position: relative;
+
+  width: 7px;
+  height: 7px;
+  margin-bottom: 98px;
+  margin-left: 170px;
+
+  border: none;
+  border-radius: 50%;
+  background-color: #FEFFD0;
+}
+
+.circle:before {
+  position: absolute;
+  top: -13px;
+  left: -12px;
+
+  width: 32px;
+  height: 32px;
+
+  content: "";
+
+  border-radius: 50%;
+  background-color: #FEFFD0;
+
+  filter: blur(15px);
+}
+
+.main__text {
+  margin-left: 80px;
+}
+
+.main__title {
+  font-family: Raleway;
+  font-size: 49px;
+  font-weight: 100;
+  font-style: normal;
+  line-height: normal;
+
+  text-transform: uppercase;
+
+  color: #FFF;
+}
+
+.main__description {
+  font-family: Raleway;
+  font-size: 34px;
+  font-weight: 100;
+  font-style: normal;
+  line-height: 70px;
+
+  color: #656565;
+}
+
+.main__button {
+  width: 70px;
+  height: 110px;
+  margin-top: 90px;
+  margin-bottom: 120px;
+  margin-left: 110px;
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+}
+
+.card__inner {
+  display: grid;
+  justify-content: center;
+
+  padding-bottom: 145px;
+
+  grid-template-columns: repeat(2, 540px);
+  grid-template-rows: repeat(2, 320px);
+  column-gap: 20px;
+  row-gap: 90px;
+}
+
+.card__painter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid;
+  border-image: linear-gradient(90deg, rgba( 255, 255, 255, 0.0) 0%, rgba( 255, 255, 255, 0.2) 43.75%, rgba( 255, 255, 255, 0.0) 100%);
+  border-image-slice: 1%;
+
+  gap: 54px;
+}
+
+.card__painter:hover {
+  border-image: linear-gradient(rgba( 255, 255, 255, 0.0) 0%, rgba( 255, 255, 255, 0.71) 43.75%, rgba( 255, 255, 255, 0.0) 100%);
+  border-image-slice: 20% 20%;
+}
+
+.card__painter-name {
+  font-family: Raleway;
+  font-size: 32px;
+  font-weight: 100;
+  font-style: normal;
+  line-height: normal;
+
+  max-width: 160px;
+
+  text-align: right;
+
+  color: #FFF;
+}
+
+.card__painter-img {
+  width: 250px;
+  height: 250px;
+  margin: 35px 0;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card__picture-1 {
+  background-image: url(../img/main-cards/lamidov.webp);
+}
+
+.card__picture-2 {
+  background-image: url(../img/main-cards/oganesyn.webp);
+}
+
+.card__picture-3 {
+  background-image: url(../img/main-cards/osinin.webp);
+}
+
+.card__picture-4 {
+  background-image: url(../img/main-cards/antipov.webp);
+}

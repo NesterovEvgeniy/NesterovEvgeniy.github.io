@@ -1,0 +1,206 @@
+/* Lamidov-gallary page */
+
+.lamidov-gallary__title {
+  font-family: Raleway;
+  font-size: 32px;
+  font-weight: 100;
+  font-style: normal;
+  line-height: normal;
+
+  padding: 60px 0 30px;
+
+  text-align: center;
+
+  color: #FFF;
+}
+
+.lamidov-gallary__block {
+  padding: 60px 0;
+
+  border: 2px solid;
+  border-image: linear-gradient(90deg, rgba( 255, 255, 255, 0.00) 0%, rgba( 255, 255, 255, 0.00) 0%, rgba( 255, 255, 255, 0.00) 0%, rgba( 255, 255, 255, 0.71) 35.93%, rgba( 255, 255, 255, 0.00) 100%);
+  border-image-slice: 1;
+}
+
+.lamidov-gallary__slider {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.lamidov-gallary__name {
+  font-family: Raleway;
+  font-size: 32px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.80);
+}
+
+.lamidov-gallary__size {
+  font-family: Raleway;
+  font-size: 32px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+
+  text-align: center;
+
+  color: rgba(117, 117, 117, 0.80);
+}
+
+.lamidov-gallary__card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 0 auto;
+}
+
+.lamidov-gallary__card-img-1 {
+  width: 600px;
+  height: 600px;
+
+  background-image: url(../img/picture/lamidov/lamidov-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.lamidov-gallary__card-img-2 {
+  width: 600px;
+  height: 600px;
+
+  background-image: url(../img/picture/lamidov/lamidov-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.lamidov-gallary__card-img-3 {
+  width: 600px;
+  height: 600px;
+
+  background-image: url(../img/picture/lamidov/lamidov-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.lamidov-gallary__card-img-4 {
+  width: 600px;
+  height: 600px;
+
+  background-image: url(../img/picture/lamidov/lamidov-4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.lamidov-gallary__card-img-5 {
+  width: 600px;
+  height: 600px;
+
+  background-image: url(../img/picture/lamidov/lamidov-5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.lamidov-gallary__card-img-6 {
+  width: 600px;
+  height: 600px;
+
+  background-image: url(../img/picture/lamidov/lamidov-6.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.lamidov-gallary__card-img-7 {
+  width: 600px;
+  height: 600px;
+
+  background-image: url(../img/picture/lamidov/lamidov-7.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.lamidov-gallary__card-img-8 {
+  width: 600px;
+  height: 600px;
+
+  background-image: url(../img/picture/lamidov/lamidov-8.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.lamidov-gallary__card-img-9 {
+  width: 600px;
+  height: 600px;
+
+  background-image: url(../img/picture/lamidov/lamidov-9.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.lamidov-gallary__card-img-10 {
+  width: 600px;
+  height: 600px;
+
+  background-image: url(../img/picture/lamidov/lamidov-10.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.clients__slider-btn {
+  position: absolute;
+  z-index: 2;
+  top: 300px;
+
+  cursor: pointer;
+
+  border: none;
+  background-color: transparent;
+}
+
+.clients__slider-btnprev {
+  left: -100px;
+}
+
+.clients__slider-btnnext {
+  right: -100px;
+}
+
+/*
+.clients-slider__btn-box {
+  position: relative;
+  z-index: 10;
+
+  width: rem(28);
+  height: rem(28);
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 50%;
+  background-color: #5ccd6a;
+
+  & img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+}
+*/

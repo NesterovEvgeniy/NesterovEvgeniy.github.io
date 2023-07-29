@@ -1,0 +1,149 @@
+/* Pictures page */
+
+.picture-page__inner {
+  padding-top: 93px;
+
+  background-image: url(../img/picture/picture-main-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.picture__main {
+  max-width: 260px;
+  margin-left: 116px;
+}
+
+.picture__main-title {
+  font-family: Montserrat;
+  font-size: 49px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: normal;
+
+  text-transform: uppercase;
+
+  color: #4D453A;
+}
+
+.picture__authors {
+  padding-top: 60px;
+  padding-bottom: 165px;
+
+  text-align: center;
+}
+
+.picture__author-text {
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 100;
+  font-style: normal;
+  line-height: normal;
+
+  padding-bottom: 15px;
+
+  color: #FFF;
+}
+
+.picture__author-text:hover {
+  transition-duration: 0.5s;
+
+  scale: 105%;
+}
+
+.antipov__block {
+}
+
+.auther__title {
+  font-family: Raleway;
+  font-size: 32px;
+  font-weight: 100;
+  font-style: normal;
+  line-height: normal;
+
+  padding: 30px 0;
+
+  text-align: center;
+
+  color: #FFF;
+  border: 2px solid;
+  border-image: linear-gradient(90deg, rgba( 255, 255, 255, 0.00) 0%, rgba( 255, 255, 255, 0.00) 0%, rgba( 255, 255, 255, 0.00) 0%, rgba( 255, 255, 255, 0.71) 35.93%, rgba( 255, 255, 255, 0.00) 100%);
+  border-image-slice: 1;
+}
+
+.antipov__pictures {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  max-height: 1000px;
+  padding: 70px 45px;
+
+  column-gap: 152px;
+}
+
+.lamidov__pictures {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  max-height: 1300px;
+  padding: 70px 45px;
+
+  column-gap: 152px;
+}
+
+.oganesyn__pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+
+  max-height: 600px;
+  padding: 70px 45px 70px 45px;
+
+  column-gap: 152px;
+}
+
+.osinin__pictures {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  max-height: 600px;
+  padding: 70px 45px;
+
+  column-gap: 152px;
+}
+
+.picture__card {
+  margin-bottom: 50px;
+}
+
+.picture__name {
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.80);
+}
+
+.picture__size {
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+
+  text-align: center;
+
+  color: rgba(117, 117, 117, 0.80);
+}
