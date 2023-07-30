@@ -12,12 +12,12 @@ const cssnano = require("gulp-cssnano");
 const uglify = require("gulp-uglify");
 const plumber = require("gulp-plumber");
 const panini = require("panini");
-const imagemin = require("gulp-imagemin");
+/* const imagemin = require("gulp-imagemin"); */
 const del = require("del");
 const notify = require("gulp-notify");
 const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
-const imagewebp = require("gulp-webp");
+/* const imagewebp = require("gulp-webp"); */
 const browserSync = require("browser-sync").create();
 
 /* Paths */
@@ -171,7 +171,7 @@ function js() {
         .pipe(browserSync.reload({ stream: true }));
 } */
 
-function images() {
+/* function images() {
     return src(path.src.images, { base: srcPath + "assets/img/" })
         .pipe(imagemin([
             imagemin.gifsicle({ interlaced: true }),
@@ -186,13 +186,13 @@ function images() {
         ]))
         .pipe(dest(path.build.images))
         .pipe(browserSync.reload({ stream: true }));
-}
+} */
 
-function webpImages() {
+/* function webpImages() {
     return src(path.src.images, { base: srcPath + "assets/img/" })
         .pipe(imagewebp())
         .pipe(dest(path.build.images))
-}
+} */
 
 function fonts() {
     return src(path.src.fonts, { base: srcPath + "assets/fonts/" })

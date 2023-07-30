@@ -103,11 +103,11 @@
               </div>
               <nav class="footer__nav">
                 <ul>
-                  <li><a href="#main">Главная</a></li>
-                  <li><a href="#about">О галерее</a></li>
-                  <li><a href="#pictures">Картины</a></li>
+                  <li><a href="index.html">Главная</a></li>
+                  <li><a href="about.html">О галерее</a></li>
+                  <li><a href="pictures.html">Картины</a></li>
                   <li><a href="#events">Мероприятия</a></li>
-                  <li><a href="#contacts">Контакты</a></li>
+                  <li><a href="contacts.html">Контакты</a></li>
                 </ul>
               </nav>
             </div>

@@ -829,7 +829,7 @@ body {
     max-width: 890px;
     margin-bottom: 70px;
     padding: 50px 60px 50px 194px;
-    background-image: url(../img/about/background-goal.webp);
+    background-image: url(../img/about/background-goal.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -837,7 +837,7 @@ body {
 .goal__comfort {
     max-width: 890px;
     padding: 50px 60px 50px 194px;
-    background-image: url(../img/about/background-goal.webp);
+    background-image: url(../img/about/background-goal.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -866,7 +866,7 @@ body {
 /* Pictures page */
 .picture-page__inner {
     padding-top: 93px;
-    background-image: url(../img/picture/picture-main-img.png);
+    background-image: url(../img/picture/picture-main-img.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
