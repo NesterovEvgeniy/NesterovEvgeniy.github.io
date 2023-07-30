@@ -1,7 +1,7 @@
 /* Main page */
 
 .main__inner {
-  padding-top: 93px;
+  padding-top: rem(93);
 
   background-image: url(../img/main-img.webp);
   background-repeat: no-repeat;
@@ -11,10 +11,10 @@
 .circle {
   position: relative;
 
-  width: 7px;
-  height: 7px;
-  margin-bottom: 98px;
-  margin-left: 170px;
+  width: rem(7);
+  height: rem(7);
+  margin-bottom: rem(98);
+  margin-left: rem(170);
 
   border: none;
   border-radius: 50%;
@@ -23,27 +23,27 @@
 
 .circle:before {
   position: absolute;
-  top: -13px;
-  left: -12px;
+  top: rem(-13);
+  left: rem(-12);
 
-  width: 32px;
-  height: 32px;
+  width: rem(32);
+  height: rem(32);
 
   content: "";
 
   border-radius: 50%;
   background-color: #FEFFD0;
 
-  filter: blur(15px);
+  filter: blur(rem( 15) );
 }
 
 .main__text {
-  margin-left: 80px;
+  margin-left: rem(80);
 }
 
 .main__title {
   font-family: Raleway;
-  font-size: 49px;
+  font-size: rem(49);
   font-weight: 100;
   font-style: normal;
   line-height: normal;
@@ -55,20 +55,20 @@
 
 .main__description {
   font-family: Raleway;
-  font-size: 34px;
+  font-size: rem(34);
   font-weight: 100;
   font-style: normal;
-  line-height: 70px;
+  line-height: rem(70);
 
   color: #656565;
 }
 
 .main__button {
-  width: 70px;
-  height: 110px;
-  margin-top: 90px;
-  margin-bottom: 120px;
-  margin-left: 110px;
+  width: rem(70);
+  height: rem(110);
+  margin-top: rem(90);
+  margin-bottom: rem(120);
+  margin-left: rem(110);
   padding: 0;
 
   border: none;
@@ -79,12 +79,12 @@
   display: grid;
   justify-content: center;
 
-  padding-bottom: 145px;
+  padding-bottom: rem(145);
 
-  grid-template-columns: repeat(2, 540px);
-  grid-template-rows: repeat(2, 320px);
-  column-gap: 20px;
-  row-gap: 90px;
+  grid-template-columns: repeat(2, rem( 540) );
+  grid-template-rows: repeat(2, rem( 320) );
+  column-gap: rem(20);
+  row-gap: rem(90);
 }
 
 .card__painter {
@@ -96,7 +96,7 @@
   border-image: linear-gradient(90deg, rgba( 255, 255, 255, 0.0) 0%, rgba( 255, 255, 255, 0.2) 43.75%, rgba( 255, 255, 255, 0.0) 100%);
   border-image-slice: 1%;
 
-  gap: 54px;
+  gap: rem(54);
 }
 
 .card__painter:hover {
@@ -106,12 +106,12 @@
 
 .card__painter-name {
   font-family: Raleway;
-  font-size: 32px;
+  font-size: rem(32);
   font-weight: 100;
   font-style: normal;
   line-height: normal;
 
-  max-width: 160px;
+  max-width: rem(160);
 
   text-align: right;
 
@@ -119,9 +119,9 @@
 }
 
 .card__painter-img {
-  width: 250px;
-  height: 250px;
-  margin: 35px 0;
+  width: rem(250);
+  height: rem(250);
+  margin: rem(35) 0;
 
   background-repeat: no-repeat;
   background-position: center;

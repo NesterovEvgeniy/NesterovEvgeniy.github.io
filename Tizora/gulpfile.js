@@ -12,12 +12,10 @@ const cssnano = require("gulp-cssnano");
 const uglify = require("gulp-uglify");
 const plumber = require("gulp-plumber");
 const panini = require("panini");
-/* const imagemin = require("gulp-imagemin"); */
 const del = require("del");
 const notify = require("gulp-notify");
 const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
-/* const imagewebp = require("gulp-webp"); */
 const browserSync = require("browser-sync").create();
 
 /* Paths */
@@ -171,28 +169,11 @@ function js() {
         .pipe(browserSync.reload({ stream: true }));
 } */
 
-/* function images() {
+function images() {
     return src(path.src.images, { base: srcPath + "assets/img/" })
-        .pipe(imagemin([
-            imagemin.gifsicle({ interlaced: true }),
-            imagemin.mozjpeg({ quality: 75, progressive: true }),
-            imagemin.optipng({ optimizationLevel: 5 }),
-            imagemin.svgo({
-                plugins: [
-                    { removeViewBox: true },
-                    { cleanupIDs: false }
-                ]
-            })
-        ]))
         .pipe(dest(path.build.images))
         .pipe(browserSync.reload({ stream: true }));
-} */
-
-/* function webpImages() {
-    return src(path.src.images, { base: srcPath + "assets/img/" })
-        .pipe(imagewebp())
-        .pipe(dest(path.build.images))
-} */
+}
 
 function fonts() {
     return src(path.src.fonts, { base: srcPath + "assets/fonts/" })
@@ -214,7 +195,7 @@ function watchFiles() {
     
 }
 
-const build = gulp.series(clean, gulp.parallel(html, php, css, js, images, webpImages, fonts))
+const build = gulp.series(clean, gulp.parallel(html, php, css, js, images, fonts))
 const watch = gulp.parallel(build, watchFiles, serve)
 
 
@@ -225,7 +206,6 @@ exports.css = css
 exports.js = js
 exports.php = php
 exports.images = images
-exports.webpImages = webpImages
 exports.fonts = fonts
 exports.clean = clean
 exports.build = build

@@ -10,12 +10,12 @@
   display: flex;
   justify-content: right;
 
-  padding-top: 23px;
-  padding-bottom: 31px;
+  padding-top: rem(23);
+  padding-bottom: rem(31);
 
   color: #FFFFFF;
 
-  gap: 21px;
+  gap: rem(21);
 }
 
 .header__bottom {
@@ -29,7 +29,7 @@
 .header__nav {
   ul {
     font-family: Raleway;
-    font-size: 16px;
+    font-size: rem(16);
     font-weight: 300;
     font-style: normal;
     line-height: normal;
@@ -39,11 +39,11 @@
 
     color: #494949;
 
-    gap: 80px;
+    gap: rem(80);
 
     a {
       font-family: Raleway;
-      font-size: 16px;
+      font-size: rem(16);
       font-weight: 300;
       font-style: normal;
       line-height: normal;

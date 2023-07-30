@@ -2,12 +2,12 @@
 
 .lamidov-gallary__title {
   font-family: Raleway;
-  font-size: 32px;
+  font-size: rem(32);
   font-weight: 100;
   font-style: normal;
   line-height: normal;
 
-  padding: 60px 0 30px;
+  padding: rem(60) 0 rem( 30);
 
   text-align: center;
 
@@ -15,7 +15,7 @@
 }
 
 .lamidov-gallary__block {
-  padding: 60px 0;
+  padding: rem(60) 0;
 
   border: 2px solid;
   border-image: linear-gradient(90deg, rgba( 255, 255, 255, 0.00) 0%, rgba( 255, 255, 255, 0.00) 0%, rgba( 255, 255, 255, 0.00) 0%, rgba( 255, 255, 255, 0.71) 35.93%, rgba( 255, 255, 255, 0.00) 100%);
@@ -23,19 +23,19 @@
 }
 
 .lamidov-gallary__slider {
-  width: 800px;
+  width: rem(800);
   margin: 0 auto;
 }
 
 .lamidov-gallary__name {
   font-family: Raleway;
-  font-size: 32px;
+  font-size: rem(32);
   font-weight: 500;
   font-style: normal;
   line-height: normal;
 
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: rem(30);
+  margin-bottom: rem(10);
 
   text-align: center;
 
@@ -44,7 +44,7 @@
 
 .lamidov-gallary__size {
   font-family: Raleway;
-  font-size: 32px;
+  font-size: rem(32);
   font-weight: 500;
   font-style: normal;
   line-height: normal;
@@ -63,100 +63,100 @@
 }
 
 .lamidov-gallary__card-img-1 {
-  width: 600px;
-  height: 600px;
+  width: rem(600);
+  height: rem(600);
 
-  background-image: url(../img/picture/lamidov/lamidov-1.jpg);
+  background-image: url(../img/picture/lamidov/lamidov-1.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .lamidov-gallary__card-img-2 {
-  width: 600px;
-  height: 600px;
+  width: rem(600);
+  height: rem(600);
 
-  background-image: url(../img/picture/lamidov/lamidov-2.jpg);
+  background-image: url(../img/picture/lamidov/lamidov-2.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .lamidov-gallary__card-img-3 {
-  width: 600px;
-  height: 600px;
+  width: rem(600);
+  height: rem(600);
 
-  background-image: url(../img/picture/lamidov/lamidov-3.jpg);
+  background-image: url(../img/picture/lamidov/lamidov-3.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .lamidov-gallary__card-img-4 {
-  width: 600px;
-  height: 600px;
+  width: rem(600);
+  height: rem(600);
 
-  background-image: url(../img/picture/lamidov/lamidov-4.jpg);
+  background-image: url(../img/picture/lamidov/lamidov-8.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .lamidov-gallary__card-img-5 {
-  width: 600px;
-  height: 600px;
+  width: rem(600);
+  height: rem(600);
 
-  background-image: url(../img/picture/lamidov/lamidov-5.jpg);
+  background-image: url(../img/picture/lamidov/lamidov-4.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .lamidov-gallary__card-img-6 {
-  width: 600px;
-  height: 600px;
+  width: rem(600);
+  height: rem(600);
 
-  background-image: url(../img/picture/lamidov/lamidov-6.jpg);
+  background-image: url(../img/picture/lamidov/lamidov-5.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .lamidov-gallary__card-img-7 {
-  width: 600px;
-  height: 600px;
+  width: rem(600);
+  height: rem(600);
 
-  background-image: url(../img/picture/lamidov/lamidov-7.jpg);
+  background-image: url(../img/picture/lamidov/lamidov-9.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .lamidov-gallary__card-img-8 {
-  width: 600px;
-  height: 600px;
+  width: rem(600);
+  height: rem(600);
 
-  background-image: url(../img/picture/lamidov/lamidov-8.jpg);
+  background-image: url(../img/picture/lamidov/lamidov-6.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .lamidov-gallary__card-img-9 {
-  width: 600px;
-  height: 600px;
+  width: rem(600);
+  height: rem(600);
 
-  background-image: url(../img/picture/lamidov/lamidov-9.jpg);
+  background-image: url(../img/picture/lamidov/lamidov-7.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .lamidov-gallary__card-img-10 {
-  width: 600px;
-  height: 600px;
+  width: rem(600);
+  height: rem(600);
 
-  background-image: url(../img/picture/lamidov/lamidov-10.jpg);
+  background-image: url(../img/picture/lamidov/lamidov-10.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -165,7 +165,7 @@
 .clients__slider-btn {
   position: absolute;
   z-index: 2;
-  top: 300px;
+  top: rem(300);
 
   cursor: pointer;
 
@@ -174,11 +174,11 @@
 }
 
 .clients__slider-btnprev {
-  left: -100px;
+  left: rem(-100);
 }
 
 .clients__slider-btnnext {
-  right: -100px;
+  right: rem(-100);
 }
 
 /*

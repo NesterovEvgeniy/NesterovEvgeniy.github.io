@@ -1,7 +1,7 @@
 /* Lamidov page */
 
 .auther-page__inner {
-  padding-top: 127px;
+  padding-top: rem(127);
 }
 
 .auther__block {
@@ -9,46 +9,46 @@
 }
 
 .auther__photo {
-  margin-right: 126px;
+  margin-right: rem(126);
 }
 
 .auther__info {
-  margin-bottom: 80px;
+  margin-bottom: rem(80);
 }
 
 .auther__name {
   font-family: Raleway;
-  font-size: 52px;
+  font-size: rem(52);
   font-weight: 300;
   font-style: normal;
   line-height: normal;
 
-  margin-bottom: 50px;
+  margin-bottom: rem(50);
 
   color: #FFF;
 }
 
 .auther__text {
   font-family: Raleway;
-  font-size: 16px;
+  font-size: rem(16);
   font-weight: 300;
   font-style: normal;
   line-height: normal;
 
-  max-width: 780px;
-  padding-bottom: 20px;
+  max-width: rem(780);
+  padding-bottom: rem(20);
 
   color: #B3AA9D;
 }
 
 .lamidov__main {
-  max-width: 260px;
-  margin-left: 116px;
+  max-width: rem(260);
+  margin-left: rem(116);
 }
 
 .lamidov__main-title {
   font-family: Montserrat;
-  font-size: 49px;
+  font-size: rem(49);
   font-weight: 300;
   font-style: normal;
   line-height: normal;
@@ -59,20 +59,20 @@
 }
 
 .lamidov__authors {
-  padding-top: 60px;
-  padding-bottom: 165px;
+  padding-top: rem(60);
+  padding-bottom: rem(165);
 
   text-align: center;
 }
 
 .lamidov__author-text {
   font-family: Raleway;
-  font-size: 18px;
+  font-size: rem(18);
   font-weight: 100;
   font-style: normal;
   line-height: normal;
 
-  padding-bottom: 15px;
+  padding-bottom: rem(15);
 
   color: #FFF;
 }
@@ -85,12 +85,12 @@
 
 .auther__title {
   font-family: Raleway;
-  font-size: 32px;
+  font-size: rem(32);
   font-weight: 100;
   font-style: normal;
   line-height: normal;
 
-  padding: 30px 0;
+  padding: rem(30) 0;
 
   text-align: center;
 
@@ -106,19 +106,19 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  max-height: 1650px;
-  padding: 70px 45px;
+  max-height: rem(1650);
+  padding: rem(70) rem( 45);
 
-  column-gap: 152px;
+  column-gap: rem(152);
 }
 
 .picture__card {
-  margin-bottom: 50px;
+  margin-bottom: rem(50);
 }
 
 .picture__name {
   font-family: Raleway;
-  font-size: 16px;
+  font-size: rem(16);
   font-weight: 500;
   font-style: normal;
   line-height: normal;
@@ -133,7 +133,7 @@
 
 .picture__size {
   font-family: Raleway;
-  font-size: 16px;
+  font-size: rem(16);
   font-weight: 500;
   font-style: normal;
   line-height: normal;
@@ -148,22 +148,22 @@
   align-items: center;
   justify-content: center;
 
-  width: 268px;
-  min-height: 48px;
+  width: rem(268);
+  min-height: rem(48);
   margin: 0 auto;
-  margin-bottom: 68px;
+  margin-bottom: rem(68);
 
   border: 1px solid #5E5548;
   background-color: transparent;
 
   p {
     font-family: Raleway;
-    font-size: 16px;
+    font-size: rem(16);
     font-weight: 500;
     font-style: normal;
     line-height: normal;
 
-    padding-left: 25px;
+    padding-left: rem(25);
 
     text-align: center;
 

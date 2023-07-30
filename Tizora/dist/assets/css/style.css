@@ -339,37 +339,19 @@ template {
 }
 
 /*
-@font-face {
-  font-family: "Akrobat";
-  src: url("../fonts/Akrobat-Bold.woff2") format("woff2");
-  src: url("../fonts/Akrobat-Bold.woff") format("woff");
-  font-weight: 700;
-}
-*/
-/*
-@font-face {
-  font-family: "Akrobat";
-  src: url("../fonts/Akrobat-SemiBold.woff2") format("woff2");
-  src: url("../fonts/Akrobat-SemiBold.woff") format("woff");
-  font-weight: 600;
-}
-*/
-/*
-@font-face {
-  font-family: "Plain";
-  src: url("../fonts/Plain-Regular.woff2") format("woff2");
-  src: url("../fonts/Plain-Regular.woff") format("woff");
-  font-weight: 400;
-}
-*/
-/*
 $color-decor: #ec6701;
 
 :root {
   --color-decor: #ec6701;
 }
 */
-/* @import "mixins"; */
+/* @mixin main-font {
+  font-family: 'SFProDisplay-Semibold', sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-style: normal;
+  font-display: swap;
+} */
 /* Functions */
 /* Default Styles */
 html {
@@ -413,7 +395,7 @@ body {
     overflow: hidden;
     box-sizing: border-box;
   /*     color: $font-color; */
-    min-width: calc(320 / 16 * 1rem);
+    min-width: calc(390 / 16 * 1rem);
     max-width: calc(1440 / 16 * 1rem);
   /* padding: 0 rem(10); */
     margin: 0 auto;
@@ -434,10 +416,10 @@ body {
     display: flex;
     -ms-flex-pack: right;
     justify-content: right;
-    padding-top: 23px;
-    padding-bottom: 31px;
+    padding-top: calc(23 / 16 * 1rem);
+    padding-bottom: calc(31 / 16 * 1rem);
     color: #FFFFFF;
-    gap: 21px;
+    gap: calc(21 / 16 * 1rem);
 }
 
 .header__bottom {
@@ -449,7 +431,7 @@ body {
 
 .header__nav ul {
     font-family: Raleway;
-    font-size: 16px;
+    font-size: calc(16 / 16 * 1rem);
     font-weight: 300;
     font-style: normal;
     line-height: normal;
@@ -458,12 +440,12 @@ body {
     -ms-flex-pack: right;
     justify-content: right;
     color: #494949;
-    gap: 80px;
+    gap: calc(80 / 16 * 1rem);
 }
 
 .header__nav ul a {
     font-family: Raleway;
-    font-size: 16px;
+    font-size: calc(16 / 16 * 1rem);
     font-weight: 300;
     font-style: normal;
     line-height: normal;
@@ -474,9 +456,59 @@ body {
     color: #fff;
 }
 
+.menu-mobile__list {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    display: none;
+    width: calc(250 / 16 * 1rem);
+    margin: calc(10 / 16 * 1rem) calc(0 / 16 * 1rem) calc(10 / 16 * 1rem) calc(10 / 16 * 1rem);
+    padding: calc(30 / 16 * 1rem) calc(30 / 16 * 1rem) calc(0 / 16 * 1rem) calc(30 / 16 * 1rem);
+    transition: all 0.5s;
+    -webkit-transform: translateX(1000%);
+    transform: translateX(1000%);
+    border: calc(1 / 16 * 1rem) dashed rgb(255, 255, 255);
+    background-color: #2a2a2a;
+    box-shadow: 0px 0px calc(20 / 16 * 1rem) rgba(0, 0, 0, 0.15);
+}
+
+.menu-mobile__item {
+    position: relative;
+    width: 100%;
+    margin-bottom: calc(30 / 16 * 1rem);
+    border-bottom: calc(1 / 16 * 1rem) solid rgba(0, 0, 0, 0.1);
+}
+
+.menu-mobile__item a {
+    display: inline;
+}
+
+.menu-mobile__link {
+    font-family: Roboto;
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1rem;
+    display: inline;
+    display: block;
+    transition: color 0.5s ease;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.menu-mobile__link:hover {
+    color: #fff;
+}
+
+.menu-mobile__list--active {
+    display: block;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+}
+
 /* Main page */
 .main__inner {
-    padding-top: 93px;
+    padding-top: calc(93 / 16 * 1rem);
     background-image: url(../img/main-img.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -484,10 +516,10 @@ body {
 
 .circle {
     position: relative;
-    width: 7px;
-    height: 7px;
-    margin-bottom: 98px;
-    margin-left: 170px;
+    width: calc(7 / 16 * 1rem);
+    height: calc(7 / 16 * 1rem);
+    margin-bottom: calc(98 / 16 * 1rem);
+    margin-left: calc(170 / 16 * 1rem);
     border: none;
     border-radius: 50%;
     background-color: #FEFFD0;
@@ -495,24 +527,24 @@ body {
 
 .circle:before {
     position: absolute;
-    top: -13px;
-    left: -12px;
-    width: 32px;
-    height: 32px;
+    top: calc(-13 / 16 * 1rem);
+    left: calc(-12 / 16 * 1rem);
+    width: calc(32 / 16 * 1rem);
+    height: calc(32 / 16 * 1rem);
     content: "";
     border-radius: 50%;
     background-color: #FEFFD0;
-    -webkit-filter: blur(15px);
-    filter: blur(15px);
+    -webkit-filter: blur(calc(15 / 16 * 1rem));
+    filter: blur(calc(15 / 16 * 1rem));
 }
 
 .main__text {
-    margin-left: 80px;
+    margin-left: calc(80 / 16 * 1rem);
 }
 
 .main__title {
     font-family: Raleway;
-    font-size: 49px;
+    font-size: calc(49 / 16 * 1rem);
     font-weight: 100;
     font-style: normal;
     line-height: normal;
@@ -522,19 +554,19 @@ body {
 
 .main__description {
     font-family: Raleway;
-    font-size: 34px;
+    font-size: calc(34 / 16 * 1rem);
     font-weight: 100;
     font-style: normal;
-    line-height: 70px;
+    line-height: calc(70 / 16 * 1rem);
     color: #656565;
 }
 
 .main__button {
-    width: 70px;
-    height: 110px;
-    margin-top: 90px;
-    margin-bottom: 120px;
-    margin-left: 110px;
+    width: calc(70 / 16 * 1rem);
+    height: calc(110 / 16 * 1rem);
+    margin-top: calc(90 / 16 * 1rem);
+    margin-bottom: calc(120 / 16 * 1rem);
+    margin-left: calc(110 / 16 * 1rem);
     padding: 0;
     border: none;
     background-color: transparent;
@@ -544,13 +576,13 @@ body {
     display: grid;
     -ms-flex-pack: center;
     justify-content: center;
-    padding-bottom: 145px;
-    grid-template-columns: repeat(2, 540px);
-    grid-template-rows: repeat(2, 320px);
-    -webkit-column-gap: 20px;
-    -moz-column-gap: 20px;
-    column-gap: 20px;
-    row-gap: 90px;
+    padding-bottom: calc(145 / 16 * 1rem);
+    grid-template-columns: repeat(2, calc(540 / 16 * 1rem));
+    grid-template-rows: repeat(2, calc(320 / 16 * 1rem));
+    -webkit-column-gap: calc(20 / 16 * 1rem);
+    -moz-column-gap: calc(20 / 16 * 1rem);
+    column-gap: calc(20 / 16 * 1rem);
+    row-gap: calc(90 / 16 * 1rem);
 }
 
 .card__painter {
@@ -564,7 +596,7 @@ body {
     -o-border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 43.75%, rgba(255, 255, 255, 0) 100%);
     border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 43.75%, rgba(255, 255, 255, 0) 100%);
     border-image-slice: 1%;
-    gap: 54px;
+    gap: calc(54 / 16 * 1rem);
 }
 
 .card__painter:hover {
@@ -575,19 +607,19 @@ body {
 
 .card__painter-name {
     font-family: Raleway;
-    font-size: 32px;
+    font-size: calc(32 / 16 * 1rem);
     font-weight: 100;
     font-style: normal;
     line-height: normal;
-    max-width: 160px;
+    max-width: calc(160 / 16 * 1rem);
     text-align: right;
     color: #FFF;
 }
 
 .card__painter-img {
-    width: 250px;
-    height: 250px;
-    margin: 35px 0;
+    width: calc(250 / 16 * 1rem);
+    height: calc(250 / 16 * 1rem);
+    margin: calc(35 / 16 * 1rem) 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -613,15 +645,14 @@ body {
 .about__main-info {
     display: -ms-flexbox;
     display: flex;
-  /*   flex-wrap: wrap; */
-    padding-left: 100px;
-    gap: 20px;
+    padding-left: calc(100 / 16 * 1rem);
+    gap: calc(20 / 16 * 1rem);
 }
 
 .about__info {
-    min-width: 490px;
-    margin-bottom: 100px;
-    padding: 100px 70px 70px;
+    min-width: calc(490 / 16 * 1rem);
+    margin-bottom: calc(100 / 16 * 1rem);
+    padding: calc(100 / 16 * 1rem) calc(70 / 16 * 1rem) calc(70 / 16 * 1rem);
     border: 2px solid;
     -o-border-image: linear-gradient(rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.1) 30.75%, rgb(255, 255, 255) 100%);
     border-image: linear-gradient(rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.1) 30.75%, rgb(255, 255, 255) 100%);
@@ -630,10 +661,10 @@ body {
 
 .about__star {
     position: relative;
-    width: 7px;
-    height: 7px;
-    margin-top: 93px;
-    margin-left: 175px;
+    width: calc(7 / 16 * 1rem);
+    height: calc(7 / 16 * 1rem);
+    margin-top: calc(93 / 16 * 1rem);
+    margin-left: calc(175 / 16 * 1rem);
     border: none;
     border-radius: 50%;
     background-color: #FEFFD0;
@@ -641,36 +672,36 @@ body {
 
 .about__star:before {
     position: absolute;
-    top: -13px;
-    left: -12px;
-    width: 32px;
-    height: 32px;
+    top: calc(-13 / 16 * 1rem);
+    left: calc(-12 / 16 * 1rem);
+    width: calc(32 / 16 * 1rem);
+    height: calc(32 / 16 * 1rem);
     content: "";
     border-radius: 50%;
     background-color: #FEFFD0;
-    -webkit-filter: blur(15px);
-    filter: blur(15px);
+    -webkit-filter: blur(calc(15 / 16 * 1rem));
+    filter: blur(calc(15 / 16 * 1rem));
 }
 
 .about__title {
     font-family: Montserrat;
-    font-size: 49px;
+    font-size: calc(49 / 16 * 1rem);
     font-weight: 300;
     font-style: normal;
     line-height: normal;
-    margin-bottom: 90px;
+    margin-bottom: calc(90 / 16 * 1rem);
     text-transform: uppercase;
     color: #4D453A;
 }
 
 .about__description {
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: calc(18 / 16 * 1rem);
     font-weight: 400;
     font-style: normal;
     line-height: normal;
-    max-width: 346px;
-    margin-bottom: 20px;
+    max-width: calc(346 / 16 * 1rem);
+    margin-bottom: calc(20 / 16 * 1rem);
     color: #FFF;
 }
 
@@ -679,34 +710,34 @@ body {
     -ms-flex-pack: center;
     justify-content: center;
     margin-top: 93px;
-    grid-template-columns: repeat(2, 100px);
-    grid-template-rows: repeat(2, 100px);
-    row-gap: 45px;
-    -webkit-column-gap: 40px;
-    -moz-column-gap: 40px;
-    column-gap: 40px;
+    grid-template-columns: repeat(2, calc(100 / 16 * 1rem));
+    grid-template-rows: repeat(2, calc(100 / 16 * 1rem));
+    row-gap: calc(45 / 16 * 1rem);
+    -webkit-column-gap: calc(40 / 16 * 1rem);
+    -moz-column-gap: calc(40 / 16 * 1rem);
+    column-gap: calc(40 / 16 * 1rem);
 }
 
 .nft-frame {
     position: absolute;
-    top: -155px;
-    left: 35px;
+    top: calc(-155 / 16 * 1rem);
+    left: calc(35 / 16 * 1rem);
 }
 
 .about__nft-text {
     position: relative;
-    max-width: 534px;
-    margin-left: 46px;
+    max-width: calc(534 / 16 * 1rem);
+    margin-left: calc(46 / 16 * 1rem);
     background: linear-gradient(360deg, #524A3E 0%, rgba(82, 74, 62, 0) 100%);
 }
 
 .about__nft-title {
     font-family: Montserrat;
-    font-size: 158px;
+    font-size: calc(158 / 16 * 1rem);
     font-weight: 100;
     font-style: normal;
     line-height: normal;
-    padding-right: 35px;
+    padding-right: calc(35 / 16 * 1rem);
     text-align: right;
     text-transform: uppercase;
     background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0) 87.4%);
@@ -717,26 +748,26 @@ body {
 
 .about__nft-description {
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: calc(18 / 16 * 1rem);
     font-weight: 400;
     font-style: normal;
     line-height: normal;
-    max-width: 402px;
-    margin-top: 30px;
-    margin-left: 61px;
-    padding-bottom: 43px;
+    max-width: calc(402 / 16 * 1rem);
+    margin-top: calc(30 / 16 * 1rem);
+    margin-left: calc(61 / 16 * 1rem);
+    padding-bottom: calc(43 / 16 * 1rem);
     color: #000;
 }
 
 .mission__title {
     font-family: Raleway;
-    font-size: 36px;
+    font-size: calc(36 / 16 * 1rem);
     font-weight: 100;
     font-style: normal;
     line-height: normal;
-    max-width: 568px;
+    max-width: calc(568 / 16 * 1rem);
     margin: 0 auto;
-    padding: 16px 0;
+    padding: calc(16 / 16 * 1rem) 0;
     text-align: center;
     color: #FFF;
     border: 2px solid;
@@ -750,9 +781,9 @@ body {
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
-    padding-top: 80px;
-    padding-bottom: 160px;
-    gap: 150px;
+    padding-top: calc(80 / 16 * 1rem);
+    padding-bottom: calc(160 / 16 * 1rem);
+    gap: calc(150 / 16 * 1rem);
 }
 
 .mission__save {
@@ -765,42 +796,42 @@ body {
 
 .mission__save-text {
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: calc(18 / 16 * 1rem);
     font-weight: 400;
     font-style: normal;
     line-height: normal;
-    max-width: 302px;
-    margin-top: 40px;
+    max-width: calc(302 / 16 * 1rem);
+    margin-top: calc(40 / 16 * 1rem);
     text-align: center;
     color: #FFF;
 }
 
 .mission__support-text {
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: calc(18 / 16 * 1rem);
     font-weight: 400;
     font-style: normal;
     line-height: normal;
-    max-width: 143px;
-    margin-top: 44px;
+    max-width: calc(143 / 16 * 1rem);
+    margin-top: calc(44 / 16 * 1rem);
     text-align: center;
     color: #FFF;
 }
 
 .about__goal-block {
-    margin-bottom: 117px;
+    margin-bottom: calc(117 / 16 * 1rem);
 }
 
 .goal__title {
     font-family: Raleway;
-    font-size: 36px;
+    font-size: calc(36 / 16 * 1rem);
     font-weight: 100;
     font-style: normal;
     line-height: normal;
-    max-width: 568px;
+    max-width: calc(568 / 16 * 1rem);
     margin: 0 auto;
-    margin-bottom: 70px;
-    padding: 16px 0;
+    margin-bottom: calc(70 / 16 * 1rem);
+    padding: calc(16 / 16 * 1rem) 0;
     text-align: center;
     color: #FFF;
     border: 2px solid;
@@ -817,7 +848,7 @@ body {
     align-items: end;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-right: 60px;
+    margin-right: calc(60 / 16 * 1rem);
 }
 
 .goal__img {
@@ -826,17 +857,17 @@ body {
 }
 
 .goal__garanty {
-    max-width: 890px;
-    margin-bottom: 70px;
-    padding: 50px 60px 50px 194px;
+    max-width: calc(890 / 16 * 1rem);
+    margin-bottom: calc(70 / 16 * 1rem);
+    padding: calc(50 / 16 * 1rem) calc(60 / 16 * 1rem) calc(50 / 16 * 1rem) calc(194 / 16 * 1rem);
     background-image: url(../img/about/background-goal.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .goal__comfort {
-    max-width: 890px;
-    padding: 50px 60px 50px 194px;
+    max-width: calc(890 / 16 * 1rem);
+    padding: calc(50 / 16 * 1rem) calc(60 / 16 * 1rem) calc(50 / 16 * 1rem) calc(194 / 16 * 1rem);
     background-image: url(../img/about/background-goal.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -844,18 +875,18 @@ body {
 
 .goal__text {
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: calc(18 / 16 * 1rem);
     font-weight: 400;
     font-style: normal;
     line-height: normal;
-    max-width: 637px;
+    max-width: calc(637 / 16 * 1rem);
     color: #FFF;
 }
 
 .video__block {
-    width: 1240px;
-    height: 715px;
-    margin-top: 120px;
+    width: calc(1240 / 16 * 1rem);
+    height: calc(715 / 16 * 1rem);
+    margin-top: calc(120 / 16 * 1rem);
     background-image: url(../img/about/about-large-picture.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -865,20 +896,20 @@ body {
 
 /* Pictures page */
 .picture-page__inner {
-    padding-top: 93px;
+    padding-top: calc(93 / 16 * 1rem);
     background-image: url(../img/picture/picture-main-img.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .picture__main {
-    max-width: 260px;
-    margin-left: 116px;
+    max-width: calc(260 / 16 * 1rem);
+    margin-left: calc(116 / 16 * 1rem);
 }
 
 .picture__main-title {
     font-family: Montserrat;
-    font-size: 49px;
+    font-size: calc(49 / 16 * 1rem);
     font-weight: 300;
     font-style: normal;
     line-height: normal;
@@ -887,18 +918,18 @@ body {
 }
 
 .picture__authors {
-    padding-top: 60px;
-    padding-bottom: 165px;
+    padding-top: calc(60 / 16 * 1rem);
+    padding-bottom: calc(165 / 16 * 1rem);
     text-align: center;
 }
 
 .picture__author-text {
     font-family: Raleway;
-    font-size: 18px;
+    font-size: calc(18 / 16 * 1rem);
     font-weight: 100;
     font-style: normal;
     line-height: normal;
-    padding-bottom: 15px;
+    padding-bottom: calc(15 / 16 * 1rem);
     color: #FFF;
 }
 
@@ -909,11 +940,11 @@ body {
 
 .auther__title {
     font-family: Raleway;
-    font-size: 32px;
+    font-size: calc(32 / 16 * 1rem);
     font-weight: 100;
     font-style: normal;
     line-height: normal;
-    padding: 30px 0;
+    padding: calc(30 / 16 * 1rem) 0;
     text-align: center;
     color: #FFF;
     border: 2px solid;
@@ -931,11 +962,11 @@ body {
     flex-wrap: wrap;
     -ms-flex-pack: center;
     justify-content: center;
-    max-height: 1000px;
-    padding: 70px 45px;
-    -webkit-column-gap: 152px;
-    -moz-column-gap: 152px;
-    column-gap: 152px;
+    max-height: calc(1000 / 16 * 1rem);
+    padding: calc(70 / 16 * 1rem) calc(45 / 16 * 1rem);
+    -webkit-column-gap: calc(152 / 16 * 1rem);
+    -moz-column-gap: calc(152 / 16 * 1rem);
+    column-gap: calc(152 / 16 * 1rem);
 }
 
 .lamidov__pictures {
@@ -947,11 +978,11 @@ body {
     flex-wrap: wrap;
     -ms-flex-pack: center;
     justify-content: center;
-    max-height: 1300px;
-    padding: 70px 45px;
-    -webkit-column-gap: 152px;
-    -moz-column-gap: 152px;
-    column-gap: 152px;
+    max-height: calc(1300 / 16 * 1rem);
+    padding: calc(70 / 16 * 1rem) calc(45 / 16 * 1rem);
+    -webkit-column-gap: calc(152 / 16 * 1rem);
+    -moz-column-gap: calc(152 / 16 * 1rem);
+    column-gap: calc(152 / 16 * 1rem);
 }
 
 .oganesyn__pictures {
@@ -961,11 +992,11 @@ body {
     flex-wrap: wrap;
     -ms-flex-pack: left;
     justify-content: left;
-    max-height: 600px;
-    padding: 70px 45px 70px 45px;
-    -webkit-column-gap: 152px;
-    -moz-column-gap: 152px;
-    column-gap: 152px;
+    max-height: calc(600 / 16 * 1rem);
+    padding: calc(70 / 16 * 1rem) calc(45 / 16 * 1rem) calc(70 / 16 * 1rem) calc(45 / 16 * 1rem);
+    -webkit-column-gap: calc(152 / 16 * 1rem);
+    -moz-column-gap: calc(152 / 16 * 1rem);
+    column-gap: calc(152 / 16 * 1rem);
 }
 
 .osinin__pictures {
@@ -977,32 +1008,32 @@ body {
     flex-wrap: wrap;
     -ms-flex-pack: center;
     justify-content: center;
-    max-height: 600px;
-    padding: 70px 45px;
-    -webkit-column-gap: 152px;
-    -moz-column-gap: 152px;
-    column-gap: 152px;
+    max-height: calc(600 / 16 * 1rem);
+    padding: calc(70 / 16 * 1rem) calc(45 / 16 * 1rem);
+    -webkit-column-gap: calc(152 / 16 * 1rem);
+    -moz-column-gap: calc(152 / 16 * 1rem);
+    column-gap: calc(152 / 16 * 1rem);
 }
 
 .picture__card {
-    margin-bottom: 50px;
+    margin-bottom: calc(50 / 16 * 1rem);
 }
 
 .picture__name {
     font-family: Raleway;
-    font-size: 16px;
+    font-size: calc(16 / 16 * 1rem);
     font-weight: 500;
     font-style: normal;
     line-height: normal;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-top: calc(30 / 16 * 1rem);
+    margin-bottom: calc(10 / 16 * 1rem);
     text-align: center;
     color: rgba(255, 255, 255, 0.8);
 }
 
 .picture__size {
     font-family: Raleway;
-    font-size: 16px;
+    font-size: calc(16 / 16 * 1rem);
     font-weight: 500;
     font-style: normal;
     line-height: normal;
@@ -1012,7 +1043,7 @@ body {
 
 /* Lamidov page */
 .auther-page__inner {
-    padding-top: 127px;
+    padding-top: calc(127 / 16 * 1rem);
 }
 
 .auther__block {
@@ -1021,42 +1052,42 @@ body {
 }
 
 .auther__photo {
-    margin-right: 126px;
+    margin-right: calc(126 / 16 * 1rem);
 }
 
 .auther__info {
-    margin-bottom: 80px;
+    margin-bottom: calc(80 / 16 * 1rem);
 }
 
 .auther__name {
     font-family: Raleway;
-    font-size: 52px;
+    font-size: calc(52 / 16 * 1rem);
     font-weight: 300;
     font-style: normal;
     line-height: normal;
-    margin-bottom: 50px;
+    margin-bottom: calc(50 / 16 * 1rem);
     color: #FFF;
 }
 
 .auther__text {
     font-family: Raleway;
-    font-size: 16px;
+    font-size: calc(16 / 16 * 1rem);
     font-weight: 300;
     font-style: normal;
     line-height: normal;
-    max-width: 780px;
-    padding-bottom: 20px;
+    max-width: calc(780 / 16 * 1rem);
+    padding-bottom: calc(20 / 16 * 1rem);
     color: #B3AA9D;
 }
 
 .lamidov__main {
-    max-width: 260px;
-    margin-left: 116px;
+    max-width: calc(260 / 16 * 1rem);
+    margin-left: calc(116 / 16 * 1rem);
 }
 
 .lamidov__main-title {
     font-family: Montserrat;
-    font-size: 49px;
+    font-size: calc(49 / 16 * 1rem);
     font-weight: 300;
     font-style: normal;
     line-height: normal;
@@ -1065,18 +1096,18 @@ body {
 }
 
 .lamidov__authors {
-    padding-top: 60px;
-    padding-bottom: 165px;
+    padding-top: calc(60 / 16 * 1rem);
+    padding-bottom: calc(165 / 16 * 1rem);
     text-align: center;
 }
 
 .lamidov__author-text {
     font-family: Raleway;
-    font-size: 18px;
+    font-size: calc(18 / 16 * 1rem);
     font-weight: 100;
     font-style: normal;
     line-height: normal;
-    padding-bottom: 15px;
+    padding-bottom: calc(15 / 16 * 1rem);
     color: #FFF;
 }
 
@@ -1087,11 +1118,11 @@ body {
 
 .auther__title {
     font-family: Raleway;
-    font-size: 32px;
+    font-size: calc(32 / 16 * 1rem);
     font-weight: 100;
     font-style: normal;
     line-height: normal;
-    padding: 30px 0;
+    padding: calc(30 / 16 * 1rem) 0;
     text-align: center;
     color: #FFF;
     border: 2px solid;
@@ -1109,20 +1140,20 @@ body {
     flex-wrap: wrap;
     -ms-flex-pack: center;
     justify-content: center;
-    max-height: 1650px;
-    padding: 70px 45px;
-    -webkit-column-gap: 152px;
-    -moz-column-gap: 152px;
-    column-gap: 152px;
+    max-height: calc(1650 / 16 * 1rem);
+    padding: calc(70 / 16 * 1rem) calc(45 / 16 * 1rem);
+    -webkit-column-gap: calc(152 / 16 * 1rem);
+    -moz-column-gap: calc(152 / 16 * 1rem);
+    column-gap: calc(152 / 16 * 1rem);
 }
 
 .picture__card {
-    margin-bottom: 50px;
+    margin-bottom: calc(50 / 16 * 1rem);
 }
 
 .picture__name {
     font-family: Raleway;
-    font-size: 16px;
+    font-size: calc(16 / 16 * 1rem);
     font-weight: 500;
     font-style: normal;
     line-height: normal;
@@ -1134,7 +1165,7 @@ body {
 
 .picture__size {
     font-family: Raleway;
-    font-size: 16px;
+    font-size: calc(16 / 16 * 1rem);
     font-weight: 500;
     font-style: normal;
     line-height: normal;
@@ -1149,21 +1180,21 @@ body {
     align-items: center;
     -ms-flex-pack: center;
     justify-content: center;
-    width: 268px;
-    min-height: 48px;
+    width: calc(268 / 16 * 1rem);
+    min-height: calc(48 / 16 * 1rem);
     margin: 0 auto;
-    margin-bottom: 68px;
+    margin-bottom: calc(68 / 16 * 1rem);
     border: 1px solid #5E5548;
     background-color: transparent;
 }
 
 .btn__picture-more p {
     font-family: Raleway;
-    font-size: 16px;
+    font-size: calc(16 / 16 * 1rem);
     font-weight: 500;
     font-style: normal;
     line-height: normal;
-    padding-left: 25px;
+    padding-left: calc(25 / 16 * 1rem);
     text-align: center;
     color: #5E5548;
 }
@@ -1171,17 +1202,17 @@ body {
 /* Lamidov-gallary page */
 .lamidov-gallary__title {
     font-family: Raleway;
-    font-size: 32px;
+    font-size: calc(32 / 16 * 1rem);
     font-weight: 100;
     font-style: normal;
     line-height: normal;
-    padding: 60px 0 30px;
+    padding: calc(60 / 16 * 1rem) 0 calc(30 / 16 * 1rem);
     text-align: center;
     color: #FFF;
 }
 
 .lamidov-gallary__block {
-    padding: 60px 0;
+    padding: calc(60 / 16 * 1rem) 0;
     border: 2px solid;
     -o-border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.71) 35.93%, rgba(255, 255, 255, 0) 100%);
     border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.71) 35.93%, rgba(255, 255, 255, 0) 100%);
@@ -1189,25 +1220,25 @@ body {
 }
 
 .lamidov-gallary__slider {
-    width: 800px;
+    width: calc(800 / 16 * 1rem);
     margin: 0 auto;
 }
 
 .lamidov-gallary__name {
     font-family: Raleway;
-    font-size: 32px;
+    font-size: calc(32 / 16 * 1rem);
     font-weight: 500;
     font-style: normal;
     line-height: normal;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-top: calc(30 / 16 * 1rem);
+    margin-bottom: calc(10 / 16 * 1rem);
     text-align: center;
     color: rgba(255, 255, 255, 0.8);
 }
 
 .lamidov-gallary__size {
     font-family: Raleway;
-    font-size: 32px;
+    font-size: calc(32 / 16 * 1rem);
     font-weight: 500;
     font-style: normal;
     line-height: normal;
@@ -1226,90 +1257,90 @@ body {
 }
 
 .lamidov-gallary__card-img-1 {
-    width: 600px;
-    height: 600px;
-    background-image: url(../img/picture/lamidov/lamidov-1.jpg);
+    width: calc(600 / 16 * 1rem);
+    height: calc(600 / 16 * 1rem);
+    background-image: url(../img/picture/lamidov/lamidov-1.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 .lamidov-gallary__card-img-2 {
-    width: 600px;
-    height: 600px;
-    background-image: url(../img/picture/lamidov/lamidov-2.jpg);
+    width: calc(600 / 16 * 1rem);
+    height: calc(600 / 16 * 1rem);
+    background-image: url(../img/picture/lamidov/lamidov-2.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 .lamidov-gallary__card-img-3 {
-    width: 600px;
-    height: 600px;
-    background-image: url(../img/picture/lamidov/lamidov-3.jpg);
+    width: calc(600 / 16 * 1rem);
+    height: calc(600 / 16 * 1rem);
+    background-image: url(../img/picture/lamidov/lamidov-3.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 .lamidov-gallary__card-img-4 {
-    width: 600px;
-    height: 600px;
-    background-image: url(../img/picture/lamidov/lamidov-4.jpg);
+    width: calc(600 / 16 * 1rem);
+    height: calc(600 / 16 * 1rem);
+    background-image: url(../img/picture/lamidov/lamidov-8.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 .lamidov-gallary__card-img-5 {
-    width: 600px;
-    height: 600px;
-    background-image: url(../img/picture/lamidov/lamidov-5.jpg);
+    width: calc(600 / 16 * 1rem);
+    height: calc(600 / 16 * 1rem);
+    background-image: url(../img/picture/lamidov/lamidov-4.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 .lamidov-gallary__card-img-6 {
-    width: 600px;
-    height: 600px;
-    background-image: url(../img/picture/lamidov/lamidov-6.jpg);
+    width: calc(600 / 16 * 1rem);
+    height: calc(600 / 16 * 1rem);
+    background-image: url(../img/picture/lamidov/lamidov-5.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 .lamidov-gallary__card-img-7 {
-    width: 600px;
-    height: 600px;
-    background-image: url(../img/picture/lamidov/lamidov-7.jpg);
+    width: calc(600 / 16 * 1rem);
+    height: calc(600 / 16 * 1rem);
+    background-image: url(../img/picture/lamidov/lamidov-9.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 .lamidov-gallary__card-img-8 {
-    width: 600px;
-    height: 600px;
-    background-image: url(../img/picture/lamidov/lamidov-8.jpg);
+    width: calc(600 / 16 * 1rem);
+    height: calc(600 / 16 * 1rem);
+    background-image: url(../img/picture/lamidov/lamidov-6.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 .lamidov-gallary__card-img-9 {
-    width: 600px;
-    height: 600px;
-    background-image: url(../img/picture/lamidov/lamidov-9.jpg);
+    width: calc(600 / 16 * 1rem);
+    height: calc(600 / 16 * 1rem);
+    background-image: url(../img/picture/lamidov/lamidov-7.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 .lamidov-gallary__card-img-10 {
-    width: 600px;
-    height: 600px;
-    background-image: url(../img/picture/lamidov/lamidov-10.jpg);
+    width: calc(600 / 16 * 1rem);
+    height: calc(600 / 16 * 1rem);
+    background-image: url(../img/picture/lamidov/lamidov-10.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -1318,18 +1349,18 @@ body {
 .clients__slider-btn {
     position: absolute;
     z-index: 2;
-    top: 300px;
+    top: calc(300 / 16 * 1rem);
     cursor: pointer;
     border: none;
     background-color: transparent;
 }
 
 .clients__slider-btnprev {
-    left: -100px;
+    left: calc(-100 / 16 * 1rem);
 }
 
 .clients__slider-btnnext {
-    right: -100px;
+    right: calc(-100 / 16 * 1rem);
 }
 
 /*
@@ -1358,8 +1389,8 @@ body {
 /* Contacts page */
 .contacts-page__inner {
     position: relative;
-    padding-top: 200px;
-    padding-bottom: 265px;
+    padding-top: calc(200 / 16 * 1rem);
+    padding-bottom: calc(265 / 16 * 1rem);
   /*
   background-image: url(../img/contacts/contacts-main-img.png);
     background-repeat: no-repeat;
@@ -1369,28 +1400,28 @@ body {
 
 .contacts__main-picture {
     position: absolute;
-    top: 100px;
-    right: -100px;
-    width: 861px;
-    height: 374px;
+    top: calc(100 / 16 * 1rem);
+    right: calc(-100 / 16 * 1rem);
+    width: calc(861 / 16 * 1rem);
+    height: calc(374 / 16 * 1rem);
 }
 
 .contacts__main-location {
     position: absolute;
-    top: 100px;
-    right: 190px;
-    width: 117px;
-    height: 117px;
+    top: calc(100 / 16 * 1rem);
+    right: calc(190 / 16 * 1rem);
+    width: calc(117 / 16 * 1rem);
+    height: calc(117 / 16 * 1rem);
 }
 
 .contacts__main {
-    max-width: 280px;
-    margin-left: 160px;
+    max-width: calc(280 / 16 * 1rem);
+    margin-left: calc(160 / 16 * 1rem);
 }
 
 .contacts__main-title {
     font-family: Montserrat;
-    font-size: 49px;
+    font-size: calc(49 / 16 * 1rem);
     font-weight: 300;
     font-style: normal;
     line-height: normal;
@@ -1403,8 +1434,8 @@ body {
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: calc(60 / 16 * 1rem);
+    padding-bottom: calc(60 / 16 * 1rem);
     color: #FFF;
     border: 2px solid;
     -o-border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.71) 35.93%, rgba(255, 255, 255, 0) 100%);
@@ -1419,26 +1450,26 @@ body {
     flex-direction: column;
     -ms-flex-pack: center;
     justify-content: center;
-    margin-right: 100px;
+    margin-right: calc(100 / 16 * 1rem);
 }
 
 .contacts__block-city {
     font-family: Montserrat;
-    font-size: 36px;
+    font-size: calc(36 / 16 * 1rem);
     font-weight: 100;
     font-style: normal;
     line-height: normal;
     position: relative;
-    margin-bottom: 35px;
+    margin-bottom: calc(35 / 16 * 1rem);
     color: #FFF;
 }
 
 .contacts__block-city:after {
     position: absolute;
-    top: -15px;
-    left: -25px;
-    width: 7px;
-    height: 7px;
+    top: calc(-15 / 16 * 1rem);
+    left: calc(-25 / 16 * 1rem);
+    width: calc(7 / 16 * 1rem);
+    height: calc(7 / 16 * 1rem);
     content: "";
     border: none;
     border-radius: 50%;
@@ -1447,36 +1478,36 @@ body {
 
 .contacts__block-city:before {
     position: absolute;
-    top: -35px;
-    left: -45px;
-    width: 32px;
-    height: 32px;
+    top: calc(-35 / 16 * 1rem);
+    left: calc(-45 / 16 * 1rem);
+    width: calc(32 / 16 * 1rem);
+    height: calc(32 / 16 * 1rem);
     content: "";
     border-radius: 50%;
     background-color: #FEFFD0;
-    -webkit-filter: blur(35px);
-    filter: blur(35px);
+    -webkit-filter: blur(calc(35 / 16 * 1rem));
+    filter: blur(calc(35 / 16 * 1rem));
 }
 
 .contacts__block-adress {
     font-family: Raleway;
-    font-size: 20px;
+    font-size: calc(20 / 16 * 1rem);
     font-weight: 300;
     font-style: normal;
     line-height: normal;
     position: relative;
-    max-width: 340px;
-    margin-bottom: 20px;
-    padding-left: 60px;
+    max-width: calc(340 / 16 * 1rem);
+    margin-bottom: calc(20 / 16 * 1rem);
+    padding-left: calc(60 / 16 * 1rem);
     color: #FFF;
 }
 
 .contacts__block-adress::before {
     position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 33px;
-    height: 41px;
+    top: calc(0 / 16 * 1rem);
+    left: calc(0 / 16 * 1rem);
+    width: calc(33 / 16 * 1rem);
+    height: calc(41 / 16 * 1rem);
     content: "";
     border: none;
     background-image: url(../img/contacts/contacts-location-icon.svg);
@@ -1487,13 +1518,13 @@ body {
 
 .contacts__block-phone {
     font-family: Raleway;
-    font-size: 20px;
+    font-size: calc(20 / 16 * 1rem);
     font-weight: 300;
     font-style: normal;
     line-height: normal;
     position: relative;
-    max-width: 240px;
-    padding-left: 60px;
+    max-width: calc(240 / 16 * 1rem);
+    padding-left: calc(60 / 16 * 1rem);
     color: #FFF;
 }
 
@@ -1507,10 +1538,10 @@ body {
 
 .phone__img:before {
     position: absolute;
-    top: 10px;
-    left: 0px;
-    width: 22px;
-    height: 35px;
+    top: calc(10 / 16 * 1rem);
+    left: calc(0 / 16 * 1rem);
+    width: calc(22 / 16 * 1rem);
+    height: calc(35 / 16 * 1rem);
     content: "";
     border: none;
     background-image: url(../img/contacts/contacts-phone-icon.svg);
@@ -1520,38 +1551,38 @@ body {
 }
 
 .contacts__block-map img {
-    width: 600px;
-    height: 400px;
+    width: calc(600 / 16 * 1rem);
+    height: calc(400 / 16 * 1rem);
 }
 
 /* Contact-form block */
 .contact-form__inner {
-    max-width: 570px;
+    max-width: calc(570 / 16 * 1rem);
     margin: 0 auto;
 }
 
 .contact-form__title {
     font-family: Montserrat;
-    font-size: 36px;
+    font-size: calc(36 / 16 * 1rem);
     font-weight: 100;
     font-style: normal;
     line-height: normal;
-    margin-top: 190px;
-    margin-bottom: 15px;
+    margin-top: calc(190 / 16 * 1rem);
+    margin-bottom: calc(15 / 16 * 1rem);
     text-align: center;
-    letter-spacing: 2.52px;
+    letter-spacing: calc(3 / 16 * 1rem);
     color: #FFF;
 }
 
 .contact-form__text {
     font-family: Montserrat;
-    font-size: 15px;
+    font-size: calc(15 / 16 * 1rem);
     font-weight: 400;
     font-style: normal;
     line-height: normal;
-    margin-bottom: 60px;
+    margin-bottom: calc(60 / 16 * 1rem);
     text-align: center;
-    letter-spacing: 1.057px;
+    letter-spacing: calc(1 / 16 * 1rem);
     color: #FFF;
 }
 
@@ -1639,11 +1670,11 @@ body {
 }
 
 .form__person-email {
-    width: 260px;
+    width: calc(260 / 16 * 1rem);
 }
 
 .form__person-phone {
-    width: 260px;
+    width: calc(260 / 16 * 1rem);
 }
 
 .form__personal-message textarea {
@@ -1775,15 +1806,15 @@ body {
 
 .application-btn {
     font-family: Open Sans;
-    font-size: 12px;
+    font-size: calc(12 / 16 * 1rem);
     font-weight: 400;
     font-style: normal;
     display: -ms-flexbox;
     display: flex;
     margin: 0 auto;
     margin-top: calc(40 / 16 * 1rem);
-    margin-bottom: 130px;
-    padding: 16px 100px;
+    margin-bottom: calc(130 / 16 * 1rem);
+    padding: calc(16 / 16 * 1rem) calc(100 / 16 * 1rem);
     cursor: pointer;
     text-align: center;
     color: #000;
@@ -1814,7 +1845,7 @@ body {
     font-weight: 400;
     font-style: normal;
     line-height: calc(16 / 16 * 1rem);
-    max-width: 410px;
+    max-width: calc(410 / 16 * 1rem);
     opacity: 0.7;
     color: #ffffff;
 }
@@ -1836,7 +1867,7 @@ body {
 }
 
 .footer__logo {
-    z-index: 5;
+    z-index: 1;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -1844,18 +1875,18 @@ body {
 }
 
 .footer__nav {
-    margin-top: 48px;
-    margin-bottom: 36px;
+    margin-top: calc(48 / 16 * 1rem);
+    margin-bottom: calc(36 / 16 * 1rem);
 }
 
 .footer__nav li {
-    margin-bottom: 17px;
+    margin-bottom: calc(17 / 16 * 1rem);
     text-align: right;
 }
 
 .footer__nav a {
     font-family: Raleway;
-    font-size: 14px;
+    font-size: calc(14 / 16 * 1rem);
     font-weight: 400;
     color: #8B8B8B;
 }
@@ -1870,27 +1901,76 @@ body {
 
 .footer__bottom-text {
     font-family: Raleway;
-    font-size: 10px;
+    font-size: calc(10 / 16 * 1rem);
     font-weight: 400;
     font-style: normal;
     line-height: normal;
-    padding: 40px 0;
+    padding: calc(40 / 16 * 1rem) 0;
     text-align: center;
     color: #646464;
 }
 
 .footer__logo-decor {
     position: absolute;
-    top: -310px;
-    left: -389px;
-    width: 784px;
-    height: 784px;
+    top: calc(-310 / 16 * 1rem);
+    left: calc(-389 / 16 * 1rem);
+    width: calc(784 / 16 * 1rem);
+    height: calc(784 / 16 * 1rem);
     content: "";
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.2);
-    -webkit-filter: blur(167px);
-    filter: blur(167px);
+    -webkit-filter: blur(calc(167 / 16 * 1rem));
+    filter: blur(calc(167 / 16 * 1rem));
 }
 
-/* @import "blocks/menu-mobile.scss"; */
+.menu-mobile__list {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    display: none;
+    width: calc(250 / 16 * 1rem);
+    margin: calc(10 / 16 * 1rem) calc(0 / 16 * 1rem) calc(10 / 16 * 1rem) calc(10 / 16 * 1rem);
+    padding: calc(30 / 16 * 1rem) calc(30 / 16 * 1rem) calc(0 / 16 * 1rem) calc(30 / 16 * 1rem);
+    transition: all 0.5s;
+    -webkit-transform: translateX(1000%);
+    transform: translateX(1000%);
+    border: calc(1 / 16 * 1rem) dashed rgb(255, 255, 255);
+    background-color: #2a2a2a;
+    box-shadow: 0px 0px calc(20 / 16 * 1rem) rgba(0, 0, 0, 0.15);
+}
+
+.menu-mobile__item {
+    position: relative;
+    width: 100%;
+    margin-bottom: calc(30 / 16 * 1rem);
+    border-bottom: calc(1 / 16 * 1rem) solid rgba(0, 0, 0, 0.1);
+}
+
+.menu-mobile__item a {
+    display: inline;
+}
+
+.menu-mobile__link {
+    font-family: Roboto;
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1rem;
+    display: inline;
+    display: block;
+    transition: color 0.5s ease;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.menu-mobile__link:hover {
+    color: #fff;
+}
+
+.menu-mobile__list--active {
+    display: block;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+}
+
 /* @import "media.scss"; */

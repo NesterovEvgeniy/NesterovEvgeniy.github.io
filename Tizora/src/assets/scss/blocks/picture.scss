@@ -1,7 +1,7 @@
 /* Pictures page */
 
 .picture-page__inner {
-  padding-top: 93px;
+  padding-top: rem(93);
 
   background-image: url(../img/picture/picture-main-img.webp);
   background-repeat: no-repeat;
@@ -9,13 +9,13 @@
 }
 
 .picture__main {
-  max-width: 260px;
-  margin-left: 116px;
+  max-width: rem(260);
+  margin-left: rem(116);
 }
 
 .picture__main-title {
   font-family: Montserrat;
-  font-size: 49px;
+  font-size: rem(49);
   font-weight: 300;
   font-style: normal;
   line-height: normal;
@@ -26,20 +26,20 @@
 }
 
 .picture__authors {
-  padding-top: 60px;
-  padding-bottom: 165px;
+  padding-top: rem(60);
+  padding-bottom: rem(165);
 
   text-align: center;
 }
 
 .picture__author-text {
   font-family: Raleway;
-  font-size: 18px;
+  font-size: rem(18);
   font-weight: 100;
   font-style: normal;
   line-height: normal;
 
-  padding-bottom: 15px;
+  padding-bottom: rem(15);
 
   color: #FFF;
 }
@@ -52,12 +52,12 @@
 
 .auther__title {
   font-family: Raleway;
-  font-size: 32px;
+  font-size: rem(32);
   font-weight: 100;
   font-style: normal;
   line-height: normal;
 
-  padding: 30px 0;
+  padding: rem(30) 0;
 
   text-align: center;
 
@@ -73,10 +73,10 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  max-height: 1000px;
-  padding: 70px 45px;
+  max-height: rem(1000);
+  padding: rem(70) rem( 45);
 
-  column-gap: 152px;
+  column-gap: rem(152);
 }
 
 .lamidov__pictures {
@@ -85,10 +85,10 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  max-height: 1300px;
-  padding: 70px 45px;
+  max-height: rem(1300);
+  padding: rem(70) rem( 45);
 
-  column-gap: 152px;
+  column-gap: rem(152);
 }
 
 .oganesyn__pictures {
@@ -96,10 +96,10 @@
   flex-wrap: wrap;
   justify-content: left;
 
-  max-height: 600px;
-  padding: 70px 45px 70px 45px;
+  max-height: rem(600);
+  padding: rem(70) rem( 45) rem( 70) rem( 45);
 
-  column-gap: 152px;
+  column-gap: rem(152);
 }
 
 .osinin__pictures {
@@ -108,25 +108,25 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  max-height: 600px;
-  padding: 70px 45px;
+  max-height: rem(600);
+  padding: rem(70) rem( 45);
 
-  column-gap: 152px;
+  column-gap: rem(152);
 }
 
 .picture__card {
-  margin-bottom: 50px;
+  margin-bottom: rem(50);
 }
 
 .picture__name {
   font-family: Raleway;
-  font-size: 16px;
+  font-size: rem(16);
   font-weight: 500;
   font-style: normal;
   line-height: normal;
 
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: rem(30);
+  margin-bottom: rem(10);
 
   text-align: center;
 
@@ -135,7 +135,7 @@
 
 .picture__size {
   font-family: Raleway;
-  font-size: 16px;
+  font-size: rem(16);
   font-weight: 500;
   font-style: normal;
   line-height: normal;

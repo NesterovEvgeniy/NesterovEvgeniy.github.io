@@ -1,8 +1,6 @@
 @import "vendor/normalize";
-@import "fonts";
 @import "vars.scss";
-
-/* @import "mixins"; */
+@import "mixins";
 
 /* Functions */
 
@@ -63,7 +61,7 @@ body {
 
   /*     color: $font-color; */
 
-  min-width: rem(320);
+  min-width: rem(390);
   max-width: rem(1440);
 
   /* padding: 0 rem(10); */
@@ -84,6 +82,7 @@ body {
 /* Blocks */
 
 @import "blocks/header.scss";
+@import "blocks/menu-mobile.scss";
 @import "blocks/main.scss";
 @import "blocks/about.scss";
 @import "blocks/picture.scss";
@@ -91,7 +90,6 @@ body {
 @import "blocks/lamidov-gallary.scss";
 @import "blocks/contacts.scss";
 @import "blocks/footer.scss";
-
-/* @import "blocks/menu-mobile.scss"; */
+@import "blocks/menu-mobile.scss";
 
 /* @import "media.scss"; */

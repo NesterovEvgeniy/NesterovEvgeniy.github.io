@@ -3,17 +3,15 @@
 .about__main-info {
   display: flex;
 
-  /*   flex-wrap: wrap; */
+  padding-left: rem(100);
 
-  padding-left: 100px;
-
-  gap: 20px;
+  gap: rem(20);
 }
 
 .about__info {
-  min-width: 490px;
-  margin-bottom: 100px;
-  padding: 100px 70px 70px;
+  min-width: rem(490);
+  margin-bottom: rem(100);
+  padding: rem(100) rem( 70) rem( 70);
 
   border: 2px solid;
   border-image: linear-gradient(rgba( 255, 255, 255, 0.0) 25%, rgba( 255, 255, 255, 0.1) 30.75%, rgba( 255, 255, 255, 1) 100%);
@@ -23,10 +21,10 @@
 .about__star {
   position: relative;
 
-  width: 7px;
-  height: 7px;
-  margin-top: 93px;
-  margin-left: 175px;
+  width: rem(7);
+  height: rem(7);
+  margin-top: rem(93);
+  margin-left: rem(175);
 
   border: none;
   border-radius: 50%;
@@ -35,28 +33,28 @@
 
 .about__star:before {
   position: absolute;
-  top: -13px;
-  left: -12px;
+  top: rem(-13);
+  left: rem(-12);
 
-  width: 32px;
-  height: 32px;
+  width: rem(32);
+  height: rem(32);
 
   content: "";
 
   border-radius: 50%;
   background-color: #FEFFD0;
 
-  filter: blur(15px);
+  filter: blur(rem( 15) );
 }
 
 .about__title {
   font-family: Montserrat;
-  font-size: 49px;
+  font-size: rem(49);
   font-weight: 300;
   font-style: normal;
   line-height: normal;
 
-  margin-bottom: 90px;
+  margin-bottom: rem(90);
 
   text-transform: uppercase;
 
@@ -65,13 +63,13 @@
 
 .about__description {
   font-family: Montserrat;
-  font-size: 18px;
+  font-size: rem(18);
   font-weight: 400;
   font-style: normal;
   line-height: normal;
 
-  max-width: 346px;
-  margin-bottom: 20px;
+  max-width: rem(346);
+  margin-bottom: rem(20);
 
   color: #FFF;
 }
@@ -82,35 +80,35 @@
 
   margin-top: 93px;
 
-  grid-template-columns: repeat(2, 100px);
-  grid-template-rows: repeat(2, 100px);
-  row-gap: 45px;
-  column-gap: 40px;
+  grid-template-columns: repeat(2, rem( 100) );
+  grid-template-rows: repeat(2, rem( 100) );
+  row-gap: rem(45);
+  column-gap: rem(40);
 }
 
 .nft-frame {
   position: absolute;
-  top: -155px;
-  left: 35px;
+  top: rem(-155);
+  left: rem(35);
 }
 
 .about__nft-text {
   position: relative;
 
-  max-width: 534px;
-  margin-left: 46px;
+  max-width: rem(534);
+  margin-left: rem(46);
 
   background: linear-gradient(360deg, #524A3E 0%, rgba( 82, 74, 62, 0.00) 100%);
 }
 
 .about__nft-title {
   font-family: Montserrat;
-  font-size: 158px;
+  font-size: rem(158);
   font-weight: 100;
   font-style: normal;
   line-height: normal;
 
-  padding-right: 35px;
+  padding-right: rem(35);
 
   text-align: right;
   text-transform: uppercase;
@@ -124,29 +122,29 @@
 
 .about__nft-description {
   font-family: Montserrat;
-  font-size: 18px;
+  font-size: rem(18);
   font-weight: 400;
   font-style: normal;
   line-height: normal;
 
-  max-width: 402px;
-  margin-top: 30px;
-  margin-left: 61px;
-  padding-bottom: 43px;
+  max-width: rem(402);
+  margin-top: rem(30);
+  margin-left: rem(61);
+  padding-bottom: rem(43);
 
   color: #000;
 }
 
 .mission__title {
   font-family: Raleway;
-  font-size: 36px;
+  font-size: rem(36);
   font-weight: 100;
   font-style: normal;
   line-height: normal;
 
-  max-width: 568px;
+  max-width: rem(568);
   margin: 0 auto;
-  padding: 16px 0;
+  padding: rem(16) 0;
 
   text-align: center;
 
@@ -160,10 +158,10 @@
   display: flex;
   justify-content: center;
 
-  padding-top: 80px;
-  padding-bottom: 160px;
+  padding-top: rem(80);
+  padding-bottom: rem(160);
 
-  gap: 150px;
+  gap: rem(150);
 }
 
 .mission__save {
@@ -176,13 +174,13 @@
 
 .mission__save-text {
   font-family: Montserrat;
-  font-size: 18px;
+  font-size: rem(18);
   font-weight: 400;
   font-style: normal;
   line-height: normal;
 
-  max-width: 302px;
-  margin-top: 40px;
+  max-width: rem(302);
+  margin-top: rem(40);
 
   text-align: center;
 
@@ -191,13 +189,13 @@
 
 .mission__support-text {
   font-family: Montserrat;
-  font-size: 18px;
+  font-size: rem(18);
   font-weight: 400;
   font-style: normal;
   line-height: normal;
 
-  max-width: 143px;
-  margin-top: 44px;
+  max-width: rem(143);
+  margin-top: rem(44);
 
   text-align: center;
 
@@ -205,20 +203,20 @@
 }
 
 .about__goal-block {
-  margin-bottom: 117px;
+  margin-bottom: rem(117);
 }
 
 .goal__title {
   font-family: Raleway;
-  font-size: 36px;
+  font-size: rem(36);
   font-weight: 100;
   font-style: normal;
   line-height: normal;
 
-  max-width: 568px;
+  max-width: rem(568);
   margin: 0 auto;
-  margin-bottom: 70px;
-  padding: 16px 0;
+  margin-bottom: rem(70);
+  padding: rem(16) 0;
 
   text-align: center;
 
@@ -235,7 +233,7 @@
   align-items: end;
   flex-direction: column;
 
-  margin-right: 60px;
+  margin-right: rem(60);
 }
 
 .goal__img {
@@ -244,9 +242,9 @@
 }
 
 .goal__garanty {
-  max-width: 890px;
-  margin-bottom: 70px;
-  padding: 50px 60px 50px 194px;
+  max-width: rem(890);
+  margin-bottom: rem(70);
+  padding: rem(50) rem( 60) rem( 50) rem( 194);
 
   background-image: url(../img/about/background-goal.png);
   background-repeat: no-repeat;
@@ -254,8 +252,8 @@
 }
 
 .goal__comfort {
-  max-width: 890px;
-  padding: 50px 60px 50px 194px;
+  max-width: rem(890);
+  padding: rem(50) rem( 60) rem( 50) rem( 194);
 
   background-image: url(../img/about/background-goal.png);
   background-repeat: no-repeat;
@@ -264,20 +262,20 @@
 
 .goal__text {
   font-family: Montserrat;
-  font-size: 18px;
+  font-size: rem(18);
   font-weight: 400;
   font-style: normal;
   line-height: normal;
 
-  max-width: 637px;
+  max-width: rem(637);
 
   color: #FFF;
 }
 
 .video__block {
-  width: 1240px;
-  height: 715px;
-  margin-top: 120px;
+  width: rem(1240);
+  height: rem(715);
+  margin-top: rem(120);
 
   background-image: url(../img/about/about-large-picture.jpg);
   background-repeat: no-repeat;
