@@ -5,12 +5,6 @@
 
   padding-top: rem(200);
   padding-bottom: rem(265);
-
-/*
-background-image: url(../img/contacts/contacts-main-img.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-*/
 }
 
 .contacts__main-picture {
@@ -24,8 +18,8 @@ background-image: url(../img/contacts/contacts-main-img.png);
 
 .contacts__main-location {
   position: absolute;
-  top: rem(100);
-  right: rem(190);
+  top: rem(163);
+  right: rem(100);
 
   width: rem(117);
   height: rem(117);
@@ -114,6 +108,39 @@ background-image: url(../img/contacts/contacts-main-img.png);
   filter: blur(rem( 35) );
 }
 
+.contacts__block-timetable {
+  font-family: Raleway;
+  font-size: rem(20);
+  font-weight: 300;
+  font-style: normal;
+  line-height: normal;
+
+  position: relative;
+
+  max-width: rem(340);
+  margin-bottom: rem(20);
+  padding-left: rem(60);
+
+  color: #FFF;
+}
+
+.contacts__block-timetable::before {
+  position: absolute;
+  top: rem(-3);
+  left: rem(0);
+
+  width: rem(38);
+  height: rem(34);
+
+  content: "";
+
+  border: none;
+  background-image: url(../img/contacts/contacts-timetable-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .contacts__block-adress {
   font-family: Raleway;
   font-size: rem(20);
@@ -157,23 +184,16 @@ background-image: url(../img/contacts/contacts-main-img.png);
   position: relative;
 
   max-width: rem(240);
+  margin-bottom: rem(20);
   padding-left: rem(60);
 
   color: #FFF;
 }
 
-.ymaps-layers-pane {
-  filter: grayscale(1);
-  -ms-filter: grayscale(1);
-  -webkit-filter: grayscale(1);
-  -moz-filter: grayscale(1);
-  -o-filter: grayscale(1);
-}
-
 .phone__img:before {
   position: absolute;
-  top: rem(10);
-  left: rem(0);
+  top: rem(0);
+  left: rem(4);
 
   width: rem(22);
   height: rem(35);
@@ -185,6 +205,88 @@ background-image: url(../img/contacts/contacts-main-img.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.contacts__block-email {
+  font-family: Raleway;
+  font-size: rem(20);
+  font-weight: 300;
+  font-style: normal;
+  line-height: normal;
+
+  position: relative;
+
+  max-width: rem(240);
+  margin-top: rem(10);
+  margin-bottom: rem(20);
+  padding-left: rem(60);
+
+  color: #FFF;
+}
+
+.email__img:before {
+  position: absolute;
+  top: rem(0);
+  left: rem(0);
+
+  width: rem(30);
+  height: rem(22);
+
+  content: "";
+
+  border: none;
+  background-image: url(../img/contacts/contacts-mail-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contacts__block-social {
+  position: relative;
+
+  margin-top: 20px;
+}
+
+.contacts__social-instagram:before {
+  position: absolute;
+  top: rem(0);
+  left: rem(90);
+
+  width: rem(40);
+  height: rem(40);
+
+  content: "";
+
+  border: none;
+  background-image: url(../img/contacts/contacts-instagram-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contacts__social-telegram:before {
+  position: absolute;
+  top: rem(0);
+  left: rem(150);
+
+  width: rem(40);
+  height: rem(40);
+
+  content: "";
+
+  border: none;
+  background-image: url(../img/contacts/contacts-telegram-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.ymaps-layers-pane {
+  filter: grayscale(1);
+  -ms-filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
 }
 
 .contacts__block-map img {

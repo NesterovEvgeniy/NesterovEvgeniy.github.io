@@ -1,6 +1,6 @@
 // burger-button
 
-/* const menuBtn = document.querySelector('.menu__btn');
+const menuBtn = document.querySelector('.header-mobile__btn');
 const menuList = document.querySelector('.menu-mobile__list');
 
 menuBtn.addEventListener('click', function () {
@@ -13,4 +13,4 @@ document.addEventListener('click', function (event) {
   if (!сlickInsideMenu) {
     menuList.classList.remove('menu-mobile__list--active');
   }
-}); */
+});

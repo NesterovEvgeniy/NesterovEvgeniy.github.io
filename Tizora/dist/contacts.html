@@ -21,16 +21,18 @@
 
 <body>
     <div class="page__wrapper">
+        
         <!-- Header -->
         
         <header>
           <div class="header__inner">
             <div class="header__top">
               <div class="header__language">
-                <div>Ru</div>
-                <div>Eng</div>
+                <!-- <div>Ru</div>
+                <div>Eng</div> -->
               </div>
             </div>
+        
             <div class="header__bottom">
               <div class="header__logo">
                 <a href="">
@@ -42,21 +44,27 @@
                   <li><a href="index.html">Главная</a></li>
                   <li><a href="about.html">О галерее</a></li>
                   <li><a href="pictures.html">Картины</a></li>
-                  <li><a href="#events">Мероприятия</a></li>
+                  <!-- <li><a href="#events">Мероприятия</a></li> -->
                   <li><a href="contacts.html">Контакты</a></li>
                 </ul>
               </nav>
+              <button class="header-mobile__btn"></button>
             </div>
           </div>
         
-          <!-- mobile menu -->
-          <ul class="menu-mobile__list">
-            <li class="menu-mobile__item"><a class="menu-mobile__link" href="#workarea">Главная</a></li>
-            <li class="menu-mobile__item"><a class="menu-mobile__link" href="#benefit">О галерее</a></li>
-            <li class="menu-mobile__item"><a class="menu-mobile__link" href="#cases">Картины</a></li>
-            <li class="menu-mobile__item"><a class="menu-mobile__link" href="#projects">Мероприятия</a></li>
-            <li class="menu-mobile__item"><a class="menu-mobile__link" href="#reviews">Контакты</a></li>
-          </ul>
+              <!-- mobile menu -->
+              <ul class="menu-mobile__list">
+                <li class="menu-mobile__item"><a class="menu-mobile__link" href="index.html">Главная</a></li>
+                <li class="menu-mobile__item"><a class="menu-mobile__link" href="about.html">О галерее</a></li>
+                <li class="menu-mobile__item"><a class="menu-mobile__link" href="pictures.html">Картины</a></li>
+                <!--     <li class="menu-mobile__item"><a class="menu-mobile__link" href="#projects">Мероприятия</a></li> -->
+                <li class="menu-mobile__item"><a class="menu-mobile__link" href="contacts.html">Контакты</a></li>
+              </ul>
+        
+        
+        
+        
+        
         </header>
         layout: default
         title: HomePage
@@ -75,17 +83,39 @@
         
             <div class="contacts__block">
               <div class="contacts__block-text">
-                <p class="contacts__block-city">Россия, Москва</p>
-                <p class="contacts__block-adress">ул. Ильинка, дом 4, 1 этаж, вход 19А (Гостиный Двор)</p>
-                <a href="tel:89854589797">
-                  <div class="contacts__block-phone phone__img">+ 7 985 458 97 97</div>
+                <p class="contacts__block-city">ОАЭ, Дубай</p>
+                <p class="contacts__block-timetable">Ежедневно: 12:00 - 21:00</p>
+                <p class="contacts__block-adress">Jumeirah Lakes Towers ALMAS Tower</p>
+                <a href="tel:89684097395">
+                  <div class="contacts__block-phone phone__img">+ 7 968 409 73 95</div>
                 </a>
-                <a href="tel:89255288705">
-                  <div class="contacts__block-phone">+7 925 528 87 05</div>
+                <a href="mailto:tizoragallery@gmail.com">
+                  <p class="contacts__block-email email__img" lang="en">tizoragallery@gmail.com</p>
                 </a>
+                <div class="contacts__block-social">
+                  <a href="https://www.instagram.com/tizora.gallery/">
+                    <div class="contacts__social-instagram"></div>
+                  </a>
+                  <a href="https://t.me/tizoragallery">
+                    <div class="contacts__social-telegram"></div>
+                  </a>
+                </div>
+        
               </div>
-              <div class="ymaps-layers-pane">
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A605d24ec8b13f840c95efe41e39e1b05ee02dfba22c6bd57bf14dff236826c6d&amp;source=constructor" width="600" height="400" frameborder="0"></iframe>
+              <div class="contacts__map-desktop">
+                <div class="ymaps-layers-pane">
+                  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A605d24ec8b13f840c95efe41e39e1b05ee02dfba22c6bd57bf14dff236826c6d&amp;source=constructor" width="600" height="400" frameborder="0"></iframe>
+                </div>
+              </div>
+              <div class="contacts__map-tab">
+                <div class="ymaps-layers-pane">
+                  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A605d24ec8b13f840c95efe41e39e1b05ee02dfba22c6bd57bf14dff236826c6d&amp;source=constructor" width="360" height="240" frameborder="0"></iframe>
+                </div>
+              </div>
+              <div class="contacts__map-mobile">
+                <div class="ymaps-layers-pane">
+                  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A605d24ec8b13f840c95efe41e39e1b05ee02dfba22c6bd57bf14dff236826c6d&amp;source=constructor" width="300" height="200" frameborder="0"></iframe>
+                </div>
               </div>
             </div>
           </div>
@@ -150,7 +180,7 @@
                   <li><a href="index.html">Главная</a></li>
                   <li><a href="about.html">О галерее</a></li>
                   <li><a href="pictures.html">Картины</a></li>
-                  <li><a href="#events">Мероприятия</a></li>
+                  <!-- <li><a href="#events">Мероприятия</a></li> -->
                   <li><a href="contacts.html">Контакты</a></li>
                 </ul>
               </nav>

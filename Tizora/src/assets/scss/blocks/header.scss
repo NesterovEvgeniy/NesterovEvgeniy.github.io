@@ -1,12 +1,12 @@
 /* header */
 
-.header__inner {
-}
-
-.header__top {
-}
-
 .header__language {
+  font-family: Raleway;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: normal;
+
   display: flex;
   justify-content: right;
 
@@ -14,8 +14,9 @@
   padding-bottom: rem(31);
 
   color: #FFFFFF;
+  color: #FFF;
 
-  gap: rem(21);
+  gap: rem(20);
 }
 
 .header__bottom {
@@ -23,23 +24,13 @@
   justify-content: space-between;
 }
 
-.header__logo {
-}
-
 .header__nav {
   ul {
-    font-family: Raleway;
-    font-size: rem(16);
-    font-weight: 300;
-    font-style: normal;
-    line-height: normal;
-
     display: flex;
+    flex-wrap: wrap;
     justify-content: right;
 
     color: #494949;
-
-    gap: rem(80);
 
     a {
       font-family: Raleway;
@@ -51,8 +42,25 @@
       color: #494949;
     }
 
+    li {
+      padding-left: 80px;
+    }
+
     a:hover {
       color: #fff;
     }
   }
+}
+
+.header-mobile__btn {
+  display: none;
+
+  width: rem(32);
+  height: rem(9);
+
+  background-color: black;
+  background-image: url(../img/mobile-btn.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: cover;
 }

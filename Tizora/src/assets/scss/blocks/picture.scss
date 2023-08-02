@@ -34,18 +34,44 @@
 
 .picture__author-text {
   font-family: Raleway;
-  font-size: rem(18);
-  font-weight: 100;
+  font-size: rem(26);
+  font-weight: 300;
   font-style: normal;
   line-height: normal;
 
+  position: relative;
+
   padding-bottom: rem(15);
+  padding-left: rem(50);
+
+  text-align: left;
 
   color: #FFF;
 }
 
+.picture__author-text:hover:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 40px;
+  height: 20px;
+  margin-top: rem(5);
+
+  content: "";
+
+  color: #4d453a;
+  background-image: url(../img/picture/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 .picture__author-text:hover {
+  cursor: pointer;
   transition-duration: 0.5s;
+
+  color: #4d453a;
 
   scale: 105%;
 }
@@ -67,51 +93,524 @@
   border-image-slice: 1;
 }
 
-.antipov__pictures {
+.shkulipa__pictures {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
 
-  max-height: rem(1000);
+  /*   flex-direction: column; */
+
+  flex-wrap: wrap;
+
+  /*   max-height: rem(2050); */
+
   padding: rem(70) rem( 45);
+
+  /*   justify-content: center; */
 
   column-gap: rem(152);
 }
 
-.lamidov__pictures {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
+.shkulipa__picture-1 {
+  width: rem(279);
+  height: rem(250);
 
-  max-height: rem(1300);
+  background-image: url(../img/picture/shkulipa/shkulipa-1.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.shkulipa__picture-2 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/shkulipa/shkulipa-2.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.shkulipa__picture-3 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/shkulipa/shkulipa-3.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.shkulipa__picture-4 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/shkulipa/shkulipa-4.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.shkulipa__picture-5 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/shkulipa/shkulipa-5.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.shkulipa__picture-6 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/shkulipa/shkulipa-6.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.shkulipa__picture-7 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/shkulipa/shkulipa-7.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.shkulipa__picture-8 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/shkulipa/shkulipa-8.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.shkulipa__picture-9 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/shkulipa/shkulipa-9.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.shkulipa__picture-10 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/shkulipa/shkulipa-10.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.shkulipa__picture-11 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/shkulipa/shkulipa-11.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.shkulipa__picture-12 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/shkulipa/shkulipa-12.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.shkulipa__picture-13 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/shkulipa/shkulipa-13.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.rytikova__pictures {
+  display: flex;
+
+  /*   flex-direction: column; */
+
+  flex-wrap: wrap;
+
+  /*   max-height: rem(1400); */
+
   padding: rem(70) rem( 45);
+
+  /*   justify-content: center; */
 
   column-gap: rem(152);
 }
 
-.oganesyn__pictures {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
+.rytikova__picture-1 {
+  width: rem(279);
+  height: rem(250);
 
-  max-height: rem(600);
-  padding: rem(70) rem( 45) rem( 70) rem( 45);
+  background-image: url(../img/picture/rytikova/rytikova-1.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.rytikova__picture-2 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/rytikova/rytikova-2.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.rytikova__picture-3 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/rytikova/rytikova-3.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.rytikova__picture-4 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/rytikova/rytikova-4.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.rytikova__picture-5 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/rytikova/rytikova-5.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.rytikova__picture-6 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/rytikova/rytikova-6.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.rytikova__picture-7 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/rytikova/rytikova-7.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.rytikova__picture-8 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/rytikova/rytikova-8.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.yakubovich__pictures {
+  display: flex;
+
+  /*   flex-direction: column; */
+
+  flex-wrap: wrap;
+
+  /*   max-height: rem(1400); */
+
+  padding: rem(70) rem( 45);
+
+  /*   justify-content: center; */
 
   column-gap: rem(152);
 }
 
-.osinin__pictures {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
+.yakubovich__picture-1 {
+  width: rem(279);
+  height: rem(250);
 
-  max-height: rem(600);
+  background-image: url(../img/picture/yakubovich/yakubovich-1.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.yakubovich__picture-2 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/yakubovich/yakubovich-2.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.yakubovich__picture-3 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/yakubovich/yakubovich-3.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.yakubovich__picture-4 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/yakubovich/yakubovich-4.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.yakubovich__picture-5 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/yakubovich/yakubovich-5.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.yakubovich__picture-6 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/yakubovich/yakubovich-6.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.yakubovich__picture-7 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/yakubovich/yakubovich-7.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.yakubovich__picture-8 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/yakubovich/yakubovich-8.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.shein__pictures {
+  display: flex;
+
+  /*   flex-direction: column; */
+
+  flex-wrap: wrap;
+
+  /*   max-height: rem(1600); */
+
   padding: rem(70) rem( 45);
 
+  /*   justify-content: center; */
+
   column-gap: rem(152);
+}
+
+.shein__picture-1 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/shein/shein-1.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.shein__picture-2 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/shein/shein-2.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.shein__picture-3 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/shein/shein-3.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.shein__picture-4 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/shein/shein-4.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.shein__picture-5 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/shein/shein-5.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.shein__picture-6 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/shein/shein-6.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.shein__picture-7 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/shein/shein-7.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.shein__picture-8 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/shein/shein-8.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.logacheva__pictures {
+  display: flex;
+
+  /*   flex-direction: column; */
+
+  flex-wrap: wrap;
+
+  /*   max-height: rem(1600); */
+
+  padding: rem(70) rem( 45);
+
+  /*   justify-content: center; */
+
+  column-gap: rem(152);
+}
+
+.logacheva__picture-1 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/logacheva/logacheva-1.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.logacheva__picture-2 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/logacheva/logacheva-2.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.logacheva__picture-3 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/logacheva/logacheva-3.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.logacheva__picture-4 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/logacheva/logacheva-4.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.logacheva__picture-5 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/logacheva/logacheva-5.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.logacheva__picture-6 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/logacheva/logacheva-6.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.logacheva__picture-7 {
+  width: rem(279);
+  height: rem(250);
+
+  background-image: url(../img/picture/logacheva/logacheva-7.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .picture__card {

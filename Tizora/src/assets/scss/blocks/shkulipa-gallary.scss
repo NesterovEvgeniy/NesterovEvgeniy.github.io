@@ -1,0 +1,206 @@
+/* Lamidov-gallary page */
+
+.lamidov-gallary__title {
+  font-family: Raleway;
+  font-size: rem(32);
+  font-weight: 100;
+  font-style: normal;
+  line-height: normal;
+
+  padding: rem(60) 0 rem( 30);
+
+  text-align: center;
+
+  color: #FFF;
+}
+
+.lamidov-gallary__block {
+  padding: rem(60) 0;
+
+  border: 2px solid;
+  border-image: linear-gradient(90deg, rgba( 255, 255, 255, 0.00) 0%, rgba( 255, 255, 255, 0.00) 0%, rgba( 255, 255, 255, 0.00) 0%, rgba( 255, 255, 255, 0.71) 35.93%, rgba( 255, 255, 255, 0.00) 100%);
+  border-image-slice: 1;
+}
+
+.lamidov-gallary__slider {
+  width: rem(800);
+  margin: 0 auto;
+}
+
+.lamidov-gallary__name {
+  font-family: Raleway;
+  font-size: rem(32);
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+
+  margin-top: rem(30);
+  margin-bottom: rem(10);
+
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.80);
+}
+
+.lamidov-gallary__size {
+  font-family: Raleway;
+  font-size: rem(32);
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+
+  text-align: center;
+
+  color: rgba(117, 117, 117, 0.80);
+}
+
+.lamidov-gallary__card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 0 auto;
+}
+
+.lamidov-gallary__card-img-1 {
+  width: rem(600);
+  height: rem(600);
+
+  background-image: url(../img/picture/lamidov/lamidov-1.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.lamidov-gallary__card-img-2 {
+  width: rem(600);
+  height: rem(600);
+
+  background-image: url(../img/picture/lamidov/lamidov-2.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.lamidov-gallary__card-img-3 {
+  width: rem(600);
+  height: rem(600);
+
+  background-image: url(../img/picture/lamidov/lamidov-3.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.lamidov-gallary__card-img-4 {
+  width: rem(600);
+  height: rem(600);
+
+  background-image: url(../img/picture/lamidov/lamidov-8.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.lamidov-gallary__card-img-5 {
+  width: rem(600);
+  height: rem(600);
+
+  background-image: url(../img/picture/lamidov/lamidov-4.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.lamidov-gallary__card-img-6 {
+  width: rem(600);
+  height: rem(600);
+
+  background-image: url(../img/picture/lamidov/lamidov-5.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.lamidov-gallary__card-img-7 {
+  width: rem(600);
+  height: rem(600);
+
+  background-image: url(../img/picture/lamidov/lamidov-9.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.lamidov-gallary__card-img-8 {
+  width: rem(600);
+  height: rem(600);
+
+  background-image: url(../img/picture/lamidov/lamidov-6.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.lamidov-gallary__card-img-9 {
+  width: rem(600);
+  height: rem(600);
+
+  background-image: url(../img/picture/lamidov/lamidov-7.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.lamidov-gallary__card-img-10 {
+  width: rem(600);
+  height: rem(600);
+
+  background-image: url(../img/picture/lamidov/lamidov-10.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.clients__slider-btn {
+  position: absolute;
+  z-index: 2;
+  top: rem(300);
+
+  cursor: pointer;
+
+  border: none;
+  background-color: transparent;
+}
+
+.clients__slider-btnprev {
+  left: rem(-100);
+}
+
+.clients__slider-btnnext {
+  right: rem(-100);
+}
+
+/*
+.clients-slider__btn-box {
+  position: relative;
+  z-index: 10;
+
+  width: rem(28);
+  height: rem(28);
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 50%;
+  background-color: #5ccd6a;
+
+  & img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+}
+*/

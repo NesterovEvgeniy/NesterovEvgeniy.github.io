@@ -11,8 +11,6 @@
 /* Default Styles */
 
 html {
-  overflow: auto;
-
   box-sizing: border-box;
 
   scroll-behavior: smooth;
@@ -37,8 +35,6 @@ a {
   text-decoration: none;
 
   color: #ffffff;
-
-  /*     color: $font-color; */
 }
 
 h1,
@@ -55,23 +51,18 @@ p {
 }
 
 body {
-  overflow: hidden;
-
   box-sizing: border-box;
-
-  /*     color: $font-color; */
-
   min-width: rem(390);
   max-width: rem(1440);
 
   /* padding: 0 rem(10); */
 
   margin: 0 auto;
-
-  /* @include main-font; */
 }
 
 .page__wrapper {
+  position: relative;
+
   box-sizing: border-box;
   max-width: rem(1440);
   padding: 0 rem(100);
@@ -86,10 +77,13 @@ body {
 @import "blocks/main.scss";
 @import "blocks/about.scss";
 @import "blocks/picture.scss";
-@import "blocks/lamidov.scss";
-@import "blocks/lamidov-gallary.scss";
+@import "blocks/shkulipa-page.scss";
+@import "blocks/rytikova-page.scss";
+@import "blocks/yakubovich-page.scss";
+@import "blocks/shein-page.scss";
+@import "blocks/logacheva-page.scss";
+@import "blocks/shkulipa-gallary.scss";
 @import "blocks/contacts.scss";
 @import "blocks/footer.scss";
 @import "blocks/menu-mobile.scss";
-
-/* @import "media.scss"; */
+@import "media.scss";

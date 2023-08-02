@@ -71,8 +71,29 @@
   margin-left: rem(110);
   padding: 0;
 
+  animation: main__btn-slide;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
   border: none;
   background-color: transparent;
+}
+
+@keyframes main__btn-slide {
+
+0% {
+  transform: translateY(0);
+}
+
+50% {
+  transform: translateY(10px);
+}
+
+100% {
+  transform: translateY(0);
+}
+
 }
 
 .card__inner {
@@ -102,6 +123,16 @@
 .card__painter:hover {
   border-image: linear-gradient(rgba( 255, 255, 255, 0.0) 0%, rgba( 255, 255, 255, 0.71) 43.75%, rgba( 255, 255, 255, 0.0) 100%);
   border-image-slice: 20% 20%;
+
+  .card__painter-img {
+    background-size: 120% 120%;
+  }
+
+  .card__painter-name {
+    font-weight: 400;
+
+    color: #494949 no-repeat;
+  }
 }
 
 .card__painter-name {
@@ -128,18 +159,53 @@
   background-size: cover;
 }
 
+.card__painter-text {
+  font-family: Raleway;
+  font-size: rem(40);
+  font-weight: 800;
+  font-style: normal;
+  line-height: normal;
+
+  max-width: rem(160);
+  margin: rem(75) auto;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
 .card__picture-1 {
-  background-image: url(../img/main-cards/lamidov.webp);
+  transition: background-size 1.5s ease;
+
+  background: url(../img/main-cards/shkulipa.webp) 50% 50% no-repeat;
+  background-size: 100% 100%;
 }
 
 .card__picture-2 {
-  background-image: url(../img/main-cards/oganesyn.webp);
+  transition: background-size 1.5s ease;
+
+  background: url(../img/main-cards/rytikova.webp) 50% 50% no-repeat;
+  background-size: 100% 100%;
 }
 
 .card__picture-3 {
-  background-image: url(../img/main-cards/osinin.webp);
+  transition: background-size 1.5s ease;
+
+  background: url(../img/main-cards/yakubovich.webp) 50% 50% no-repeat;
+  background-size: 100% 100%;
 }
 
 .card__picture-4 {
-  background-image: url(../img/main-cards/antipov.webp);
+  transition: background-size 1.5s ease;
+
+  background: url(../img/main-cards/shein.webp) 50% 50% no-repeat;
+  background-size: 100% 100%;
+}
+
+.card__picture-5 {
+  transition: background-size 1.5s ease;
+
+  background: url(../img/main-cards/logacheva.webp) 50% 50% no-repeat;
+  background-position: bottom;
+  background-size: 100% 100%;
 }

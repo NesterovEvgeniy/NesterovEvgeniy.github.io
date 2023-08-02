@@ -11,7 +11,7 @@
 .about__info {
   min-width: rem(490);
   margin-bottom: rem(100);
-  padding: rem(100) rem( 70) rem( 70);
+  padding: rem(100) rem( 70) rem( 123);
 
   border: 2px solid;
   border-image: linear-gradient(rgba( 255, 255, 255, 0.0) 25%, rgba( 255, 255, 255, 0.1) 30.75%, rgba( 255, 255, 255, 1) 100%);
@@ -203,7 +203,6 @@
 }
 
 .about__goal-block {
-  margin-bottom: rem(117);
 }
 
 .goal__title {
@@ -276,6 +275,7 @@
   width: rem(1240);
   height: rem(715);
   margin-top: rem(120);
+  margin-bottom: rem(120);
 
   background-image: url(../img/about/about-large-picture.jpg);
   background-repeat: no-repeat;

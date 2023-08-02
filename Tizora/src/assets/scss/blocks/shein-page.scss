@@ -1,0 +1,136 @@
+/* shein-page */
+
+.shein-page__inner {
+  padding-top: rem(127);
+}
+
+.shein-page__box {
+  display: flex;
+}
+
+.shein-page__photo {
+  width: rem(350);
+  height: rem(450);
+  margin-right: rem(126);
+  margin-left: rem(45);
+
+  background-image: url(../img/picture/shein/shein-photo.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.shein-page__info {
+  margin-bottom: rem(80);
+}
+
+.shein-page__name {
+  font-family: Raleway;
+  font-size: rem(52);
+  font-weight: 300;
+  font-style: normal;
+  line-height: normal;
+
+  margin-bottom: rem(50);
+
+  color: #FFF;
+}
+
+.shein-page__text {
+  font-family: Raleway;
+  font-size: rem(16);
+  font-weight: 300;
+  font-style: normal;
+  line-height: normal;
+
+  max-width: rem(780);
+  padding-bottom: rem(20);
+
+  color: #B3AA9D;
+}
+
+.shein-page__title {
+  font-family: Raleway;
+  font-size: rem(32);
+  font-weight: 100;
+  font-style: normal;
+  line-height: normal;
+
+  margin-top: rem(50);
+  padding: rem(30) 0;
+
+  text-align: center;
+
+  color: #FFF;
+  border: 2px solid;
+  border-image: linear-gradient(90deg, rgba( 255, 255, 255, 0.00) 0%, rgba( 255, 255, 255, 0.00) 0%, rgba( 255, 255, 255, 0.00) 0%, rgba( 255, 255, 255, 0.71) 35.93%, rgba( 255, 255, 255, 0.00) 100%);
+  border-image-slice: 1;
+}
+
+.shein-page__pictures {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: rem(70) rem( 45);
+
+  column-gap: rem(152);
+}
+
+.shein-page__picture-card {
+  margin-bottom: rem(50);
+}
+
+.shein-page__picture-name {
+  font-family: Raleway;
+  font-size: rem(16);
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.80);
+}
+
+.shein-page__picture-size {
+  font-family: Raleway;
+  font-size: rem(16);
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+
+  text-align: center;
+
+  color: rgba(117, 117, 117, 0.80);
+}
+
+.shein-page__btn-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: rem(268);
+  min-height: rem(48);
+  margin: 0 auto;
+  margin-bottom: rem(68);
+
+  border: 1px solid #5E5548;
+  background-color: transparent;
+
+  p {
+    font-family: Raleway;
+    font-size: rem(16);
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+
+    padding-left: rem(25);
+
+    text-align: center;
+
+    color: #5E5548;
+  }
+}
